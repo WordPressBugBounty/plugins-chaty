@@ -22,7 +22,7 @@ License: GPLv3
 
 [youtube  https://www.youtube.com/watch?v=i6t05AeuyWg]
 
-= 💬 WhatsApp & 20+ chat channels =
+= 💬 WhatsApp & 20+ chat buttons =
 Connect on WhatsApp or WhatsApp Business by entering your WhatsApp number. Get WhatsApp features like the WhatsApp popup that emulates a WhatsApp chat window, WhatsApp Merge tags, WhatsApp agents & many other features that’ll help you chat on WhatsApp.
 
 = 📞 Click to chat & call now phone button =
