@@ -46,6 +46,7 @@
         }, 1000)
     }
 
+
     $(document).ready(function () {
         var botPattern = "(googlebot\/|bot|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|java|wget|curl|Commons-HttpClient|Python-urllib|libwww|httpunit|nutch|phpcrawl|msnbot|jyxobot|FAST-WebCrawler|FAST Enterprise Crawler|biglotron|teoma|convera|seekbot|gigablast|exabot|ngbot|ia_archiver|GingerCrawler|webmon |httrack|webcrawler|grub.org|UsineNouvelleCrawler|antibot|netresearchserver|speedy|fluffy|bibnum.bnf|findlink|msrbot|panscient|yacybot|AISearchBot|IOI|ips-agent|tagoobot|MJ12bot|dotbot|woriobot|yanga|buzzbot|mlbot|yandexbot|purebot|Linguee Bot|Voyager|CyberPatrol|voilabot|baiduspider|citeseerxbot|spbot|twengabot|postrank|turnitinbot|scribdbot|page2rss|sitebot|linkdex|Adidxbot|blekkobot|ezooms|dotbot|Mail.RU_Bot|discobot|heritrix|findthatfile|europarchive.org|NerdByNature.Bot|sistrix crawler|ahrefsbot|Aboundex|domaincrawler|wbsearchbot|summify|ccbot|edisterbot|seznambot|ec2linkfinder|gslfbot|aihitbot|intelium_bot|facebookexternalhit|yeti|RetrevoPageAnalyzer|lb-spider|sogou|lssbot|careerbot|wotbox|wocbot|ichiro|DuckDuckBot|lssrocketcrawler|drupact|webcompanycrawler|acoonbot|openindexspider|gnam gnam spider|web-archive-net.com.bot|backlinkcrawler|coccoc|integromedb|content crawler spider|toplistbot|seokicks-robot|it2media-domain-crawler|ip-web-crawler.com|siteexplorer.info|elisabot|proximic|changedetection|blexbot|arabot|WeSEE:Search|niki-bot|CrystalSemanticsBot|rogerbot|360Spider|psbot|InterfaxScanBot|Lipperhey SEO Service|CC Metadata Scaper|g00g1e.net|GrapeshotCrawler|urlappendbot|brainobot|fr-crawler|binlar|SimpleCrawler|Livelapbot|Twitterbot|cXensebot|smtbot|bnf.fr_bot|A6-Indexer|ADmantX|Facebot|Twitterbot|OrangeBot|memorybot|AdvBot|MegaIndex|SemanticScholarBot|ltx71|nerdybot|xovibot|BUbiNG|Qwantify|archive.org_bot|Applebot|TweetmemeBot|crawler4j|findxbot|SemrushBot|yoozBot|lipperhey|y!j-asr|Domain Re-Animator Bot|AddThis)";
         var re = new RegExp(botPattern, 'i');
@@ -350,7 +351,6 @@
         /* track google analytics event */
         $(document).on("click", ".chaty-channel a.has-gae", function (e) {
             var widgetChannel = $(this).closest(".chaty-channel").data("channel");
-            console.log("widgetChannel: "+widgetChannel);
             if (widgetChannel !== undefined && widgetChannel != "" && widgetChannel != null) {
                 if (window.hasOwnProperty("gtag")) {
                     gtag("event", "chaty_" + widgetChannel, {
@@ -458,6 +458,12 @@
                 $(this).closest(".chaty-channel").removeClass("active");
             }
             removeChatyAnimation(chatyWidgetId);
+        });
+
+        $(document).on("click", ".chaty-chatway-channel", function (){
+            if(typeof(window.$chatway) == 'object') {
+                window.$chatway.openChatwayWidget()
+            }
         });
 
         /* check for channel or widget click event */
@@ -871,6 +877,7 @@
                 var customCSS = "";
                 var advanceCustomCSS = "";
                 var activeChannels = 0;
+                var activeChannelList = [];
                 var channelSetting = {};
 
                 /* check for country filter */
@@ -878,11 +885,29 @@
                 widgetStatus = widgetStatus && checkForTimeSchedule(widgetRecord);
                 widgetStatus = widgetStatus && checkForDayAndTimeSchedule(widgetRecord);
 
+                // Chatway Settings
+                let chatwaySettings = null;
+                let hasChatway = 0;
+                let chatwayPosition = null;
+                let hasOnlyChatway = false;
+
                 $.each(widgetRecord.channels, function (key, channel) {
                     var channelStatus = checkForChannel(channel);
                     if (channelStatus) {
-                        activeChannels++;
-                        channelSetting = channel;
+                        if(channel.channel === "Chatway") {
+                            hasChatway = true;
+                            chatwayPosition = channel.chatway_position;
+                            chatwaySettings = channel;
+                            if (chatwayPosition === "inside-chaty" || widgetRecord.settings.cta_type === "chat-view") {
+                                hasOnlyChatway = true;
+                                activeChannels++;
+                                activeChannelList.push(channel);
+                            }
+                        } else {
+                            channelSetting = channel;
+                            activeChannelList.push(channel);
+                            activeChannels++;
+                        }
                     }
                 });
 
@@ -891,7 +916,14 @@
                     widgetData[key].settings.default_state = "click";
                 }
 
-                if (widgetStatus && activeChannels > 0 && !$("#chaty-widget-" + widgetRecord.id).length) {
+                let chatwayClass = '';
+                if(hasChatway) {
+                    chatwayClass = 'has-chatway-channel'
+                }
+
+                let skipWidget = (activeChannels == 1 && hasOnlyChatway) ? false : true;
+
+                if (skipWidget && widgetStatus && activeChannels > 0 && !$("#chaty-widget-" + widgetRecord.id).length) {
                     var widgetPosition = getWidgetPosition(widgetRecord.settings);
                     widgetPosition = (widgetPosition == "right") ? "right" : "left";
                     var toolTipPosition = getToolTipPosition(widgetRecord);
@@ -899,7 +931,8 @@
                         var widgetHtml = "<div style='display: none' class='chaty chaty-has-chat-view chaty-id-" + widgetRecord.id + " chaty-widget-" + widgetRecord.id + " chaty-key-" + key + "' id='chaty-widget-" + widgetRecord.id + "' data-key='" + key + "' data-id='" + widgetRecord.id + "' data-identifier='" + widgetRecord.identifier + "' data-nonce='" + widgetRecord.settings.widget_token + "' >" +
                             "<div class='chaty-widget " + widgetPosition + "-position'>" +
                             "<div class='chaty-channels'>" +
-                            "<div class='chaty-i-trigger'></div>" +
+                            "<div class='chaty-channel-list' id='csaas-channels-"+widgetRecord.id+"'></div>" +
+                            "<div class='chaty-i-trigger csaas-widget-trigger "+chatwayClass+"'></div>" +
                             "</div>" +
                             "</div>" +
                             "</div>";
@@ -910,8 +943,8 @@
                         var widgetHtml = "<div style='display: none' class='chaty chaty-id-" + widgetRecord.id + " chaty-widget-" + widgetRecord.id + " chaty-key-" + key + "' id='chaty-widget-" + widgetRecord.id + "' data-key='" + key + "' data-id='" + widgetRecord.id + "' data-identifier='" + widgetRecord.identifier + "' data-nonce='" + widgetRecord.settings.widget_token + "' >" +
                             "<div class='chaty-widget " + widgetPosition + "-position'>" +
                             "<div class='chaty-channels'>" +
-                            "<div class='chaty-channel-list'></div>" +
-                            "<div class='chaty-i-trigger'></div>" +
+                            "<div class='chaty-channel-list' id='csaas-channels-"+widgetRecord.id+"'></div>" +
+                            "<div class='chaty-i-trigger csaas-widget-trigger "+chatwayClass+"'></div>" +
                             "</div>" +
                             "</div>" +
                             "</div>";
@@ -930,7 +963,7 @@
                             toolTipPosition = (widgetPosition != "right") ? "right" : "left";
                         }
                         var channelHtml = getChannelSetting(channelSetting, widgetRecord.id, toolTipPosition);
-                        $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger").html(channelHtml);
+                        $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger").append(channelHtml);
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger").addClass("single-channel");
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger .chaty-channel").addClass("single");
 
@@ -985,7 +1018,8 @@
                     } else {
                         $.each(widgetRecord.channels, function (key, channel) {
                             var channelStatus = checkForChannel(channel);
-                            if (channelStatus) {
+                            if (channelStatus && (channel.channel !== "Chatway" || (chatwayPosition === "inside-chaty" || widgetRecord.settings.cta_type === "chat-view"))) {
+
                                 if (isValueEmpty(channel.channel_type)) {
                                     channel.channel_type = channel.channel;
                                 }
@@ -1047,7 +1081,7 @@
                             widgetIcon +
                             '<span class="sr-only">Open chaty</span>' +
                             '</button>' +
-                            '<button type="button" class="open-chaty-channel"><span class="sr-only">chaty button</span></button>' +
+                            '<button type="button" class="open-chaty-channel"><span class="sr-only">chaty buttons</span></button>' +
                             '</div>' +
                             '</div>';
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger").html(widgetButton);
@@ -1065,11 +1099,17 @@
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger").append(closeHtml);
                     }
 
+                    /* check for State */
                     $.each(widgetRecord.channels, function (key, channel) {
                         if(channel.channel_type == "Contact_Us" && channel.hide_recaptcha_badge == "yes") {
                             customCSS += ".grecaptcha-badge {visibility: hidden;}";
                         }
                     });
+
+
+                    if(widgetRecord.settings.cta_type == "chat-view") {
+                        widgetRecord.settings.show_close_button == "yes";
+                    }
 
 
                     var clickStatus = checkChatyCookieExpired(widgetRecord.id, 'c-widget');
@@ -1083,6 +1123,27 @@
                     if (widgetRecord.settings.default_state == "open" && !isTrue(widgetRecord.settings.show_close_button)) {
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-widget").addClass("chaty-no-close-button").addClass("chaty-open");
                         extraSpace = 1;
+                    }
+
+                    if(hasChatway) {
+                        $("#chaty-widget-"+widgetRecord.id+" .chaty-widget").addClass(chatwayPosition);
+                        if (chatwayPosition === "above-chaty") {
+                            $("#chaty-widget-"+widgetRecord.id+" .chaty-widget").addClass("has-chatway");
+
+                            let toolTipPosition = getToolTipPosition(widgetRecord);
+
+                            let channelHtml = getChannelSetting(chatwaySettings, widgetRecord.id, toolTipPosition, key, widgetRecord.settings);
+                            if ($("#chaty-widget-"+widgetRecord.id).length) {
+                                $("#chaty-widget-"+widgetRecord.id+" .chaty-channel-list").prepend(channelHtml);
+                                customExtraCSS += "#chaty-widget-" + widgetRecord.id + " ." + chatwaySettings.channel_type + "-channel .color-element{ fill: " + chatwaySettings.icon_color + "; color: " + chatwaySettings.icon_color + ";}";
+                                customExtraCSS += "#chaty-widget-" + widgetRecord.id + " ." + chatwaySettings.channel_type + "-channel .csaas-svg { background-color: " + chatwaySettings.icon_color + ";}";
+                                customExtraCSS += ".channel-" + widgetRecord.id + "-" + chatwaySettings.channel_type + " .csaas-svg { background-color: " + chatwaySettings.icon_color + ";}";
+
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " ." + chatwaySettings.channel_type + "-channel .chaty-custom-icon { background-color: " + chatwaySettings.icon_color + "; }";
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " ." + chatwaySettings.channel_type + "-channel .chaty-svg { background-color: " + chatwaySettings.icon_color + ";}";
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .channel-icon-" + chatwaySettings.channel_type + " .chaty-svg { background-color: " + chatwaySettings.icon_color + ";}";
+                            }
+                        }
                     }
 
                     /* checking for google analytics */
@@ -1104,6 +1165,7 @@
                     if (widgetRecord.settings.default_state == "hover") {
                         $("#chaty-widget-" + widgetRecord.id).addClass("open-on-hover");
                     } else if (widgetRecord.settings.default_state == "open") {
+
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-widget").addClass("default-open");
                         if (clickStatus || !isTrue(widgetRecord.settings.show_close_button)) {
                             $("#chaty-widget-" + widgetRecord.id + " .chaty-widget:not(.has-single)").addClass("chaty-open");
@@ -1115,7 +1177,6 @@
 
                     if($("#chaty-widget-" + widgetRecord.id + " .chaty-widget:not(.has-single):not(.chaty-no-close-button)").hasClass("default-open")) {
                         if (isTrue(widgetRecord.settings.bg_blur_effect)) {
-                            console.log("@323");
                             $("body").addClass("add-bg-blur-effect");
                         }
                     } else {
@@ -1155,23 +1216,61 @@
                     customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-i-trigger .chaty-channel .chaty-svg .widget-fa-icon {line-height: " + widgetSize + "px; font-size:" + (parseInt(widgetSize / 2)) + "px; }";
 
                     if (widgetRecord.settings.icon_view == "vertical") {
-                        //customCSS += "#chaty-widget-"+widgetRecord.id+" .chaty-channel-list {bottom: "+(widgetSize+4)+"px; }";
                         customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-channel-list {height: " + (activeChannels * (widgetSize + 8)) + "px; }";
                         customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-channel-list {width: " + (widgetSize + 8) + "px; }";
 
                         for (var i = 0; i <= activeChannels; i++) {
                             customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
                         }
+                        if(hasChatway && chatwayPosition == "inside-chaty") {
+                            let i = 0, j = 1;
+                            for(let key = 0; key < activeChannelList.length; key++){
+                                channel = activeChannelList[key]
+                                customCSS += "body.chatway--active #chaty-widget-" + widgetRecord.id + " .chaty-open .chaty-channel-list .chaty-channel."+channel.channel+"-channel {-webkit-transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                                if(channel.channel != "Chatway") {
+                                    customCSS += "body:not(.chatway--active) #chaty-widget-" + widgetRecord.id + " .chaty-open .chaty-channel-list .chaty-channel."+channel.channel+"-channel {-webkit-transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i  - j - extraSpace)) + "px); transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - j - extraSpace)) + "px);}";
+                                } else {
+                                    j = 0;
+                                }
+                                i++;
+                            }
+                        } else {
+                            let i = 0;
+                            for (i = 0; i <= activeChannels; i++) {
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateY(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                            }
+                            if (chatwayPosition == "above-chaty") {
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-channel-list .Chatway-channel-link {-webkit-transform: translateY(-" + ((widgetSize + 8) * (extraSpace)) + "px); transform: translateY(-" + ((widgetSize + 8) * (1 - extraSpace)) + "px);}";
+                            }
+                        }
                     } else {
                         $("#chaty-widget-" + widgetRecord.id + " .chaty-widget").addClass("hor-mode");
                         customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-channel-list {width: " + (activeChannels * (widgetSize + 8)) + "px; }";
                         customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-channel-list {height: " + (widgetSize) + "px; }";
-                        // customCSS += "#chaty-widget-"+widgetRecord.id+" .chaty-widget.left-position.hor-mode .chaty-channel-list {left: "+(widgetSize+8)+"px; }";
-                        // customCSS += "#chaty-widget-"+widgetRecord.id+" .chaty-widget.right-position.hor-mode .chaty-channel-list {right: "+(widgetSize+8)+"px; }";
-
-                        for (var i = 0; i <= activeChannels; i++) {
-                            customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.left-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
-                            customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.right-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                        let i = 0;
+                        if(hasChatway && chatwayPosition == "inside-chaty") {
+                            let i = 0, j = 1;
+                            for(let key = 0; key < activeChannelList.length; key++){
+                                channel = activeChannelList[key]
+                                customCSS += "body.chatway--active .chaty-widget-" + widgetRecord.id + " .chaty-widget.left-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                                customCSS += "body.chatway--active .chaty-widget-" + widgetRecord.id + " .chaty-widget.right-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                                if(channel.channel != "Chatway") {
+                                    customCSS += "body:not(.chatway--active) #chaty-widget-" + widgetRecord.id + " .chaty-widget.left-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - j - extraSpace)) + "px); transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - j - extraSpace)) + "px);}";
+                                    customCSS += "body:not(.chatway--active) #chaty-widget-" + widgetRecord.id + " .chaty-widget.right-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - j - extraSpace)) + "px); transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - j - extraSpace)) + "px);}";
+                                } else {
+                                    j = 0;
+                                }
+                                i++;
+                            }
+                        } else {
+                            for (i = 0; i <= activeChannels; i++) {
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.left-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.right-position.hor-mode.chaty-open .chaty-channel-list .chaty-channel:nth-child(" + (i + 1) + ") {-webkit-transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px); transform: translateX(-" + ((widgetSize + 8) * (activeChannels - i - extraSpace)) + "px);}";
+                            }
+                            if(chatwayPosition == "above-chaty") {
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.left-position.hor-mode .chaty-channel-list .Chatway-channel-link {-webkit-transform: translateX(" + ((widgetSize + 8) * (1 - extraSpace)) + "px); transform: translateX(" + ((widgetSize + 8) * (1 - extraSpace)) + "px);}";
+                                customCSS += "#chaty-widget-" + widgetRecord.id + " .chaty-widget.right-position.hor-mode .chaty-channel-list .Chatway-channel-link {-webkit-transform: translateX(-" + ((widgetSize + 8) * (1 - extraSpace)) + "px); transform: translateX(-" + ((widgetSize + 8) * (1 - extraSpace)) + "px);}";
+                            }
                         }
                     }
 
@@ -1350,7 +1449,6 @@
                             if (!$(this).closest(".chaty-widget").hasClass("chaty-no-close-button")) {
                                 if (isTrue(widgetRecord.settings.bg_blur_effect)) {
                                     $("body").addClass("add-bg-blur-effect");
-                                    console.log("@32334");
                                 }
                             }
                         }
@@ -1441,7 +1539,7 @@
                 }
             }
         } else {
-            if (((!isChatyInMobile && isTrue(channel.is_desktop)) || (isChatyInMobile && isTrue(channel.is_mobile))) && (channel.value != '' || channel.channel == "Contact_Us")) {
+            if (((!isChatyInMobile && isTrue(channel.is_desktop)) || (isChatyInMobile && isTrue(channel.is_mobile))) && (channel.value != '' || (channel.channel == "Contact_Us" || channel.channel == "Chatway"))) {
                 return true;
             }
         }
@@ -1474,7 +1572,6 @@
                         $("#" + dataForm).addClass("active");
                         if($("#chaty-widget-" + widgetId + " .chaty-widget:not(.chaty-no-close-button)").hasClass("has-bg-blur-effect")) {
                             $("body").addClass("add-bg-blur-effect");
-                            console.log("@32333");
                         }
                         setTimeout(function(){
                             $(".chaty-whatsapp-btn-form.active .chaty-whatsapp-input").focus();
@@ -1739,7 +1836,7 @@
                     }
                 }
             }
-            return "<div class='chaty-channel " + channel.channel + "-channel" + extraClass + "' id='" + channel.channel + "-" + widgetId + "-channel' data-id='" + channel.channel_type + "-" + widgetId + "' data-widget='" + widgetId + "' data-channel='" + channel.channel + "'>" + channelLink + "</div>";
+            return "<div class='chaty-channel " + channel.channel + "-channel-link" + extraClass + "' id='" + channel.channel + "-" + widgetId + "-channel' data-id='" + channel.channel_type + "-" + widgetId + "' data-widget='" + widgetId + "' data-channel='" + channel.channel + "'>" + channelLink + "</div>";
         }
     }
 
@@ -2056,6 +2153,8 @@
                 channel.target = "";
             } else if (channel.channel_type == "Vkontakte") {
                 channel.url = "https://vk.me/" + $.trim(channel.value);
+            } else if (channel.channel_type == "Waze") {
+                channel.url = decodeURI($.trim(channel.value));
             }
         }
         if(channel.channel == "Link" || channel.channel == "Custom_Link" || channel.channel == "Custom_Link_3" || channel.channel == "Custom_Link_4" || channel.channel == "Custom_Link_5") {
@@ -2074,7 +2173,7 @@
             channel.target = "";
             channel.url = "javascript:;";
         }
-        return "<a href='" + channel.url + "' " + onClickFn + " target='" + channel.target + "' rel='nofollow noopener' aria-label='" + ariaLabel + "' class='chaty-tooltip chaty-"+(channel.channel_type).toLowerCase()+"-channel pos-" + toolTipPosition + extraClass + "' data-form='chaty-form-" + widgetId + "-" + channel.channel_type + "' data-hover='" + channel.hover_text + "'>" + channelIcon + "</a>";
+        return "<a href='" + channel.url + "' " + onClickFn + " target='" + channel.target + "' rel='nofollow noopener' aria-label='" + ariaLabel + "' class='chaty-tooltip " + channel.channel_type + "-channel chaty-"+(channel.channel_type).toLowerCase()+"-channel pos-" + toolTipPosition + extraClass + "' data-form='chaty-form-" + widgetId + "-" + channel.channel_type + "' data-hover='" + channel.hover_text + "'>" + channelIcon + "</a>";
     }
 
     function startMakingContactForm(channel, widgetId) {
