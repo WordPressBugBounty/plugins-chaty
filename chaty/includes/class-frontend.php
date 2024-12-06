@@ -20,9 +20,7 @@ $socialIcons = CHT_ADMIN_INC.'/class-social-icons.php';
 require_once $socialIcons;
 
 /**
- * Class CHT_Frontend
- *
- * This class is responsible for handling the frontend functionality of the Chaty plugin.
+ * Class for managing frontend functionalities.
  */
 class CHT_Frontend extends CHT_Admin_Base
 {
@@ -739,6 +737,8 @@ class CHT_Frontend extends CHT_Admin_Base
                     wp_enqueue_script('chaty-picmo-js', CHT_PLUGIN_URL . 'admin/assets/js/picmo-umd.min.js', ['jquery'], CHT_VERSION, $in_footer);
                     wp_enqueue_script('chaty-picmo-latest-js', CHT_PLUGIN_URL . 'admin/assets/js/picmo-latest-umd.min.js', ['jquery'], CHT_VERSION, $in_footer);
                 }
+
+                $data['has_chatway'] = $this->hasChatway;
                 wp_localize_script('chaty-front-end', 'chaty_settings',  $data);
 
                 if ( version_compare( get_bloginfo( 'version' ), '6.2.3', '>=' ) ) {
@@ -1365,7 +1365,7 @@ class CHT_Frontend extends CHT_Admin_Base
             if(!empty($user_identifier)) {
                 $position = isset($settings['chatway_position'])?$settings['chatway_position']:"above-chaty";
                 if($position == 'above-chaty' || $position == 'inside-chaty') {
-                    add_filter('body_class', [$this, 'add_chatway_class_to_body']);
+                    $this->hasChatway = true;
                     return $user_identifier;
                 }
             }

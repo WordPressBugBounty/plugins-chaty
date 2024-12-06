@@ -3,7 +3,7 @@ Contributors: galdub, tomeraharon, premio
 Tags: whatsapp, whatsapp chat, facebook messenger, chat, chat button
 Requires at least: 3.1
 Tested up to: 6.7
-Stable tag: 3.3.2
+Stable tag: 3.3.3
 Plugin URI: https://premio.io/downloads/chaty/
 License: GPLv3
 
@@ -291,6 +291,9 @@ Yes! You can even decide what chat buttons will show up on each device (desktop/
 
 
 == Changelog ==
+
+= 3.3.3 =
+Display bugs fixed
 
 = 3.3.2 =
 Exciting news! The Chatway integration just got even better. You can now add the live chat icon as part of the Chaty chat icons, overlay it on the main Chaty icon, or position it anywhere you like.
