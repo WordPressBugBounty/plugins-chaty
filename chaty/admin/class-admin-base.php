@@ -83,7 +83,7 @@ class CHT_Admin_Base
 
         add_action('admin_enqueue_scripts', [$this, 'enqueue_scripts'], 99); 
 
-        add_action("wp_ajax_update_popup_status", [$this, 'update_popup_status']);
+        add_action("wp_ajax_chaty_update_popup_status", [$this, 'update_popup_status']);
         add_action("wp_ajax_update_channel_setting", [$this, 'update_channel_setting']);
 
         /*
@@ -599,9 +599,7 @@ class CHT_Admin_Base
         if($page == "chaty_page_chaty-app-upgrade") {
             wp_enqueue_script($this->pluginSlug.'slick-script', plugins_url('../admin/assets/js/slick.min.js', __FILE__), ['jquery'], CHT_VERSION, true);
         }
-
-        // delete_option("chaty_update_message");
-        // $isShown = get_option("chaty_update_message");
+ 
         $is_shown = \CHT_SIGNUP_CLASS::check_modal_status();  
         if ($is_shown) { 
             wp_enqueue_script($this->pluginSlug.'mailcheck', plugins_url('../admin/assets/js/mailcheck.js', __FILE__), ['jquery'], CHT_VERSION, true);
