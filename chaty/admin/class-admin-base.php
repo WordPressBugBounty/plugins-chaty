@@ -354,7 +354,7 @@ class CHT_Admin_Base
      */
     public function plugin_action_links($links)
     {
-        $links['need_help'] = '<a target="_blank" href="https://wordpress.org/support/plugin/chaty/" >'.__('Need help?', 'chaty').'</a>';
+        $links['need_help'] = '<a target="_blank" href="https://premio.io/help/chaty/" >'.__('Need help?', 'chaty').'</a>';
         $links['go_pro']    = '<a style="color: #FF5983; font-weight: bold; display: inline-block; border: solid 1px #FF5983; border-radius: 4px; padding: 0 5px;" href="'.CHT_PRO_URL.'" class="chaty-plugins-gopro">'.esc_attr__('Upgrade', 'chaty').'</a>';
         return $links;
 

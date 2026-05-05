@@ -8,7 +8,7 @@ $data = array(
     'pro_icon' => esc_url(CHT_PLUGIN_URL."admin/assets/images/help/pro.svg"),
     'support_icon' => esc_url(CHT_PLUGIN_URL."admin/assets/images/help/help-circle.svg"),
     'contact_icon' => esc_url(CHT_PLUGIN_URL."admin/assets/images/help/headphones.svg"),
-    'get_support_link' => esc_url("https://wordpress.org/support/plugin/chaty/"),
+    'get_support_link' => esc_url("https://premio.io/help/chaty/"),
     'upgrade_to_pro_link' => esc_url(admin_url("admin.php?page=chaty-app-upgrade")),
     'recommended_plugins_link' => esc_url(admin_url("admin.php?page=recommended-chaty-plugins")),
     'recommended_plugins_link_status' => get_option("hide_chaty_recommended_plugin"),
