@@ -32,7 +32,6 @@ $data = array(
         bottom: 100px;
         background: #fff;
         -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
         border-radius: 10px;
         width: 320px;
         z-index: 1001;
@@ -41,7 +40,7 @@ $data = array(
         opacity: 0;
         transition: .4s;
         -webkit-transition: .4s;
-        -moz-transition: .4s
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
     .premio-help-form.active {
         opacity: 1;
@@ -51,12 +50,11 @@ $data = array(
     .premio-help-header {
         background: #f4f4f4;
         border-bottom: solid 1px #e9edf0;
-        padding: 5px 20px;
+        padding: 8px 20px;
         -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
         border-radius: 10px 10px 0 0;
         font-size: 16px;
-        text-align: right
+        text-align: center;
     }
     .premio-help-header b {
         float: left
@@ -159,14 +157,12 @@ $data = array(
         box-shadow: none !important;
     }
     .premio-help-content p {
-        color: #83A1B7;
         text-align: center;
-        /* font-family: Poppins; */
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
-        margin: 0 !important;
+        margin: 0 0 10px !important;
     }
     .premio-help-content p a {
         color: #7459B3;
@@ -414,10 +410,10 @@ $data = array(
     
         <form action="<?php echo esc_url(admin_url('admin-ajax.php')) ?>" method="post" id="premio-help-form">
             <div class="premio-help-header">
-                <b>Gal Dubinski</b>  <?php esc_html_e("Co-Founder at Premio", "chaty") ?>
+                <?php esc_html_e('Contact Us', 'chaty'); ?>
             </div>
             <div class="premio-help-content">
-                <p><?php esc_html_e("Hello! Are you experiencing any problems with Chaty? Please let me know :)", 'chaty'); ?></p>
+                <p><?php esc_html_e("Are you experiencing any issues with Chaty? Please let us know, we’d be happy to help 🙏", 'chaty'); ?></p>
                 <div class="premio-form-field">
                     <input type="text" name="user_email" id="user_email" placeholder="<?php esc_html_e("Email", 'chaty'); ?>">
                 </div>
@@ -430,11 +426,7 @@ $data = array(
                     <input type="hidden" id="nonce" name="nonce" value="<?php echo esc_attr(wp_create_nonce('chaty_send_message_to_owner')) ?>"  >
                 </div>
             </div>
-            <div class="help-form-footer">
-                <p><?php esc_html_e("Or", 'chaty'); ?></p>
-                <p><a href="<?php echo esc_url($data['help_center_link']) ?>" target="_blank"><?php esc_html_e("Visit our Help Center >>", 'chaty'); ?></a></p>
-            </div>
-        </form> 
+        </form>
         <div class="premio-form-response"></div>
     </div>
 </div>
