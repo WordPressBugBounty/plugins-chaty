@@ -191,6 +191,9 @@ $data = array(
         border-radius: 50%; 
          transition: 0.4s;
     }
+    .premio-help-btn:focus, .premio-help-close-btn:focus {
+        border-radius: 50%;
+    }
     .premio-help-btn.hide{
         display: none;
     }
@@ -418,7 +421,7 @@ $data = array(
                     <input type="text" name="user_email" id="user_email" placeholder="<?php esc_html_e("Email", 'chaty'); ?>">
                 </div>
                 <div class="premio-form-field">
-                    <textarea type="text" name="textarea_text" id="textarea_text" placeholder="<?php esc_html_e("How can I help you?", 'chaty'); ?>"></textarea>
+                    <textarea type="text" name="textarea_text" id="textarea_text" placeholder="<?php esc_html_e("How can we help you?", 'chaty'); ?>"></textarea>
                 </div>
                 <div class="form-button">
                     <button type="submit" class="premio-help-button" ><?php esc_html_e("Chat", 'chaty') ?></button>

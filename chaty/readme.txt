@@ -2,8 +2,8 @@
 Contributors: galdub, tomeraharon, premio
 Tags: whatsapp, whatsapp chat, facebook messenger, chat, chat button
 Requires at least: 3.1
-Tested up to: 6.9
-Stable tag: 3.5.6
+Tested up to: 7.0
+Stable tag: 3.5.7
 Plugin URI: https://premio.io/downloads/chaty/
 License: GPLv3
 
@@ -70,6 +70,7 @@ Line
 WeChat
 Viber
 Waze
+YouTube
 Google Maps
 Discord
 Microsoft Teams
@@ -195,7 +196,9 @@ In the Pro version, Chaty has many WooCommerce integrations, including dynamic c
 
 * Viber - is a cross-platform instant messaging app.
 
-* Waze - is a GPS navigation app that works on smartphones and tablets with GPS support.
+* Waze - is a GPS navigation app.
+
+* YouTube - showcase YouTube videos.
 
 * Google Maps - add your business location link as it is shown on Google Maps.
 
@@ -246,7 +249,7 @@ Yes! You can add a WhatsApp chat button to your website (also known as Whats App
 Yes! Just choose the Phone icon and add your phone number.
 
 = Which buttons are available with the Chaty plugin? =
-WhatsApp chat, Facebook Messenger, Instagram, Email, SMS, Snapchat, Twitter, LinkedIn, Vkontakte, Phone (click to call), Telegram, Line, WeChat, Viber, Waze, Google maps, 2 Links to an external channel/contact page, Launch a Poptin popup
+WhatsApp chat, Facebook Messenger, Instagram, Email, SMS, Snapchat, Twitter, LinkedIn, Vkontakte, Phone (click to call), Telegram, Line, WeChat, Viber, YouTube, Waze, Google maps, 2 Links to an external channel/contact page, Launch a Poptin popup
 
 = I don’t see the widget on my site, what should I do? =
 Please make sure you’ve chosen at least one channel and clicked on the “SAVE CHANGES” button.
@@ -293,6 +296,13 @@ Yes! You can even decide what chat buttons will show up on each device (desktop/
 
 
 == Changelog ==
+
+= 3.5.7 =
+Added YouTube channel support with embedded video player for Pro users.
+Added support for full Instagram DM, LinkedIn, X, and TikTok profile links.
+Fixed TikTok, X, and Instagram link handling issues.
+Improved LinkedIn and WhatsApp setup experience.
+Fixed WordPress translation warnings in debug logs.
 
 = 3.5.6 =
 Improve chat form interface

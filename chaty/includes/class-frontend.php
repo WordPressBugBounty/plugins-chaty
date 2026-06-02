@@ -1117,8 +1117,12 @@ class CHT_Frontend extends CHT_Admin_Base
                             }
                             $url = esc_url($url);
                         } else if ($channelType == "twitter") {
-                            // setting for Twitter
-                            $url           = "https://twitter.com/".esc_attr($val);
+                            $val = str_replace(
+                                ["https://x.com/", "http://x.com/", "x.com/", "https://twitter.com/", "http://twitter.com/", "twitter.com/", "https://www.twitter.com/", "http://www.twitter.com/", "www.twitter.com/"],
+                                "",
+                                $val
+                            );
+                            $url            = "https://x.com/".esc_attr(trim($val));
                             $desktopTarget = "_blank";
                             $mobileTarget  = "_blank";
                             $url           = esc_url($url);
@@ -1137,21 +1141,23 @@ class CHT_Frontend extends CHT_Admin_Base
                             $mobileTarget  = "_blank";
                         } else if ($channelType == "instagram") {
                             // setting for Instagram
-                            $val = str_replace(["https://www.instagram.com/", "https://ig.me/m/", "@"], ["","", ""], $val);
+                            $val            = str_replace(["https://www.instagram.com/", "http://www.instagram.com/", "http://instagram.com/", "https://instagram.com/", "https://ig.me/m/", "http://ig.me/m/", 'www.instagram.com/', 'ig.me/m/',"@"], "", $val);
                             $url            = "https://www.instagram.com/".esc_attr($val);
                             $desktopTarget = "_blank";
                             $mobileTarget  = "_blank";
                             $url           = esc_url($url);
                         } else if ($channelType == "instagram_dm") {
                             // setting for Instagram
-                            $val = str_replace(["https://www.instagram.com/", "https://ig.me/m/", "@"], ["","", ""], $val);
-                            $url            = "https://ig.me/m/".esc_attr($val);
+                            $val            = str_replace(["https://www.instagram.com/", "http://www.instagram.com/", "http://instagram.com/", "https://instagram.com/", "https://ig.me/m/", "http://ig.me/m/", 'www.instagram.com/', 'ig.me/m/',"@"], "", $val);
+                            $url            = "https://ig.me/m/".esc_attr(trim($val));
                             $desktopTarget = "_blank";
                             $mobileTarget  = "_blank";
                             $url           = esc_url($url);
                         } else if ($channelType == "linkedin") {
                             // setting for Linkedin
                             $linkType = !isset($value['link_type']) || $value['link_type'] == "company" ? "company" : "personal";
+                            $val = str_replace(["https://www.linkedin.com/in/", "http://www.linkedin.com/in/", "https://linkedin.com/in/", "http://linkedin.com/in/", "www.linkedin.com/in/", "linkedin.com/in/"], "", $val);
+                            $val = str_replace(["https://www.linkedin.com/company/", "http://www.linkedin.com/company/", "https://linkedin.com/company/", "http://linkedin.com/company/", "www.linkedin.com/company/", "linkedin.com/company/"], "", $val);
                             if ($linkType == "personal") {
                                 $url = "https://www.linkedin.com/in/".esc_attr($val);
                             } else {
@@ -1167,14 +1173,18 @@ class CHT_Frontend extends CHT_Admin_Base
                             $mobileTarget  = "_blank";
                         } else if ($channelType == "tiktok") {
                             $val            = $value['value'];
-                            $firstCharacter = substr($val, 0, 1);
-                            if ($firstCharacter != "@") {
-                                $val = "@".$val;
-                            }
-
-                            $url           = esc_url("https://www.tiktok.com/".$val);
+                            $val = str_replace(
+                                ["https://www.tiktok.com/", "http://www.tiktok.com/", "www.tiktok.com/", "https://tiktok.com/", "http://tiktok.com/", "tiktok.com/", "@"],
+                                "",
+                                $val
+                            );
+                            $val = "@".esc_attr($val);
+                            $url            = esc_url("https://www.tiktok.com/".trim($val));
                             $desktopTarget = $mobileTarget = "_blank";
-                            $url           = esc_url($url);
+                        } else if ($channelType == "youtube") {
+                            $desktopTarget = "_blank";
+                            $mobileTarget  = "_blank";
+                            $url = esc_url($val);
                         } else if ($channelType == "chatway") {
                             $url = "#";
                             $desktopTarget = $mobileTarget = "";

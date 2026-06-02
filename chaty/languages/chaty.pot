@@ -2,10 +2,10 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chaty 3.5.6\n"
+"Project-Id-Version: Chaty 3.5.7\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/chaty-free-uncompressed\n"
-"POT-Creation-Date: 2026-05-12 05:44:24+00:00\n"
+"POT-Creation-Date: 2026-06-02 07:32:09+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Your request is not valid"
 msgstr ""
 
-#: admin/class-admin-base.php:357 views/admin/help.php:385
+#: admin/class-admin-base.php:357 views/admin/help.php:388
 msgid "Need help?"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgid ""
 "administrator to give you access to add JavaScript."
 msgstr ""
 
-#: admin/class-admin-base.php:739 views/admin/channel.php:398
+#: admin/class-admin-base.php:739 views/admin/channel.php:393
 msgid "Remove"
 msgstr ""
 
@@ -92,26 +92,24 @@ msgid "Contact form leads"
 msgstr ""
 
 #: admin/class-admin-base.php:917 admin/class-admin-base.php:918
-#: views/admin/help.php:373
+#: views/admin/help.php:376
 msgid "Recommended Plugins"
 msgstr ""
 
 #: admin/class-admin-base.php:930 admin/class-admin-base.php:931
-#: admin/class-admin-base.php:1221 views/admin/channel.php:547
-#: views/admin/channel.php:616 views/admin/channel.php:642
-#: views/admin/channel.php:692 views/admin/channel.php:701
-#: views/admin/channel.php:916 views/admin/channel.php:970
-#: views/admin/channel.php:996 views/admin/channel.php:1012
-#: views/admin/channel.php:1044 views/admin/channel.php:1074
-#: views/admin/channel.php:1101 views/admin/chaty_widget.php:17
-#: views/admin/customize-widget-section.php:62
+#: admin/class-admin-base.php:1221 views/admin/channel.php:542
+#: views/admin/channel.php:611 views/admin/channel.php:637
+#: views/admin/channel.php:687 views/admin/channel.php:696
+#: views/admin/channel.php:911 views/admin/channel.php:965
+#: views/admin/channel.php:991 views/admin/channel.php:1007
+#: views/admin/chaty_widget.php:17 views/admin/customize-widget-section.php:62
 #: views/admin/customize-widget-section.php:172
 #: views/admin/customize-widget-section.php:277
 #: views/admin/customize-widget-section.php:486
 #: views/admin/customize-widget-section.php:514
 #: views/admin/customize-widget-section.php:543 views/admin/first-popup.php:57
-#: views/admin/first-popup.php:94 views/admin/help.php:371
-#: views/admin/help.php:395 views/admin/popup.php:181 views/admin/popup.php:209
+#: views/admin/first-popup.php:94 views/admin/help.php:374
+#: views/admin/help.php:398 views/admin/popup.php:181 views/admin/popup.php:209
 #: views/admin/popup.php:234 views/admin/trigger-and-target.php:207
 #: views/admin/trigger-and-target.php:303
 #: views/admin/trigger-and-target.php:366
@@ -129,28 +127,27 @@ msgstr ""
 msgid "Widget"
 msgstr ""
 
-#: admin/class-admin-base.php:1294 includes/class-frontend.php:1220
-#: views/admin/channel.php:452 views/admin/channels-section.php:43
+#: admin/class-admin-base.php:1294 includes/class-frontend.php:1230
+#: views/admin/channel.php:447 views/admin/channels-section.php:43
 #: views/admin/contact-form-feed.php:196 views/admin/contact-form-feed.php:234
 msgid "Name"
 msgstr ""
 
 #: admin/class-admin-base.php:1295 admin/class-admin-base.php:2605
-#: includes/class-frontend.php:1232 views/admin/channel.php:459
+#: includes/class-frontend.php:1242 views/admin/channel.php:454
 #: views/admin/contact-form-feed.php:197 views/admin/contact-form-feed.php:237
-#: views/admin/help.php:418
+#: views/admin/help.php:421
 msgid "Email"
 msgstr ""
 
-#: admin/class-admin-base.php:1296 admin/class-social-icons.php:142
-#: admin/class-social-icons.php:165 admin/class-social-icons.php:223
-#: admin/class-social-icons.php:290 views/admin/contact-form-feed.php:198
-#: views/admin/contact-form-feed.php:240 views/admin/popup.php:290
+#: admin/class-admin-base.php:1296 admin/class-social-icons.php:294
+#: views/admin/contact-form-feed.php:198 views/admin/contact-form-feed.php:240
+#: views/admin/popup.php:290
 msgid "Phone number"
 msgstr ""
 
-#: admin/class-admin-base.php:1297 includes/class-frontend.php:1254
-#: views/admin/channel.php:473 views/admin/contact-form-feed.php:199
+#: admin/class-admin-base.php:1297 includes/class-frontend.php:1264
+#: views/admin/channel.php:468 views/admin/contact-form-feed.php:199
 #: views/admin/contact-form-feed.php:243
 msgid "Message"
 msgstr ""
@@ -200,77 +197,101 @@ msgstr ""
 msgid "Pink"
 msgstr ""
 
-#: admin/class-social-icons.php:125 views/admin/chatway-setting.php:146
-msgid "Chatway"
+#: admin/class-social-icons.php:125
+msgid "Chatway user id"
+msgstr ""
+
+#: admin/class-social-icons.php:142 admin/class-social-icons.php:165
+msgid "Example: +1548587534"
 msgstr ""
 
 #: admin/class-social-icons.php:155
 msgid "https://m.me/Coca-Cola/"
 msgstr ""
 
-#: admin/class-social-icons.php:191 admin/class-social-icons.php:199
-msgid "InstagramUsername"
+#: admin/class-social-icons.php:177
+msgid "Example: someone@example.com"
 msgstr ""
 
-#: admin/class-social-icons.php:243
-msgid "Enter a poptin link"
+#: admin/class-social-icons.php:178
+msgid "How do I use this?"
 msgstr ""
 
-#: admin/class-social-icons.php:254 admin/class-social-icons.php:270
-#: admin/class-social-icons.php:310
-msgid "User Name"
+#: admin/class-social-icons.php:191
+msgid "Example: my_handle or https://ig.me/m/my_handle"
 msgstr ""
 
-#: admin/class-social-icons.php:281
-msgid "Maps link"
+#: admin/class-social-icons.php:201
+msgid "Example: my_handle or https://instagram.com/my_handle"
 msgstr ""
 
-#: admin/class-social-icons.php:296
+#: admin/class-social-icons.php:227
+msgid "Example: +1507854875"
+msgstr ""
+
+#: admin/class-social-icons.php:247
+msgid "https://app.popt.in/APIRequest/click/34e92354f927c"
+msgstr ""
+
+#: admin/class-social-icons.php:258
+msgid "Example: http://line.me/ti/p/2a-s5A2B8B"
+msgstr ""
+
+#: admin/class-social-icons.php:274 admin/class-social-icons.php:327
+#: admin/class-social-icons.php:375
+msgid "Example: myusername"
+msgstr ""
+
+#: admin/class-social-icons.php:285
+msgid "Example: https://goo.gl/maps/4m93C84v2DC2"
+msgstr ""
+
+#: admin/class-social-icons.php:300
 msgid ""
 "Enter your Viber ID or full phone number that you registered with Viber. "
 "Example:+18006927753"
 msgstr ""
 
-#: admin/class-social-icons.php:302
-msgid "Twitter"
+#: admin/class-social-icons.php:306
+msgid "Example: MyHandle or x.com/MyHandle"
 msgstr ""
 
-#: admin/class-social-icons.php:321
-msgid "Username"
+#: admin/class-social-icons.php:316
+msgid "User Name"
 msgstr ""
 
-#: admin/class-social-icons.php:330
-msgid "@TikTok_username"
+#: admin/class-social-icons.php:336
+msgid "Example: @my_handle or tiktok.com/@my_handle"
 msgstr ""
 
-#: admin/class-social-icons.php:339
-msgid "Enter a waze link"
+#: admin/class-social-icons.php:347
+msgid "Example: https://youtu.be/FdeioVndUhs"
 msgstr ""
 
-#: admin/class-social-icons.php:349
-msgid "My-Name-512b1413b"
+#: admin/class-social-icons.php:355
+msgid "Example: https://waze.com/ul/hdr5ru7vtv"
 msgstr ""
 
-#: admin/class-social-icons.php:359
-msgid "Link Vkontakte"
+#: admin/class-social-icons.php:365
+msgid "Example: My-Name-512b1413b or https://www.linkedin.com/in/My-Name-512b1413b/"
 msgstr ""
 
-#: admin/class-social-icons.php:368
-msgid "Slack"
+#: admin/class-social-icons.php:384
+msgid "Example: https://workspace.slack.com/"
 msgstr ""
 
-#: admin/class-social-icons.php:386
-msgid "Discord"
+#: admin/class-social-icons.php:402
+msgid "Example: https://discord.gg/abcde"
 msgstr ""
 
-#: admin/class-social-icons.php:394
-msgid "Microsoft Teams"
+#: admin/class-social-icons.php:410
+msgid "Example: https://teams.microsoft.com/join/abcde"
 msgstr ""
 
-#: admin/class-social-icons.php:402 admin/class-social-icons.php:424
-#: admin/class-social-icons.php:446 admin/class-social-icons.php:468
-#: admin/class-social-icons.php:490
-msgid "Link"
+#: admin/class-social-icons.php:418 admin/class-social-icons.php:440
+#: admin/class-social-icons.php:462 admin/class-social-icons.php:484
+#: admin/class-social-icons.php:506
+msgid "Example: https://www.example.com/contact"
 msgstr ""
 
 #: includes/class-email-signup.php:61
@@ -310,27 +331,27 @@ msgstr ""
 msgid "Show Emojis"
 msgstr ""
 
-#: includes/class-frontend.php:1222 views/admin/channel.php:453
+#: includes/class-frontend.php:1232 views/admin/channel.php:448
 msgid "Enter your name"
 msgstr ""
 
-#: includes/class-frontend.php:1234
+#: includes/class-frontend.php:1244
 msgid "Enter your email"
 msgstr ""
 
-#: includes/class-frontend.php:1243 views/admin/channel.php:466
+#: includes/class-frontend.php:1253 views/admin/channel.php:461
 msgid "Phone"
 msgstr ""
 
-#: includes/class-frontend.php:1245 views/admin/channel.php:467
+#: includes/class-frontend.php:1255 views/admin/channel.php:462
 msgid "Enter your phone number"
 msgstr ""
 
-#: includes/class-frontend.php:1256 views/admin/channel.php:474
+#: includes/class-frontend.php:1266 views/admin/channel.php:469
 msgid "Enter your message"
 msgstr ""
 
-#: includes/class-frontend.php:1282 views/admin/channel.php:404
+#: includes/class-frontend.php:1292 views/admin/channel.php:399
 msgid "Write your message..."
 msgstr ""
 
@@ -512,282 +533,282 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: views/admin/channel.php:247 views/admin/popup.php:290
+#: views/admin/channel.php:242 views/admin/popup.php:290
 msgid "Test"
 msgstr ""
 
-#: views/admin/channel.php:300
+#: views/admin/channel.php:295
 msgid "Enable WhatsApp Chat Widget"
 msgstr ""
 
-#: views/admin/channel.php:311
+#: views/admin/channel.php:306
 msgid ""
 "Engage visitors with a WhatsApp-style chat window with a welcome message. "
 "Visitors can start conversations by typing messages and  clicking on 'Send' "
 "will redirect them to WhatsApp."
 msgstr ""
 
-#: views/admin/channel.php:320
+#: views/admin/channel.php:315
 msgid "Welcome message"
 msgstr ""
 
-#: views/admin/channel.php:324
+#: views/admin/channel.php:319
 msgid "How can I help you? :)"
 msgstr ""
 
-#: views/admin/channel.php:335
+#: views/admin/channel.php:330
 msgid "Open the chat widget on page load"
 msgstr ""
 
-#: views/admin/channel.php:336
+#: views/admin/channel.php:331
 msgid ""
 "Open the WhatsApp chat popup on page load, after the user sends a message "
 "or closes the window, the window will stay closed to avoid disruption"
 msgstr ""
 
-#: views/admin/channel.php:348
+#: views/admin/channel.php:343
 msgid "Let's chat on WhatsApp"
 msgstr ""
 
-#: views/admin/channel.php:351
+#: views/admin/channel.php:346
 msgid "Headline"
 msgstr ""
 
-#: views/admin/channel.php:363 views/admin/channel.php:1128
+#: views/admin/channel.php:358 views/admin/channel.php:1128
 msgid "Header Background"
 msgstr ""
 
-#: views/admin/channel.php:375
+#: views/admin/channel.php:370
 msgid "Nickname"
 msgstr ""
 
-#: views/admin/channel.php:386
+#: views/admin/channel.php:381
 msgid "Add a profile image"
 msgstr ""
 
-#: views/admin/channel.php:391
+#: views/admin/channel.php:386
 msgid "Profile image"
 msgstr ""
 
-#: views/admin/channel.php:395
+#: views/admin/channel.php:390
 msgid "Upload Image"
 msgstr ""
 
-#: views/admin/channel.php:408
+#: views/admin/channel.php:403
 msgid "Text input placeholder"
 msgstr ""
 
-#: views/admin/channel.php:422
+#: views/admin/channel.php:417
 msgid "Enable emoji picker"
 msgstr ""
 
-#: views/admin/channel.php:434
+#: views/admin/channel.php:429
 msgid ""
 "Allow visitors to pick emoji from the emoji picker and enter them into the "
 "message input field"
 msgstr ""
 
-#: views/admin/channel.php:460
+#: views/admin/channel.php:455
 msgid "Enter your email address"
 msgstr ""
 
-#: views/admin/channel.php:526
+#: views/admin/channel.php:521
 msgid "Required?"
 msgstr ""
 
-#: views/admin/channel.php:544
+#: views/admin/channel.php:539
 msgid "Add Custom Field"
 msgstr ""
 
-#: views/admin/channel.php:556 views/admin/chatway-setting.php:243
+#: views/admin/channel.php:551 views/admin/chatway-setting.php:243
 #: views/admin/trigger-and-target.php:168
 msgid "Show on"
 msgstr ""
 
-#: views/admin/channel.php:573 views/admin/chatway-setting.php:260
+#: views/admin/channel.php:568 views/admin/chatway-setting.php:260
 msgid "Hide on desktop"
 msgstr ""
 
-#: views/admin/channel.php:574 views/admin/chatway-setting.php:261
+#: views/admin/channel.php:569 views/admin/chatway-setting.php:261
 msgid "Show on desktop"
 msgstr ""
 
-#: views/admin/channel.php:588 views/admin/chatway-setting.php:274
+#: views/admin/channel.php:583 views/admin/chatway-setting.php:274
 msgid "Hide on mobile"
 msgstr ""
 
-#: views/admin/channel.php:589 views/admin/chatway-setting.php:275
+#: views/admin/channel.php:584 views/admin/chatway-setting.php:275
 msgid "Show on mobile"
 msgstr ""
 
-#: views/admin/channel.php:603 views/admin/channel.php:629
+#: views/admin/channel.php:598 views/admin/channel.php:624
 msgid "Add Agents"
 msgstr ""
 
-#: views/admin/channel.php:605 views/admin/channel.php:631
+#: views/admin/channel.php:600 views/admin/channel.php:626
 msgid ""
 "Learn more here: "
 "https://premio.io/help/chaty/how-to-use-chaty-with-different-agents/"
 msgstr ""
 
-#: views/admin/channel.php:669 views/admin/chatway-setting.php:290
+#: views/admin/channel.php:664 views/admin/chatway-setting.php:290
 msgid "Settings"
 msgstr ""
 
-#: views/admin/channel.php:681 views/admin/chatway-setting.php:300
+#: views/admin/channel.php:676 views/admin/chatway-setting.php:300
 msgid "Icon Appearance"
 msgstr ""
 
-#: views/admin/channel.php:689
+#: views/admin/channel.php:684
 msgid "Custom Image"
 msgstr ""
 
-#: views/admin/channel.php:698
+#: views/admin/channel.php:693
 msgid "Change Icon"
 msgstr ""
 
-#: views/admin/channel.php:718
+#: views/admin/channel.php:713
 msgid "Channel type"
 msgstr ""
 
-#: views/admin/channel.php:722
+#: views/admin/channel.php:717
 msgid "Custom channel"
 msgstr ""
 
-#: views/admin/channel.php:738 views/admin/chatway-setting.php:316
+#: views/admin/channel.php:733 views/admin/chatway-setting.php:316
 msgid "On Hover Text"
 msgstr ""
 
-#: views/admin/channel.php:740 views/admin/chatway-setting.php:318
+#: views/admin/channel.php:735 views/admin/chatway-setting.php:318
 msgid "The text that will appear next to your channel when a visitor hovers over it"
 msgstr ""
 
-#: views/admin/channel.php:762
+#: views/admin/channel.php:757
 msgid "Contact Form Title"
 msgstr ""
 
-#: views/admin/channel.php:764 views/admin/help.php:403
-#: views/admin/help.php:413
+#: views/admin/channel.php:759 views/admin/help.php:406
+#: views/admin/help.php:416
 msgid "Contact Us"
 msgstr ""
 
-#: views/admin/channel.php:774
+#: views/admin/channel.php:769
 msgid "Title background color"
 msgstr ""
 
-#: views/admin/channel.php:781
+#: views/admin/channel.php:776
 msgid "Submit Button"
 msgstr ""
 
-#: views/admin/channel.php:788
+#: views/admin/channel.php:783
 msgid "Text color"
 msgstr ""
 
-#: views/admin/channel.php:799 views/admin/customize-widget-section.php:668
+#: views/admin/channel.php:794 views/admin/customize-widget-section.php:668
 msgid "Background color"
 msgstr ""
 
-#: views/admin/channel.php:805 views/admin/help.php:424
-#: views/admin/help.php:475
+#: views/admin/channel.php:800 views/admin/help.php:427
+#: views/admin/help.php:478
 msgid "Chat"
 msgstr ""
 
-#: views/admin/channel.php:807
+#: views/admin/channel.php:802
 msgid "Button text"
 msgstr ""
 
-#: views/admin/channel.php:812
+#: views/admin/channel.php:807
 msgid "Your message was sent successfully"
 msgstr ""
 
-#: views/admin/channel.php:814
+#: views/admin/channel.php:809
 msgid "Thank you message"
 msgstr ""
 
-#: views/admin/channel.php:826
+#: views/admin/channel.php:821
 msgid "Redirect visitors after submission"
 msgstr ""
 
-#: views/admin/channel.php:832
+#: views/admin/channel.php:827
 msgid "Redirect link"
 msgstr ""
 
-#: views/admin/channel.php:843
+#: views/admin/channel.php:838
 msgid "Open in a new tab"
 msgstr ""
 
-#: views/admin/channel.php:854
+#: views/admin/channel.php:849
 msgid "Close form automatically after submission"
 msgstr ""
 
-#: views/admin/channel.php:855
+#: views/admin/channel.php:850
 msgid "Close the form automatically after a few seconds based on your choice"
 msgstr ""
 
-#: views/admin/channel.php:869
+#: views/admin/channel.php:864
 msgid "Close after(Seconds)"
 msgstr ""
 
-#: views/admin/channel.php:893
+#: views/admin/channel.php:888
 msgid ""
 "Your leads will be saved in your local database, you'll be able to find "
 "them %1$s here"
 msgstr ""
 
-#: views/admin/channel.php:893 views/admin/channel.php:957
+#: views/admin/channel.php:888 views/admin/channel.php:952
 msgid "here"
 msgstr ""
 
-#: views/admin/channel.php:903
+#: views/admin/channel.php:898
 msgid "Send leads to your email"
 msgstr ""
 
-#: views/admin/channel.php:906
+#: views/admin/channel.php:901
 msgid ""
 "Get your leads by email, whenever you get a new email you'll get an email "
 "notification"
 msgstr ""
 
-#: views/admin/channel.php:923 views/admin/chaty-deactivate-form.php:136
+#: views/admin/channel.php:918 views/admin/chaty-deactivate-form.php:136
 msgid "Email address"
 msgstr ""
 
-#: views/admin/channel.php:930
+#: views/admin/channel.php:925
 msgid "Sender's name"
 msgstr ""
 
-#: views/admin/channel.php:937
+#: views/admin/channel.php:932
 msgid "Email subject"
 msgstr ""
 
-#: views/admin/channel.php:954
+#: views/admin/channel.php:949
 msgid "Enable reCAPTCHA"
 msgstr ""
 
-#: views/admin/channel.php:957
+#: views/admin/channel.php:952
 msgid ""
 "Click %1$s to add your website. (please make sure you select V3). After "
 "adding your website you'll get your site Key and secret key."
 msgstr ""
 
-#: views/admin/channel.php:981
+#: views/admin/channel.php:976
 msgid "Capture IP address"
 msgstr ""
 
-#: views/admin/channel.php:984
+#: views/admin/channel.php:979
 msgid "Capture the visitor's IP address when they submit the form."
 msgstr ""
 
-#: views/admin/channel.php:1008
+#: views/admin/channel.php:1003
 msgid "Send leads to Mailchimp/Klaviyo"
 msgstr ""
 
-#: views/admin/channel.php:1025 views/admin/channel.php:1055
+#: views/admin/channel.php:1021 views/admin/channel.php:1051
 msgid "Pre Set Message"
 msgstr ""
 
-#: views/admin/channel.php:1026 views/admin/channel.php:1056
-#: views/admin/channel.php:1083
+#: views/admin/channel.php:1022 views/admin/channel.php:1052
+#: views/admin/channel.php:1081
 msgid ""
 "Add your own pre-set message that's automatically added to the user's "
 "message. You can also use merge tags and add the URL or the title of the "
@@ -796,20 +817,14 @@ msgid ""
 "visitor messages you"
 msgstr ""
 
-#: views/admin/channel.php:1082
+#: views/admin/channel.php:1033 views/admin/channel.php:1062
+#: views/admin/channel.php:1093 views/admin/channel.php:1219
+#: views/admin/customize-widget-section.php:144 views/admin/dashboard.php:104
+msgid "Upgrade Now"
+msgstr ""
+
+#: views/admin/channel.php:1080
 msgid "Mail Subject"
-msgstr ""
-
-#: views/admin/channel.php:1098
-msgid "{title} tag grabs the page title of the webpage"
-msgstr ""
-
-#: views/admin/channel.php:1098
-msgid "{url} tag grabs the URL of the page"
-msgstr ""
-
-#: views/admin/channel.php:1098
-msgid "tags are supported"
 msgstr ""
 
 #: views/admin/channel.php:1109
@@ -840,79 +855,83 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: views/admin/channel.php:1169
+#: views/admin/channel.php:1174
 msgid "Open In a New Tab"
 msgstr ""
 
-#: views/admin/channel.php:1183
+#: views/admin/channel.php:1184
 msgid "LinkedIn"
 msgstr ""
 
-#: views/admin/channel.php:1188
+#: views/admin/channel.php:1189
 msgid "Personal"
 msgstr ""
 
-#: views/admin/channel.php:1194
+#: views/admin/channel.php:1195
 msgid "Company"
 msgstr ""
 
-#: views/admin/channel.php:1205
-msgid "Whatsapp Web"
+#: views/admin/channel.php:1207
+msgid "Embedded video player"
 msgstr ""
 
-#: views/admin/channel.php:1207
+#: views/admin/channel.php:1209
+msgid "Play videos directly inside the widget instead of opening a new tab."
+msgstr ""
+
+#: views/admin/channel.php:1237
+msgid "Use Whatsapp Web directly on desktop"
+msgstr ""
+
+#: views/admin/channel.php:1239
 msgid ""
 "If unchecked, visitors will be redirected to chat with you via the WhatsApp "
 "desktop app. Please note if they don't have it installed, they'll be "
 "redirected to WhatsApp Web"
 msgstr ""
 
-#: views/admin/channel.php:1223
-msgid "Use Whatsapp Web directly on desktop"
-msgstr ""
-
-#: views/admin/channel.php:1257
+#: views/admin/channel.php:1279
 msgid "WhatsApp test"
 msgstr ""
 
-#: views/admin/channel.php:1260
+#: views/admin/channel.php:1282
 msgid "Did we redirect you to the correct Whatsapp link for this number?"
 msgstr ""
 
-#: views/admin/channel.php:1261
+#: views/admin/channel.php:1283
 msgid "+91-7485963214"
 msgstr ""
 
-#: views/admin/channel.php:1263
+#: views/admin/channel.php:1285
 msgid "Edit Number"
 msgstr ""
 
-#: views/admin/channel.php:1264 views/admin/channel.php:1288
+#: views/admin/channel.php:1286 views/admin/channel.php:1310
 msgid "Yes, Correct"
 msgstr ""
 
-#: views/admin/channel.php:1266 views/admin/channel.php:1290
+#: views/admin/channel.php:1288 views/admin/channel.php:1312
 msgid "Having trouble? Contact "
 msgstr ""
 
-#: views/admin/channel.php:1266 views/admin/channel.php:1290
-#: views/admin/help.php:391
+#: views/admin/channel.php:1288 views/admin/channel.php:1312
+#: views/admin/help.php:394
 msgid "Support"
 msgstr ""
 
-#: views/admin/channel.php:1281
+#: views/admin/channel.php:1303
 msgid "Facebook Messenger test"
 msgstr ""
 
-#: views/admin/channel.php:1284
+#: views/admin/channel.php:1306
 msgid "Did we redirect you to the correct Facebook Messenger link?"
 msgstr ""
 
-#: views/admin/channel.php:1285
+#: views/admin/channel.php:1307
 msgid "m.me/coca-cola"
 msgstr ""
 
-#: views/admin/channel.php:1287
+#: views/admin/channel.php:1309
 msgid "Edit Link"
 msgstr ""
 
@@ -940,13 +959,17 @@ msgstr ""
 msgid "Place manually from the Chatway settings"
 msgstr ""
 
+#: views/admin/chatway-setting.php:146
+msgid "Chatway"
+msgstr ""
+
 #: views/admin/chatway-setting.php:203
 msgid "Change View Method"
 msgstr ""
 
 #: views/admin/chatway-setting.php:212 views/admin/chatway.php:28
 #: views/admin/dashboard.php:73 views/admin/dashboard.php:89
-#: views/admin/dashboard.php:167 views/admin/help.php:376
+#: views/admin/dashboard.php:167 views/admin/help.php:379
 msgid "Add Live Chat"
 msgstr ""
 
@@ -1176,7 +1199,7 @@ msgid "View method has been changed 🥳"
 msgstr ""
 
 #: views/admin/chatyway-info-popup.php:205 views/admin/first-popup.php:54
-#: views/admin/help.php:386
+#: views/admin/help.php:389
 msgid "Close"
 msgstr ""
 
@@ -1375,10 +1398,6 @@ msgstr ""
 
 #: views/admin/customize-widget-section.php:141
 msgid "Icons Library"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:144 views/admin/dashboard.php:104
-msgid "Upgrade Now"
 msgstr ""
 
 #: views/admin/customize-widget-section.php:152
@@ -1831,11 +1850,11 @@ msgstr ""
 msgid "Show me the new lead"
 msgstr ""
 
-#: views/admin/help.php:370 views/admin/help.php:399
+#: views/admin/help.php:373 views/admin/help.php:402
 msgid "Get Support"
 msgstr ""
 
-#: views/admin/help.php:380
+#: views/admin/help.php:383
 msgid "Powered by "
 msgstr ""
 
@@ -1843,29 +1862,29 @@ msgstr ""
 msgid "Premio"
 msgstr ""
 
-#: views/admin/help.php:416
+#: views/admin/help.php:419
 msgid ""
 "Are you experiencing any issues with Chaty? Please let us know, we’d be "
 "happy to help 🙏"
 msgstr ""
 
-#: views/admin/help.php:421
-msgid "How can I help you?"
+#: views/admin/help.php:424
+msgid "How can we help you?"
 msgstr ""
 
-#: views/admin/help.php:464
+#: views/admin/help.php:467
 msgid "Sending Request..."
 msgstr ""
 
-#: views/admin/help.php:481
+#: views/admin/help.php:484
 msgid "Done!"
 msgstr ""
 
-#: views/admin/help.php:488
+#: views/admin/help.php:491
 msgid "Your message is sent successfully."
 msgstr ""
 
-#: views/admin/help.php:494
+#: views/admin/help.php:497
 msgid "There is some problem in sending request. Please send us mail on %1$s"
 msgstr ""
 
