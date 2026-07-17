@@ -1,9 +1,9 @@
 === Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty ===
 Contributors: galdub, tomeraharon, premio
 Tags: whatsapp, whatsapp chat, facebook messenger, chat, chat button
-Requires at least: 3.1
+Requires at least: 4.7
 Tested up to: 7.0
-Stable tag: 3.5.7
+Stable tag: 3.5.8
 Plugin URI: https://premio.io/downloads/chaty/
 License: GPLv3
 
@@ -23,7 +23,7 @@ WhatsApp chat, Facebook Messenger, Telegram, TikTok, Instagram, Email, Line, WeC
 [youtube  https://www.youtube.com/watch?v=i6t05AeuyWg]
 
 = 💬 WhatsApp & 20+ chat buttons =
-Connect on WhatsApp or WhatsApp Business by entering your WhatsApp number. Get WhatsApp features like the WhatsApp popup that emulates a WhatsApp chat window, WhatsApp Merge tags, WhatsApp agents & many other features that’ll help you chat on WhatsApp.
+Connect on WhatsApp or WhatsApp Business by entering your WhatsApp number. Including WhatsApp features like a WhatsApp popup that emulates a WhatsApp chat window, WhatsApp Merge tags, WhatsApp agents & many other features that’ll help you chat on WhatsApp.
 
 = 📞 Click to chat & call now phone button =
 Chaty is the perfect chat plugin to display a call widget, WhatsApp button, email button, SMS button, TikTok, Instagram Direct Messenger, Google Maps button, Vkontakte button, Line.me messenger button, Viber button, and other chat widgets. Using Chaty your website visitors can chat with you after they leave your website. Want to use our robust Pro version? Check the <a href="https://premio.io/downloads/chaty/?utm_source=wordpressorg" target="_blank" title="Chaty pro plans"><strong>Chaty Pro Plans</strong></a>.
@@ -296,6 +296,9 @@ Yes! You can even decide what chat buttons will show up on each device (desktop/
 
 
 == Changelog ==
+
+= 3.5.8 =
+Live chat view window bug fixed.
 
 = 3.5.7 =
 Added YouTube channel support with embedded video player for Pro users.
