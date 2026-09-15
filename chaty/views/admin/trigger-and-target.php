@@ -145,7 +145,7 @@ if($hasWooCommerce) {
 
 
         <div class="form-horizontal__item">
-            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3">
+            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base flex items-center gap-1 mb-3">
                 <?php esc_html_e("Show on pages", "chaty") ?>
                 <span class="header-tooltip">
                     <span class="header-tooltip-text text-center"><?php esc_html_e("Use this feature to show the widget for specific products, posts or on certain posts or pages by excluding or including them in the rules", "chaty") ?></span>
@@ -157,6 +157,7 @@ if($hasWooCommerce) {
                         </svg>
                     </span>
                 </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div class="chaty-option-box">
                 <div class="chaty-page-options relative hidden" id="chaty-pro-options">
@@ -204,7 +205,10 @@ if($hasWooCommerce) {
 
                     <div class="chaty-pro-feature">
                         <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -216,7 +220,7 @@ if($hasWooCommerce) {
         </div>
 
         <div class="form-horizontal__item  flex-center" id="scroll-to-item">
-            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3">
+            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base flex items-center gap-1 mb-3">
                 <?php esc_html_e('Date scheduling', 'chaty');?>
                 <span class="header-tooltip">
                     <span class="header-tooltip-text text-center"><?php esc_html_e('Schedule the specific time and date when your Chaty widget appears.', 'chaty');?></span>
@@ -228,6 +232,7 @@ if($hasWooCommerce) {
                         </svg>
                     </span>
                 </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <?php
             $timezone  = "";
@@ -300,7 +305,10 @@ if($hasWooCommerce) {
                             </div>
                             <div class="chaty-pro-feature">
                                 <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()) ?>">
-                                    <?php esc_html_e('Upgrade to Pro', 'chaty'); ?>
+                                    <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -313,8 +321,9 @@ if($hasWooCommerce) {
             </div>
             <input type="hidden" name="cht_date_rules[status]" id="cht_date_rules" value="<?php echo esc_attr($status) ?>" />
         </div>
+
         <div class="form-horizontal__item flex-center">
-            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3">
+            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base flex items-center gap-1 mb-3">
                 <?php esc_html_e('Days and hours', 'chaty');?>
                 <span class="header-tooltip">
                     <span class="header-tooltip-text text-center"><?php esc_html_e("Display the widget on specific days and hours based on your opening days and hours", "chaty") ?></span>
@@ -326,6 +335,7 @@ if($hasWooCommerce) {
                         </svg>
                     </span>
                 </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div class="chaty-option-box">
                 <div class="chaty-page-options relative hidden" id="chaty-page-options">
@@ -363,7 +373,10 @@ if($hasWooCommerce) {
                             </div>
                             <div class="chaty-pro-feature">
                                 <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()) ?>">
-                                    <?php esc_html_e('Upgrade to Pro', 'chaty'); ?>
+                                    <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -377,7 +390,7 @@ if($hasWooCommerce) {
         </div>
 
         <div class="form-horizontal__item" id="custom-rules">
-            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 inline-block">
+            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 flex items-center gap-1">
                 <?php esc_html_e("Traffic source", "chaty") ?>
                 <span class="header-tooltip">
                     <span class="header-tooltip-text text-center"><?php esc_html_e("Show the widget only to visitors who come from specific traffic sources including direct traffic, social networks, search engines, Google Ads, or any other traffic source.", "chaty") ?></span>
@@ -389,6 +402,7 @@ if($hasWooCommerce) {
                         </svg>
                     </span>
                 </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <?php
             $checked = get_option('chaty_traffic_source');
@@ -544,7 +558,10 @@ if($hasWooCommerce) {
                             </div>
                             <div class="chaty-pro-feature">
                                 <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                                    <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                                    <?php esc_html_e('Upgrade Now', 'chaty');?>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -559,7 +576,7 @@ if($hasWooCommerce) {
         </div>
 
         <div class="form-horizontal__item">
-            <label class="form-horizontal__item-label mb-3 inline-block text-cht-gray-150 font-primary text-base">
+            <label class="form-horizontal__item-label mb-3 flex items-center gap-1 text-cht-gray-150 font-primary text-base">
                 <?php esc_html_e('Country targeting', 'chaty');?>
                 <span class="header-tooltip">
                     <span class="header-tooltip-text text-center"><?php esc_html_e("Target your widget to specific countries. You can create different widgets for different countries", "chaty") ?></span>
@@ -571,6 +588,7 @@ if($hasWooCommerce) {
                         </svg>
                     </span>
                 </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div class="chaty-option-box">
                 <div class="chaty-page-options hidden relative">
@@ -581,7 +599,10 @@ if($hasWooCommerce) {
                     </div>
                     <div class="chaty-pro-feature">
                         <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -593,17 +614,19 @@ if($hasWooCommerce) {
         </div>
 
         <div class="form-horizontal__item">
-            <label class="form-horizontal__item-label font-primary text-base text-cht-gray-150 block mb-3"><?php esc_html_e('Custom CSS', 'chaty');?>
-            <span class="header-tooltip">
-                <span class="header-tooltip-text text-center"><?php esc_html_e("Use this option if you wish to modify your widget additionally. This step is optional.", 'chaty');?></span>
-                <span class="ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+            <label class="form-horizontal__item-label font-primary text-base text-cht-gray-150 flex items-center gap-1 mb-3">
+                <?php esc_html_e('Custom CSS', 'chaty');?>
+                <span class="header-tooltip">
+                    <span class="header-tooltip-text text-center"><?php esc_html_e("Use this option if you wish to modify your widget additionally. This step is optional.", 'chaty');?></span>
+                    <span class="ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
                 </span>
-            </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div class="chaty-option-box">
                 <div class="chaty-page-options relative">
@@ -612,7 +635,10 @@ if($hasWooCommerce) {
                     </div>
                     <div class="chaty-pro-feature">
                         <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>

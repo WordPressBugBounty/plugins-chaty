@@ -20,53 +20,70 @@ $plugins_allowedtags = array(
     'br'      => array(),
 );
 ?>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 <div class="chaty-new-widget-wrap">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <h2 class="text-center chaty-integrate-title-main"><?php esc_html_e( 'Upgrade to Pro and connect your Chaty form to the following platforms to automatically receive leads', 'chaty' ); ?></h2>
-    <div class="chaty-new-widget-row">
-        <div class="chaty-features">
-            <ul>
-                <li>
-                    <div class="elements-int-container chaty-feature">
-                        <div class="chaty-feature-top">
-                            <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/mailchimp.png" />
+    <div class="new-widget-wrap">
+        <h2 class="text-center chaty-integrate-title-main"><?php esc_html_e( 'Upgrade Now and connect your Chaty form to the following platforms to automatically receive leads', 'chaty' ); ?></h2>
+        <div class="chaty-new-widget-row">
+            <div class="chaty-features">
+                <ul>
+                    <li>
+                        <div class="elements-int-container chaty-feature">
+                            <div class="chaty-feature-top">
+                                <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/mailchimp.png" />
+                            </div>
+                            <div class="feature-title">Connect your forms to Mailchimp</div>
+                            <div id="elements-int-container-content feature-description">
+                                <p>
+                                    <a href="#" class="integrate-element-form">
+                                        <?php esc_html_e('Connect', 'chaty')?>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature-title">Connect your forms to Mailchimp</div>
-                        <div id="elements-int-container-content feature-description">
-                            <p>
-                                <a href="#" class="integrate-element-form button-primary" disabled="disabled">
-                                    <?php echo 'Connect';?>
-                                </a>
-                            </p>
+                        <div class="chaty-integration-button">
+                            <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="chaty-upgrade-now-button" target="blank">
+                                <?php esc_html_e('Upgrade Now', 'chaty') ?>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-                    <div class="chaty-integration-button">
-                        <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="new-upgrade-button" target="blank">Upgrade to Pro</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="elements-int-container chaty-feature">
-                        <div class="chaty-feature-top">
-                            <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/klaviyo_icon.png" />
+                    </li>
+                    <li>
+                        <div class="elements-int-container chaty-feature">
+                            <div class="chaty-feature-top">
+                                <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/klaviyo_icon.png" />
+                            </div>
+                            <div class="feature-title">Connect your forms to Klaviyo</div>
+                            <div id="elements-int-container-content feature-description">
+                                <p>
+                                    <a href="#" class="integrate-element-form">
+                                        <?php esc_html_e('Connect', 'chaty')?>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature-title">Connect your forms to Klaviyo</div>
-                        <div id="elements-int-container-content feature-description">
-                            <p>
-                                <a href="#" class="integrate-element-form button-primary" disabled="disabled">
-                                    <?php echo 'Connect';?>
-                                </a>
-                            </p>
+                        <div class="chaty-integration-button">
+                            <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="chaty-upgrade-now-button" target="blank">
+                                <?php esc_html_e('Upgrade Now', 'chaty') ?>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-                    <div class="chaty-integration-button">
-                        <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="new-upgrade-button" target="blank">Upgrade to Pro</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="clear clearfix"></div>
+                    </li>
+                </ul>
+                <div class="clear clearfix"></div>
+            </div>
         </div>
         <div class="chaty-integration-upgrade-button">
-            <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="new-upgrade-button" target="blank">Upgrade to Pro</a>
+            <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")); ?>" class="chaty-upgrade-now-button" target="blank">
+                <?php esc_html_e('Upgrade Now', 'chaty') ?>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </a>
         </div>
     </div>
 </div>
@@ -77,48 +94,68 @@ $plugins_allowedtags = array(
     }
     /*New Widget Page css*/
     .chaty-new-widget-wrap {
-        background: #fff;
         padding: 30px;
         margin: 20px auto 0 auto;
         width: 100%;
         font-family: Poppins;
         line-height: 20px;
+        display: flex;
+        min-height: calc(100vh - 200px);
+        align-items: center;
+        justify-content: center;
+    }
+    a.integrate-element-form {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 20px;
+        border: solid 1px #49687e;
+        color: #49687e;
+        border-radius: 4px;
+        margin-top: 10px;
+        display: inline-flex;
+    }
+    .new-widget-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     .chaty-features {
         padding-top: 40px;
         max-width: 776px;
         margin: 0 auto;
     }
-    .chaty-new-widget-wrap h2 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        color: #1e1e1e;
-        margin: 0;
-        text-align: center;
+    .chaty-upgrade-now-button {
+        align-items: center;
+        background: linear-gradient(94.73deg,#f8c704 5.32%,#ffab00 56.99%);
+        border: 1px solid #0000;
+        border-radius: 8px;
+        color: #092030;
+        display: inline-flex;
+        gap: 6px;
+        padding: 8px 16px;
+        transition: all .2s ease-in-out;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .chaty-upgrade-now-button:hover, .chaty-upgrade-now-button:focus {
+        background: linear-gradient(94.73deg,#f8c704 5.32%,#ffab00 56.99%);
+        box-shadow: 0 0 0 3px rgba(255,171,0,.3);
+        color: #092030;
+        border-radius: 8px;
     }
     .chaty-new-widget-wrap h2.chaty-integrate-title-main {
         font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.5;
         color: #1E1E1E;
         margin: 0 auto;
-        max-width: 530px;
+        max-width: 600px;
         position: relative;
-        padding-bottom: 30px;
-    }
-    .chaty-new-widget-wrap h2.chaty-integrate-title-main::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 158px;
-        height: 1px;
-        background-color: #3C85F7;
-        margin: 0 auto;
+        font-weight: 600;
+        text-align: center;
     }
     .chaty-features ul {
         margin: 0;
@@ -130,6 +167,9 @@ $plugins_allowedtags = array(
         float: left;
         padding: 10px;
         position: relative;
+    }
+    .chaty-feature p {
+        text-align: center;
     }
     .chaty-feature {
         background: #fff;
@@ -212,7 +252,7 @@ $plugins_allowedtags = array(
     }
 
     .chaty-features ul li:hover .chaty-integration-button{
-        display: block;
+        display: flex;
     }
     .chaty-features ul li:hover a.new-upgrade-button {
         background-color: rgba(176, 143, 229, 1);
@@ -223,8 +263,13 @@ $plugins_allowedtags = array(
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: 9;
+        backdrop-filter: blur(2px);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .chaty-feature input[type="text"] {
         border: 1px solid #E2E8F0;

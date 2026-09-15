@@ -18,12 +18,6 @@ if (defined('ABSPATH') === false) {
         <div class="px-7 py-8 flex-1">
             <h2 class="chaty-widgetanalytic-heading"><?php printf(esc_html__("Unlock Chaty %s 🚀", "chaty"), "<span>".esc_html__("Analytics", "chaty")."</span>") ?></h2>
 
-            <!-- <div class="flex items-center mt-5 space-x-3">
-                <a class="btn rounded-lg drop-shadow-3xl font-normal" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>" >
-                    <?php //esc_html_e('Upgrade to Pro 🚀', 'chaty'); ?>
-                </a>
-            </div> -->
-
             <div class="chaty-licenseimage">
                 <img class="h-full w-auto" src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/analytics-image.png" alt="Chaty analytics" />
             </div>
@@ -45,8 +39,11 @@ if (defined('ABSPATH') === false) {
             </ul>
 
             <div class="flex items-center mt-5 space-x-3">
-                <a class="btn rounded-lg drop-shadow-3xl font-normal" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>" >
-                    <?php esc_html_e('Upgrade to Pro 🚀', 'chaty'); ?>
+                <a class="chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>" >
+                    <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -156,24 +153,26 @@ if (defined('ABSPATH') === false) {
         max-width: 405px;
     }
 
-    .chaty-widgetanalytic-body a.btn.rounded-lg.drop-shadow-3xl.font-normal{
-        padding: 15px 45px;
-        font-size:20px;
-        text-align:center;
-        font-weight: 400;
-        border-radius: 0.5rem;
-        background-color: #3c85f7;
-        color: #fff;
-        text-decoration-line: none;
-        line-height: 1.25rem;
-        --tw-drop-shadow: drop-shadow(0px 9px 7px rgba (60 133 247 /0.37%));
-        border: 1px solid #3c85f7;
-        outline: none;
-        box-shadow: none;
-        transition: all 0.2s linear;
+    .chaty-upgrade-now-button {
+        align-items: center;
+        background: linear-gradient(94.73deg,#f8c704 5.32%,#ffab00 56.99%);
+        border: 1px solid #0000;
+        border-radius: 8px;
+        color: #092030;
+        display: inline-flex;
+        gap: 6px;
+        padding: 8px 16px;
+        transition: all .2s ease-in-out;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 1.4;
     }
-    .chaty-widgetanalytic-body a.btn.rounded-lg.drop-shadow-3xl.font-normal:hover {
-        box-shadow: rgba(60, 133, 247, 0.25) 0px 8px 24px;
+    .chaty-upgrade-now-button:hover, .chaty-upgrade-now-button:focus {
+        background: linear-gradient(94.73deg,#f8c704 5.32%,#ffab00 56.99%);
+        box-shadow: 0 0 0 3px rgba(255,171,0,.3);
+        color: #092030;
+        border-radius: 8px;
     }
 
     .chaty-widgetanalytic-body ul li img{

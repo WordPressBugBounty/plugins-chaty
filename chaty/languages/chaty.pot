@@ -2,10 +2,10 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Chaty 3.6.0\n"
+"Project-Id-Version: Chaty 3.6.1\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/chaty-free-uncompressed\n"
-"POT-Creation-Date: 2026-08-07 05:45:52+00:00\n"
+"POT-Creation-Date: 2026-09-15 10:41:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,27 +25,57 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: admin/class-admin-base.php:328 admin/class-admin-base.php:333
-#: admin/class-admin-base.php:384 admin/class-admin-base.php:388
-#: admin/class-admin-base.php:393
+#: admin/class-admin-base.php:134
+msgid "Upgrade now to enjoy awesome Pro features!"
+msgstr ""
+
+#: admin/class-admin-base.php:138 views/admin/channel.php:542
+#: views/admin/channel.php:614 views/admin/channel.php:643
+#: views/admin/channel.php:697 views/admin/channel.php:711
+#: views/admin/channel.php:1123 views/admin/chaty-admin-integration.php:46
+#: views/admin/chaty-admin-integration.php:69
+#: views/admin/chaty-admin-integration.php:82 views/admin/chaty_widget.php:17
+#: views/admin/customize-widget-section.php:66
+#: views/admin/customize-widget-section.php:152
+#: views/admin/customize-widget-section.php:290
+#: views/admin/customize-widget-section.php:321
+#: views/admin/customize-widget-section.php:573
+#: views/admin/customize-widget-section.php:605
+#: views/admin/customize-widget-section.php:638
+#: views/admin/customize-widget-section.php:732 views/admin/dashboard.php:104
+#: views/admin/first-popup.php:57 views/admin/first-popup.php:100
+#: views/admin/help.php:374 views/admin/help.php:398 views/admin/popup.php:181
+#: views/admin/popup.php:209 views/admin/popup.php:234
+#: views/admin/pro_analytics.php:43 views/admin/trigger-and-target.php:208
+#: views/admin/trigger-and-target.php:308
+#: views/admin/trigger-and-target.php:376
+#: views/admin/trigger-and-target.php:561
+#: views/admin/trigger-and-target.php:602
+#: views/admin/trigger-and-target.php:638
+msgid "Upgrade Now"
+msgstr ""
+
+#: admin/class-admin-base.php:368 admin/class-admin-base.php:373
+#: admin/class-admin-base.php:424 admin/class-admin-base.php:428
+#: admin/class-admin-base.php:433
 msgid "Your request is not valid"
 msgstr ""
 
-#: admin/class-admin-base.php:357 views/admin/help.php:388
+#: admin/class-admin-base.php:397 views/admin/help.php:388
 msgid "Need help?"
 msgstr ""
 
-#: admin/class-admin-base.php:358
+#: admin/class-admin-base.php:398
 msgid "Upgrade"
 msgstr ""
 
-#: admin/class-admin-base.php:738
+#: admin/class-admin-base.php:778
 msgid ""
 "Please remove the JavaScript from the channels or ask the website's "
 "administrator to give you access to add JavaScript."
 msgstr ""
 
-#: admin/class-admin-base.php:739 views/admin/channel.php:393
+#: admin/class-admin-base.php:779 views/admin/channel.php:393
 msgid "Remove"
 msgstr ""
 
@@ -53,123 +83,105 @@ msgstr ""
 msgid "Chaty"
 msgstr ""
 
-#: admin/class-admin-base.php:812 admin/class-admin-base.php:813
+#: admin/class-admin-base.php:852 admin/class-admin-base.php:853
 msgid "Dashboard"
 msgstr ""
 
-#: admin/class-admin-base.php:824 admin/class-admin-base.php:862
+#: admin/class-admin-base.php:864 admin/class-admin-base.php:902
 msgid "Settings Admin"
 msgstr ""
 
-#: admin/class-admin-base.php:825
+#: admin/class-admin-base.php:865
 msgid "+ Create New Widget"
 msgstr ""
 
-#: admin/class-admin-base.php:836
+#: admin/class-admin-base.php:876
 msgid "Chaty upgrade"
 msgstr ""
 
-#: admin/class-admin-base.php:837
+#: admin/class-admin-base.php:877
 msgid "Chaty Upgrade"
 msgstr ""
 
-#: admin/class-admin-base.php:850 admin/class-admin-base.php:851
+#: admin/class-admin-base.php:890 admin/class-admin-base.php:891
 #: views/admin/chatway-setting.php:165
 msgid "Chatway Live Chat"
 msgstr ""
 
-#: admin/class-admin-base.php:863
+#: admin/class-admin-base.php:903
 msgid "Integrations"
 msgstr ""
 
-#: admin/class-admin-base.php:876 admin/class-admin-base.php:877
+#: admin/class-admin-base.php:916 admin/class-admin-base.php:917
 #: views/admin/upgrade.php:167
 msgid "Widget Analytics"
 msgstr ""
 
-#: admin/class-admin-base.php:891 admin/class-admin-base.php:892
+#: admin/class-admin-base.php:931 admin/class-admin-base.php:932
 msgid "Contact form leads"
 msgstr ""
 
-#: admin/class-admin-base.php:917 admin/class-admin-base.php:918
+#: admin/class-admin-base.php:957 admin/class-admin-base.php:958
 #: views/admin/help.php:376
 msgid "Recommended Plugins"
 msgstr ""
 
-#: admin/class-admin-base.php:930 admin/class-admin-base.php:931
-#: admin/class-admin-base.php:1221 views/admin/channel.php:542
-#: views/admin/channel.php:611 views/admin/channel.php:637
-#: views/admin/channel.php:687 views/admin/channel.php:696
-#: views/admin/channel.php:911 views/admin/channel.php:965
-#: views/admin/channel.php:991 views/admin/channel.php:1007
-#: views/admin/chaty_widget.php:17 views/admin/customize-widget-section.php:62
-#: views/admin/customize-widget-section.php:172
-#: views/admin/customize-widget-section.php:277
-#: views/admin/customize-widget-section.php:486
-#: views/admin/customize-widget-section.php:514
-#: views/admin/customize-widget-section.php:543 views/admin/first-popup.php:57
-#: views/admin/first-popup.php:94 views/admin/help.php:374
-#: views/admin/help.php:398 views/admin/popup.php:181 views/admin/popup.php:209
-#: views/admin/popup.php:234 views/admin/trigger-and-target.php:207
-#: views/admin/trigger-and-target.php:303
-#: views/admin/trigger-and-target.php:366
-#: views/admin/trigger-and-target.php:547
-#: views/admin/trigger-and-target.php:584
-#: views/admin/trigger-and-target.php:615
+#: admin/class-admin-base.php:970 admin/class-admin-base.php:971
+#: admin/class-admin-base.php:1261
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: admin/class-admin-base.php:1292
+#: admin/class-admin-base.php:1332
 msgid "id"
 msgstr ""
 
-#: admin/class-admin-base.php:1293
+#: admin/class-admin-base.php:1333
 msgid "Widget"
 msgstr ""
 
-#: admin/class-admin-base.php:1294 includes/class-frontend.php:1230
+#: admin/class-admin-base.php:1334 includes/class-frontend.php:1228
 #: views/admin/channel.php:447 views/admin/channels-section.php:43
 #: views/admin/contact-form-feed.php:196 views/admin/contact-form-feed.php:234
 msgid "Name"
 msgstr ""
 
-#: admin/class-admin-base.php:1295 admin/class-admin-base.php:2605
-#: includes/class-frontend.php:1242 views/admin/channel.php:454
+#: admin/class-admin-base.php:1335 admin/class-admin-base.php:2645
+#: includes/class-frontend.php:1240 views/admin/channel.php:454
 #: views/admin/contact-form-feed.php:197 views/admin/contact-form-feed.php:237
 #: views/admin/help.php:421
 msgid "Email"
 msgstr ""
 
-#: admin/class-admin-base.php:1296 admin/class-social-icons.php:294
+#: admin/class-admin-base.php:1336 admin/class-social-icons.php:294
 #: views/admin/contact-form-feed.php:198 views/admin/contact-form-feed.php:240
 #: views/admin/popup.php:290
 msgid "Phone number"
 msgstr ""
 
-#: admin/class-admin-base.php:1297 includes/class-frontend.php:1264
+#: admin/class-admin-base.php:1337 includes/class-frontend.php:1262
 #: views/admin/channel.php:468 views/admin/contact-form-feed.php:199
 #: views/admin/contact-form-feed.php:243
 msgid "Message"
 msgstr ""
 
-#: admin/class-admin-base.php:1298 views/admin/contact-form-feed.php:201
+#: admin/class-admin-base.php:1338 views/admin/contact-form-feed.php:201
 #: views/admin/contact-form-feed.php:257
 msgid "Date"
 msgstr ""
 
-#: admin/class-admin-base.php:1299
+#: admin/class-admin-base.php:1339
 msgid "Reference Page"
 msgstr ""
 
-#: admin/class-admin-base.php:2588
+#: admin/class-admin-base.php:2628
 msgid "%1$s is required"
 msgstr ""
 
-#: admin/class-admin-base.php:2597
+#: admin/class-admin-base.php:2637
 msgid "Please enter your message"
 msgstr ""
 
-#: admin/class-social-icons.php:59 views/admin/customize-widget-section.php:313
+#: admin/class-social-icons.php:59 views/admin/customize-widget-section.php:250
 msgid "Purple"
 msgstr ""
 
@@ -319,39 +331,39 @@ msgstr ""
 msgid "email address is not valid"
 msgstr ""
 
-#: includes/class-frontend.php:769 includes/class-frontend.php:770
+#: includes/class-frontend.php:767 includes/class-frontend.php:768
 msgid "WhatsApp Message"
 msgstr ""
 
-#: includes/class-frontend.php:771
+#: includes/class-frontend.php:769
 msgid "Hide WhatsApp Form"
 msgstr ""
 
-#: includes/class-frontend.php:772
+#: includes/class-frontend.php:770
 msgid "Show Emojis"
 msgstr ""
 
-#: includes/class-frontend.php:1232 views/admin/channel.php:448
+#: includes/class-frontend.php:1230 views/admin/channel.php:448
 msgid "Enter your name"
 msgstr ""
 
-#: includes/class-frontend.php:1244
+#: includes/class-frontend.php:1242
 msgid "Enter your email"
 msgstr ""
 
-#: includes/class-frontend.php:1253 views/admin/channel.php:461
+#: includes/class-frontend.php:1251 views/admin/channel.php:461
 msgid "Phone"
 msgstr ""
 
-#: includes/class-frontend.php:1255 views/admin/channel.php:462
+#: includes/class-frontend.php:1253 views/admin/channel.php:462
 msgid "Enter your phone number"
 msgstr ""
 
-#: includes/class-frontend.php:1266 views/admin/channel.php:469
+#: includes/class-frontend.php:1264 views/admin/channel.php:469
 msgid "Enter your message"
 msgstr ""
 
-#: includes/class-frontend.php:1292 views/admin/channel.php:399
+#: includes/class-frontend.php:1290 views/admin/channel.php:399
 msgid "Write your message..."
 msgstr ""
 
@@ -445,91 +457,91 @@ msgstr ""
 msgid "Remind me in 30 days"
 msgstr ""
 
-#: views/admin/admin.php:55
+#: views/admin/admin.php:85
 msgid "1. Select channels"
 msgstr ""
 
-#: views/admin/admin.php:56
+#: views/admin/admin.php:86
 msgid "1. Channels"
 msgstr ""
 
-#: views/admin/admin.php:62
+#: views/admin/admin.php:92
 msgid "2. Widget customization "
 msgstr ""
 
-#: views/admin/admin.php:63
+#: views/admin/admin.php:93
 msgid "2. Customization"
 msgstr ""
 
-#: views/admin/admin.php:69
+#: views/admin/admin.php:99
 msgid "3. Triggers and targeting"
 msgstr ""
 
-#: views/admin/admin.php:70
+#: views/admin/admin.php:100
 msgid "2. Triggers & targeting"
 msgstr ""
 
-#: views/admin/admin.php:76
+#: views/admin/admin.php:106
 msgid "4. Add live chat"
 msgstr ""
 
-#: views/admin/admin.php:104
+#: views/admin/admin.php:134
 msgid "Back"
 msgstr ""
 
-#: views/admin/admin.php:107
+#: views/admin/admin.php:137
 msgid "Next"
 msgstr ""
 
-#: views/admin/admin.php:121
+#: views/admin/admin.php:151
 msgid "Save Widget"
 msgstr ""
 
-#: views/admin/admin.php:122 views/admin/admin.php:255
+#: views/admin/admin.php:152 views/admin/admin.php:285
 msgid "Save"
 msgstr ""
 
-#: views/admin/admin.php:132
+#: views/admin/admin.php:162
 msgid "Save & View Dashboard"
 msgstr ""
 
-#: views/admin/admin.php:154
+#: views/admin/admin.php:184
 msgid "Step 1:"
 msgstr ""
 
-#: views/admin/admin.php:154
+#: views/admin/admin.php:184
 msgid "Choose your channels"
 msgstr ""
 
-#: views/admin/admin.php:164
+#: views/admin/admin.php:194
 msgid "Step 2:"
 msgstr ""
 
-#: views/admin/admin.php:164
+#: views/admin/admin.php:194
 msgid "Customize your widget"
 msgstr ""
 
-#: views/admin/admin.php:174
+#: views/admin/admin.php:204
 msgid "Step 3:"
 msgstr ""
 
-#: views/admin/admin.php:174
+#: views/admin/admin.php:204
 msgid "Triggers and targeting"
 msgstr ""
 
-#: views/admin/admin.php:184
+#: views/admin/admin.php:214
 msgid "Step 4:"
 msgstr ""
 
-#: views/admin/admin.php:184
+#: views/admin/admin.php:214
 msgid "Add live chat + AI support agent"
 msgstr ""
 
-#: views/admin/admin.php:264
+#: views/admin/admin.php:294
 msgid "help"
 msgstr ""
 
-#: views/admin/admin.php:267
+#: views/admin/admin.php:297
 msgid "Preview"
 msgstr ""
 
@@ -574,7 +586,7 @@ msgstr ""
 msgid "Headline"
 msgstr ""
 
-#: views/admin/channel.php:358 views/admin/channel.php:1128
+#: views/admin/channel.php:358 views/admin/channel.php:1092
 msgid "Header Background"
 msgstr ""
 
@@ -620,195 +632,183 @@ msgstr ""
 msgid "Add Custom Field"
 msgstr ""
 
-#: views/admin/channel.php:551 views/admin/chatway-setting.php:243
-#: views/admin/trigger-and-target.php:168
+#: views/admin/channel.php:554 views/admin/chatway-setting.php:243
+#: views/admin/trigger-and-target.php:169
 msgid "Show on"
 msgstr ""
 
-#: views/admin/channel.php:568 views/admin/chatway-setting.php:260
+#: views/admin/channel.php:571 views/admin/chatway-setting.php:260
 msgid "Hide on desktop"
 msgstr ""
 
-#: views/admin/channel.php:569 views/admin/chatway-setting.php:261
+#: views/admin/channel.php:572 views/admin/chatway-setting.php:261
 msgid "Show on desktop"
 msgstr ""
 
-#: views/admin/channel.php:583 views/admin/chatway-setting.php:274
+#: views/admin/channel.php:586 views/admin/chatway-setting.php:274
 msgid "Hide on mobile"
 msgstr ""
 
-#: views/admin/channel.php:584 views/admin/chatway-setting.php:275
+#: views/admin/channel.php:587 views/admin/chatway-setting.php:275
 msgid "Show on mobile"
 msgstr ""
 
-#: views/admin/channel.php:598 views/admin/channel.php:624
+#: views/admin/channel.php:601 views/admin/channel.php:630
 msgid "Add Agents"
 msgstr ""
 
-#: views/admin/channel.php:600 views/admin/channel.php:626
+#: views/admin/channel.php:603 views/admin/channel.php:632
 msgid ""
 "Learn more here: "
 "https://premio.io/help/chaty/how-to-use-chaty-with-different-agents/"
 msgstr ""
 
-#: views/admin/channel.php:664 views/admin/chatway-setting.php:290
+#: views/admin/channel.php:673 views/admin/chatway-setting.php:290
 msgid "Settings"
 msgstr ""
 
-#: views/admin/channel.php:676 views/admin/chatway-setting.php:300
+#: views/admin/channel.php:685 views/admin/chatway-setting.php:300
 msgid "Icon Appearance"
 msgstr ""
 
-#: views/admin/channel.php:684
+#: views/admin/channel.php:693
 msgid "Custom Image"
 msgstr ""
 
-#: views/admin/channel.php:693
+#: views/admin/channel.php:707
 msgid "Change Icon"
 msgstr ""
 
-#: views/admin/channel.php:713
+#: views/admin/channel.php:732
 msgid "Channel type"
 msgstr ""
 
-#: views/admin/channel.php:717
+#: views/admin/channel.php:736
 msgid "Custom channel"
 msgstr ""
 
-#: views/admin/channel.php:733 views/admin/chatway-setting.php:316
+#: views/admin/channel.php:752 views/admin/chatway-setting.php:316
 msgid "On Hover Text"
 msgstr ""
 
-#: views/admin/channel.php:735 views/admin/chatway-setting.php:318
+#: views/admin/channel.php:754 views/admin/chatway-setting.php:318
 msgid "The text that will appear next to your channel when a visitor hovers over it"
 msgstr ""
 
-#: views/admin/channel.php:757
+#: views/admin/channel.php:776
 msgid "Contact Form Title"
 msgstr ""
 
-#: views/admin/channel.php:759 views/admin/help.php:406
+#: views/admin/channel.php:778 views/admin/help.php:406
 #: views/admin/help.php:416
 msgid "Contact Us"
 msgstr ""
 
-#: views/admin/channel.php:769
+#: views/admin/channel.php:788
 msgid "Title background color"
 msgstr ""
 
-#: views/admin/channel.php:776
+#: views/admin/channel.php:795
 msgid "Submit Button"
 msgstr ""
 
-#: views/admin/channel.php:783
+#: views/admin/channel.php:802
 msgid "Text color"
 msgstr ""
 
-#: views/admin/channel.php:794 views/admin/customize-widget-section.php:668
+#: views/admin/channel.php:813 views/admin/customize-widget-section.php:799
 msgid "Background color"
 msgstr ""
 
-#: views/admin/channel.php:800 views/admin/help.php:427
+#: views/admin/channel.php:819 views/admin/help.php:427
 #: views/admin/help.php:478
 msgid "Chat"
 msgstr ""
 
-#: views/admin/channel.php:802
+#: views/admin/channel.php:821
 msgid "Button text"
 msgstr ""
 
-#: views/admin/channel.php:807
+#: views/admin/channel.php:826
 msgid "Your message was sent successfully"
 msgstr ""
 
-#: views/admin/channel.php:809
+#: views/admin/channel.php:828
 msgid "Thank you message"
 msgstr ""
 
-#: views/admin/channel.php:821
+#: views/admin/channel.php:840
 msgid "Redirect visitors after submission"
 msgstr ""
 
-#: views/admin/channel.php:827
+#: views/admin/channel.php:846
 msgid "Redirect link"
 msgstr ""
 
-#: views/admin/channel.php:838
+#: views/admin/channel.php:857
 msgid "Open in a new tab"
 msgstr ""
 
-#: views/admin/channel.php:849
+#: views/admin/channel.php:868
 msgid "Close form automatically after submission"
 msgstr ""
 
-#: views/admin/channel.php:850
+#: views/admin/channel.php:869
 msgid "Close the form automatically after a few seconds based on your choice"
 msgstr ""
 
-#: views/admin/channel.php:864
+#: views/admin/channel.php:883
 msgid "Close after(Seconds)"
 msgstr ""
 
-#: views/admin/channel.php:888
+#: views/admin/channel.php:907
 msgid ""
 "Your leads will be saved in your local database, you'll be able to find "
 "them %1$s here"
 msgstr ""
 
-#: views/admin/channel.php:888 views/admin/channel.php:952
+#: views/admin/channel.php:907 views/admin/channel.php:941
 msgid "here"
 msgstr ""
 
-#: views/admin/channel.php:898
+#: views/admin/channel.php:917
 msgid "Send leads to your email"
 msgstr ""
 
-#: views/admin/channel.php:901
+#: views/admin/channel.php:920
 msgid ""
 "Get your leads by email, whenever you get a new email you'll get an email "
 "notification"
 msgstr ""
 
-#: views/admin/channel.php:918 views/admin/chaty-deactivate-form.php:136
-msgid "Email address"
-msgstr ""
-
-#: views/admin/channel.php:925
-msgid "Sender's name"
-msgstr ""
-
-#: views/admin/channel.php:932
-msgid "Email subject"
-msgstr ""
-
-#: views/admin/channel.php:949
+#: views/admin/channel.php:938
 msgid "Enable reCAPTCHA"
 msgstr ""
 
-#: views/admin/channel.php:952
+#: views/admin/channel.php:941
 msgid ""
 "Click %1$s to add your website. (please make sure you select V3). After "
 "adding your website you'll get your site Key and secret key."
 msgstr ""
 
-#: views/admin/channel.php:976
+#: views/admin/channel.php:959
 msgid "Capture IP address"
 msgstr ""
 
-#: views/admin/channel.php:979
+#: views/admin/channel.php:962
 msgid "Capture the visitor's IP address when they submit the form."
 msgstr ""
 
-#: views/admin/channel.php:1003
+#: views/admin/channel.php:980
 msgid "Send leads to Mailchimp/Klaviyo"
 msgstr ""
 
-#: views/admin/channel.php:1021 views/admin/channel.php:1051
+#: views/admin/channel.php:998 views/admin/channel.php:1023
 msgid "Pre Set Message"
 msgstr ""
 
-#: views/admin/channel.php:1022 views/admin/channel.php:1052
-#: views/admin/channel.php:1081
+#: views/admin/channel.php:999 views/admin/channel.php:1024
+#: views/admin/channel.php:1048
 msgid ""
 "Add your own pre-set message that's automatically added to the user's "
 "message. You can also use merge tags and add the URL or the title of the "
@@ -817,121 +817,115 @@ msgid ""
 "visitor messages you"
 msgstr ""
 
-#: views/admin/channel.php:1033 views/admin/channel.php:1062
-#: views/admin/channel.php:1093 views/admin/channel.php:1219
-#: views/admin/customize-widget-section.php:144 views/admin/dashboard.php:104
-msgid "Upgrade Now"
-msgstr ""
-
-#: views/admin/channel.php:1080
+#: views/admin/channel.php:1047
 msgid "Mail Subject"
 msgstr ""
 
-#: views/admin/channel.php:1109
+#: views/admin/channel.php:1071
 msgid "Pro Features"
 msgstr ""
 
-#: views/admin/channel.php:1113
+#: views/admin/channel.php:1077
 msgid "WeChat ID"
 msgstr ""
 
-#: views/admin/channel.php:1116
+#: views/admin/channel.php:1080
 msgid "Heading"
 msgstr ""
 
-#: views/admin/channel.php:1136
+#: views/admin/channel.php:1100
 msgid "Scan QR Code"
 msgstr ""
 
-#: views/admin/channel.php:1139
+#: views/admin/channel.php:1103
 msgid "QR code heading"
 msgstr ""
 
-#: views/admin/channel.php:1148
+#: views/admin/channel.php:1112
 msgid "Upload QR Code"
 msgstr ""
 
-#: views/admin/channel.php:1151 views/admin/customize-widget-section.php:142
+#: views/admin/channel.php:1115 views/admin/customize-widget-section.php:150
 msgid "Upload"
 msgstr ""
 
-#: views/admin/channel.php:1174
+#: views/admin/channel.php:1141
 msgid "Open In a New Tab"
 msgstr ""
 
-#: views/admin/channel.php:1184
+#: views/admin/channel.php:1151
 msgid "LinkedIn"
 msgstr ""
 
-#: views/admin/channel.php:1189
+#: views/admin/channel.php:1157
 msgid "Personal"
 msgstr ""
 
-#: views/admin/channel.php:1195
+#: views/admin/channel.php:1163
 msgid "Company"
 msgstr ""
 
-#: views/admin/channel.php:1207
+#: views/admin/channel.php:1176
 msgid "Embedded video player"
 msgstr ""
 
-#: views/admin/channel.php:1209
+#: views/admin/channel.php:1178
 msgid "Play videos directly inside the widget instead of opening a new tab."
 msgstr ""
 
-#: views/admin/channel.php:1237
+#: views/admin/channel.php:1200
 msgid "Use Whatsapp Web directly on desktop"
 msgstr ""
 
-#: views/admin/channel.php:1239
+#: views/admin/channel.php:1202
 msgid ""
 "If unchecked, visitors will be redirected to chat with you via the WhatsApp "
 "desktop app. Please note if they don't have it installed, they'll be "
 "redirected to WhatsApp Web"
 msgstr ""
 
-#: views/admin/channel.php:1279
+#: views/admin/channel.php:1242
 msgid "WhatsApp test"
 msgstr ""
 
-#: views/admin/channel.php:1282
+#: views/admin/channel.php:1245
 msgid "Did we redirect you to the correct Whatsapp link for this number?"
 msgstr ""
 
-#: views/admin/channel.php:1283
+#: views/admin/channel.php:1246
 msgid "+91-7485963214"
 msgstr ""
 
-#: views/admin/channel.php:1285
+#: views/admin/channel.php:1248
 msgid "Edit Number"
 msgstr ""
 
-#: views/admin/channel.php:1286 views/admin/channel.php:1310
+#: views/admin/channel.php:1249 views/admin/channel.php:1273
 msgid "Yes, Correct"
 msgstr ""
 
-#: views/admin/channel.php:1288 views/admin/channel.php:1312
+#: views/admin/channel.php:1251 views/admin/channel.php:1275
 msgid "Having trouble? Contact "
 msgstr ""
 
-#: views/admin/channel.php:1288 views/admin/channel.php:1312
+#: views/admin/channel.php:1251 views/admin/channel.php:1275
 #: views/admin/help.php:394
 msgid "Support"
 msgstr ""
 
-#: views/admin/channel.php:1303
+#: views/admin/channel.php:1266
 msgid "Facebook Messenger test"
 msgstr ""
 
-#: views/admin/channel.php:1306
+#: views/admin/channel.php:1269
 msgid "Did we redirect you to the correct Facebook Messenger link?"
 msgstr ""
 
-#: views/admin/channel.php:1307
+#: views/admin/channel.php:1270
 msgid "m.me/coca-cola"
 msgstr ""
 
-#: views/admin/channel.php:1309
+#: views/admin/channel.php:1272
 msgid "Edit Link"
 msgstr ""
 
@@ -1052,10 +1046,15 @@ msgstr ""
 msgid "Manage Live Chat"
 msgstr ""
 
-#: views/admin/chaty-admin-integration.php:25
+#: views/admin/chaty-admin-integration.php:26
 msgid ""
-"Upgrade to Pro and connect your Chaty form to the following platforms to "
+"Upgrade Now and connect your Chaty form to the following platforms to "
 "automatically receive leads"
+msgstr ""
+
+#: views/admin/chaty-admin-integration.php:39
+#: views/admin/chaty-admin-integration.php:62
+msgid "Connect"
 msgstr ""
 
 #: views/admin/chaty-deactivate-form.php:131
@@ -1068,6 +1067,10 @@ msgid ""
 "decide to deactivate Chaty :)"
 msgstr ""
 
+#: views/admin/chaty-deactivate-form.php:136
+msgid "Email address"
+msgstr ""
+
 #: views/admin/chaty-deactivate-form.php:140
 msgid "Your comment"
 msgstr ""
@@ -1076,8 +1079,8 @@ msgstr ""
 msgid "Anonymous feedback"
 msgstr ""
 
-#: views/admin/chaty-deactivate-form.php:151 views/admin/dashboard.php:249
-#: views/admin/dashboard.php:283 views/admin/dashboard.php:310
+#: views/admin/chaty-deactivate-form.php:151 views/admin/dashboard.php:251
+#: views/admin/dashboard.php:285 views/admin/dashboard.php:312
 msgid "Cancel"
 msgstr ""
 
@@ -1382,89 +1385,108 @@ msgstr ""
 msgid "Simple view"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:60
-msgid "Chat view (Pro)"
+#: views/admin/customize-widget-section.php:61
+msgid "Chat view"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:68
+#: views/admin/customize-widget-section.php:76
 msgid "Widget icon"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:70
+#: views/admin/customize-widget-section.php:78
 msgid ""
 "Select the icon for your widget or upload a custom icon. Please make sure "
 "you upload an image file of the following types: PNG/JPEG/JPG/GIF/SVG. The "
 "max file size is up to 100KB"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:141
+#: views/admin/customize-widget-section.php:149
 msgid "Icons Library"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:152
+#: views/admin/customize-widget-section.php:170
+msgid "Widget icon color"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:214
+msgid "Custom color"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:219
+msgid "Ok"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:247
+#: views/admin/customize-widget-section.php:417
+msgid "Custom"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:262
+msgid "Widget shape"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:263
+msgid ""
+"Choose the shape of your chat widget. This setting affects the widget icon "
+"and call-to-action button where applicable. Select whether the chat widget "
+"uses a round or square appearance."
+msgstr ""
+
+#: views/admin/customize-widget-section.php:281
+msgid "Round"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:287
+msgid "Square"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:300
 msgid "Position"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:160
+#: views/admin/customize-widget-section.php:308
 msgid "Left"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:165
+#: views/admin/customize-widget-section.php:313
 msgid "Right"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:170
+#: views/admin/customize-widget-section.php:318
 msgid "Custom Position"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:179
+#: views/admin/customize-widget-section.php:331
 msgid "Default state"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:181
+#: views/admin/customize-widget-section.php:333
 msgid ""
 "When the page loads, choose the default state of the widget. Choose between "
 "hover to open, opened by default or click to open states."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:194
+#: views/admin/customize-widget-section.php:346
 msgid "Click to open"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:195
+#: views/admin/customize-widget-section.php:347
 msgid "Hover to open"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:196
+#: views/admin/customize-widget-section.php:348
 msgid "Opened by default"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:211
+#: views/admin/customize-widget-section.php:363
 msgid "Show close button"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:231
-msgid "Widget icon color"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:275
-msgid "Custom color"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:282
-msgid "Ok"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:310
-#: views/admin/customize-widget-section.php:366
-msgid "Custom"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:324
+#: views/admin/customize-widget-section.php:375
 msgid "Widget size"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:326
+#: views/admin/customize-widget-section.php:377
 msgid ""
 "Change the size of your Chaty widget. S is the smallest and XXL is the "
 "largest. You can also set custom sizes (the actual size of the Chaty widget "
@@ -1472,168 +1494,193 @@ msgid ""
 "website)"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:346
+#: views/admin/customize-widget-section.php:397
 msgid "S"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:350
+#: views/admin/customize-widget-section.php:401
 msgid "M"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:354
+#: views/admin/customize-widget-section.php:405
 msgid "L"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:358
+#: views/admin/customize-widget-section.php:409
 msgid "XL"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:362
+#: views/admin/customize-widget-section.php:413
 msgid "XXL"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:374
+#: views/admin/customize-widget-section.php:425
 msgid "Custom widget size"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:383
+#: views/admin/customize-widget-section.php:434
 msgid "Call to action"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:384
+#: views/admin/customize-widget-section.php:435
 msgid ""
 "When the default state is set to \"Opened by default\", the \"Call to "
 "action\" feature doesn't apply because the Chaty widget is already open."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:392
-msgid "Call to action behavior"
+#: views/admin/customize-widget-section.php:441
+msgid "Call to Action Customization"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:394
-msgid ""
-"Choose how the CTA button would appear. &quot;Hide after first click&quot; "
-"hides the CTA button after the first visit. If you select the second "
-"option, the CTA stays visible all the time"
+#: views/admin/customize-widget-section.php:446
+msgid "Placement"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:409
-#: views/admin/customize-widget-section.php:415
-msgid ""
-"When the default state is set to \"Opened by default\", the \"Show call to "
-"action\" feature doesn't apply because the Chaty widget is already open."
-msgstr ""
-
-#: views/admin/customize-widget-section.php:412
-msgid "Hide after first click"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:418
-msgid "Show all the time"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:433
-msgid "Call to action text color"
-msgstr ""
-
-#: views/admin/customize-widget-section.php:434
 #: views/admin/customize-widget-section.php:447
-#: views/admin/customize-widget-section.php:584
+msgid ""
+"Choose where the call-to-action button appears. Display it outside the "
+"widget or inside the widget for a cleaner, more compact design."
+msgstr ""
+
+#: views/admin/customize-widget-section.php:461
+msgid "Outside the Widget"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:465
+msgid "Inside the Widget"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:478
+msgid "Tooltip Text Color"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:480
+#: views/admin/customize-widget-section.php:495
+#: views/admin/customize-widget-section.php:682
 msgid ""
 "When the default state is set to \"Opened by default\", the \"Attention "
 "effect\" feature doesn't apply because the Chaty widget is already open."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:446
-msgid "Call to action background"
+#: views/admin/customize-widget-section.php:493
+msgid "Tooltip Background Color"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:457
+#: views/admin/customize-widget-section.php:505
+msgid "Call to action behavior"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:506
+msgid ""
+"Choose how the CTA button would appear. \"Hide after first click\" hides "
+"the CTA button after the first visit. If you select the second option, the "
+"CTA stays visible all the time"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:525
+msgid "Hide after first click"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:532
+msgid "Show all the time"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:544
 msgid "Change the title of page"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:463
+#: views/admin/customize-widget-section.php:550
 msgid ""
 "Grab the attention of visitors with the changing titles. It applies to the "
 "text within the <title> tag. The title will change between the selected and "
 "original titles every second until the visitor opens the widget."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:494 views/admin/upgrade.php:207
+#: views/admin/customize-widget-section.php:584 views/admin/upgrade.php:207
 msgid "Google Analytics"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:496
+#: views/admin/customize-widget-section.php:586
 msgid "Enable google analytics tracking on the widget clicks. You can %1$s"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:496
+#: views/admin/customize-widget-section.php:586
 msgid "learn more here"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:522
+#: views/admin/customize-widget-section.php:616
 msgid "Background blur effect"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:533
+#: views/admin/customize-widget-section.php:627
 msgid ""
 "Blur the background when the widget is in the open state. Useful for "
 "drawing the user's attention to the widget."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:550
+#: views/admin/customize-widget-section.php:648
 msgid "Icons view"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:559
+#: views/admin/customize-widget-section.php:657
 msgid "Vertical"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:564
+#: views/admin/customize-widget-section.php:662
 msgid "Horizontal"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:572
+#: views/admin/customize-widget-section.php:670
 msgid "Attention effect"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:574
+#: views/admin/customize-widget-section.php:672
 msgid ""
 "The attention effect will appear on your site until your website visitors "
 "engage with the widget for the first time. After the first engagement, the "
 "attention effect will not appear again."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:612
+#: views/admin/customize-widget-section.php:710
+msgid "Widget border"
+msgstr ""
+
+#: views/admin/customize-widget-section.php:712
+msgid ""
+"Add a subtle border around the widget to help it stand out against your "
+"website's background."
+msgstr ""
+
+#: views/admin/customize-widget-section.php:743
 msgid "Pending messages"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:613
+#: views/admin/customize-widget-section.php:744
 msgid ""
 "Increase your click-rate by displaying a pending messages icon near your "
 "Chaty widget to let your visitors know that you\"re waiting for them to "
 "contact you."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:623
+#: views/admin/customize-widget-section.php:754
 msgid ""
 "When the default state is set to \"Opened by default\", the \"Pending "
 "messages\" feature doesn't apply because the Chaty widget is already open."
 msgstr ""
 
-#: views/admin/customize-widget-section.php:644
+#: views/admin/customize-widget-section.php:775
 msgid "Number of messages"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:656
+#: views/admin/customize-widget-section.php:787
 msgid "Number color"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:677
+#: views/admin/customize-widget-section.php:808
 msgid "Font Family"
 msgstr ""
 
-#: views/admin/customize-widget-section.php:679
+#: views/admin/customize-widget-section.php:810
 msgid ""
 "System Stack is the font that comes preloaded with your operating system. "
 "For example, if you are using Mac, you would be able to use mac's native "
@@ -1693,49 +1740,49 @@ msgstr ""
 msgid "🎨 Customise the widget to display the chat view popup."
 msgstr ""
 
-#: views/admin/dashboard.php:201
+#: views/admin/dashboard.php:202
 msgid "Upgrade to Pro today"
 msgstr ""
 
-#: views/admin/dashboard.php:212
+#: views/admin/dashboard.php:214
 msgid ""
 "Create widgets for WhatsApp, Facebook Messenger, Telegram & 20+ more "
 "channels. Adding a new Chaty widget takes a minute - start now  🚀"
 msgstr ""
 
-#: views/admin/dashboard.php:214 views/admin/dashboard.php:248
+#: views/admin/dashboard.php:216 views/admin/dashboard.php:250
 msgid "Create Widget"
 msgstr ""
 
-#: views/admin/dashboard.php:236
+#: views/admin/dashboard.php:238
 msgid "Duplicate Widget?"
 msgstr ""
 
-#: views/admin/dashboard.php:239
+#: views/admin/dashboard.php:241
 msgid "Please select a name for your new duplicate widget"
 msgstr ""
 
-#: views/admin/dashboard.php:269 views/admin/dashboard.php:284
+#: views/admin/dashboard.php:271 views/admin/dashboard.php:286
 msgid "Rename Widget"
 msgstr ""
 
-#: views/admin/dashboard.php:273
+#: views/admin/dashboard.php:275
 msgid "Enter new name for widget"
 msgstr ""
 
-#: views/admin/dashboard.php:303
+#: views/admin/dashboard.php:305
 msgid "Delete Widget?"
 msgstr ""
 
-#: views/admin/dashboard.php:306
+#: views/admin/dashboard.php:308
 msgid "Are you sure you want to delete this widget?"
 msgstr ""
 
-#: views/admin/dashboard.php:311
+#: views/admin/dashboard.php:313
 msgid "Delete Widget"
 msgstr ""
 
-#: views/admin/dashboard.php:412
+#: views/admin/dashboard.php:414
 msgid "Widget name is required"
 msgstr ""
 
@@ -1847,7 +1894,7 @@ msgstr ""
 msgid "Upgrade to Chaty Pro 🚀"
 msgstr ""
 
-#: views/admin/first-popup.php:91
+#: views/admin/first-popup.php:92
 msgid "Show me the new lead"
 msgstr ""
 
@@ -1901,78 +1948,78 @@ msgid ""
 "more."
 msgstr ""
 
-#: views/admin/install-chatway.php:193 views/admin/recommended-plugins.php:209
+#: views/admin/install-chatway.php:193 views/admin/recommended-plugins.php:232
 #. translators: %s: Plugin author.
 msgid "By %s"
 msgstr ""
 
-#: views/admin/install-chatway.php:217 views/admin/recommended-plugins.php:233
+#: views/admin/install-chatway.php:217 views/admin/recommended-plugins.php:256
 #. translators: %s: Plugin name and version.
 msgid "Install %s now"
 msgstr ""
 
-#: views/admin/install-chatway.php:219 views/admin/recommended-plugins.php:235
+#: views/admin/install-chatway.php:219 views/admin/recommended-plugins.php:258
 msgid "Install Now"
 msgstr ""
 
-#: views/admin/install-chatway.php:224 views/admin/recommended-plugins.php:240
+#: views/admin/install-chatway.php:224 views/admin/recommended-plugins.php:263
 msgid "Cannot Install"
 msgstr ""
 
-#: views/admin/install-chatway.php:239 views/admin/recommended-plugins.php:255
+#: views/admin/install-chatway.php:239 views/admin/recommended-plugins.php:278
 #. translators: %s: Plugin name and version.
 msgid "Update %s now"
 msgstr ""
 
-#: views/admin/install-chatway.php:241 views/admin/recommended-plugins.php:257
+#: views/admin/install-chatway.php:241 views/admin/recommended-plugins.php:280
 msgid "Update Now"
 msgstr ""
 
-#: views/admin/install-chatway.php:246 views/admin/recommended-plugins.php:262
+#: views/admin/install-chatway.php:246 views/admin/recommended-plugins.php:285
 msgid "Cannot Update"
 msgstr ""
 
-#: views/admin/install-chatway.php:257 views/admin/recommended-plugins.php:273
+#: views/admin/install-chatway.php:257 views/admin/recommended-plugins.php:296
 #: views/admin/trigger-and-target.php:62
 msgid "Active"
 msgstr ""
 
-#: views/admin/install-chatway.php:260 views/admin/recommended-plugins.php:276
+#: views/admin/install-chatway.php:260 views/admin/recommended-plugins.php:299
 msgid "Activate"
 msgstr ""
 
-#: views/admin/install-chatway.php:262 views/admin/recommended-plugins.php:278
+#: views/admin/install-chatway.php:262 views/admin/recommended-plugins.php:301
 #. translators: %s: Plugin name.
 msgid "Activate %s"
 msgstr ""
 
-#: views/admin/install-chatway.php:273 views/admin/recommended-plugins.php:289
+#: views/admin/install-chatway.php:273 views/admin/recommended-plugins.php:312
 msgid "Network Activate"
 msgstr ""
 
-#: views/admin/install-chatway.php:275 views/admin/recommended-plugins.php:291
+#: views/admin/install-chatway.php:275 views/admin/recommended-plugins.php:314
 #. translators: %s: Plugin name.
 msgid "Network Activate %s"
 msgstr ""
 
-#: views/admin/install-chatway.php:288 views/admin/recommended-plugins.php:304
+#: views/admin/install-chatway.php:288 views/admin/recommended-plugins.php:327
 msgid "Installed"
 msgstr ""
 
-#: views/admin/install-chatway.php:303 views/admin/recommended-plugins.php:319
+#: views/admin/install-chatway.php:303 views/admin/recommended-plugins.php:342
 #. translators: %s: Plugin name and version.
 msgid "More information about %s"
 msgstr ""
 
-#: views/admin/install-chatway.php:305 views/admin/recommended-plugins.php:321
+#: views/admin/install-chatway.php:305 views/admin/recommended-plugins.php:344
 msgid "More Details"
 msgstr ""
 
-#: views/admin/install-chatway.php:335 views/admin/recommended-plugins.php:351
+#: views/admin/install-chatway.php:335 views/admin/recommended-plugins.php:376
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr ""
 
-#: views/admin/install-chatway.php:339 views/admin/recommended-plugins.php:355
+#: views/admin/install-chatway.php:339 views/admin/recommended-plugins.php:380
 #. translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page.
 msgid ""
 "<a href=\"%1$s\">Please update WordPress</a>, and then <a "
@@ -1980,46 +2027,46 @@ msgid ""
 msgstr ""
 
 #: views/admin/install-chatway.php:347 views/admin/install-chatway.php:363
-#: views/admin/recommended-plugins.php:363
-#: views/admin/recommended-plugins.php:379
+#: views/admin/recommended-plugins.php:388
+#: views/admin/recommended-plugins.php:404
 #. translators: %s: URL to WordPress Updates screen.
 msgid "<a href=\"%s\">Please update WordPress</a>."
 msgstr ""
 
 #: views/admin/install-chatway.php:353 views/admin/install-chatway.php:372
-#: views/admin/recommended-plugins.php:369
-#: views/admin/recommended-plugins.php:388
+#: views/admin/recommended-plugins.php:394
+#: views/admin/recommended-plugins.php:413
 #. translators: %s: URL to Update PHP page.
 msgid "<a href=\"%s\">Learn more about updating PHP</a>."
 msgstr ""
 
-#: views/admin/install-chatway.php:359 views/admin/recommended-plugins.php:375
+#: views/admin/install-chatway.php:359 views/admin/recommended-plugins.php:400
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr ""
 
-#: views/admin/install-chatway.php:368 views/admin/recommended-plugins.php:384
+#: views/admin/install-chatway.php:368 views/admin/recommended-plugins.php:409
 msgid "This plugin doesn&#8217;t work with your version of PHP."
 msgstr ""
 
-#: views/admin/install-chatway.php:417 views/admin/recommended-plugins.php:433
+#: views/admin/install-chatway.php:417 views/admin/recommended-plugins.php:458
 msgid "Last Updated:"
 msgstr ""
 
-#: views/admin/install-chatway.php:420 views/admin/recommended-plugins.php:436
+#: views/admin/install-chatway.php:420 views/admin/recommended-plugins.php:461
 #. translators: %s: Human-readable time difference.
 msgid "%s ago"
 msgstr ""
 
-#: views/admin/install-chatway.php:433 views/admin/recommended-plugins.php:449
+#: views/admin/install-chatway.php:433 views/admin/recommended-plugins.php:474
 msgid "Less Than 10"
 msgstr ""
 
-#: views/admin/install-chatway.php:439 views/admin/recommended-plugins.php:455
+#: views/admin/install-chatway.php:439 views/admin/recommended-plugins.php:480
 #. translators: %s: Number of installations.
 msgid "%s Active Installations"
 msgstr ""
 
-#: views/admin/install-chatway.php:445 views/admin/recommended-plugins.php:461
+#: views/admin/install-chatway.php:445 views/admin/recommended-plugins.php:486
 msgid "Untested with your version of WordPress"
 msgstr ""
 
@@ -2142,55 +2189,51 @@ msgstr ""
 msgid "Analytics"
 msgstr ""
 
-#: views/admin/pro_analytics.php:31
+#: views/admin/pro_analytics.php:25
 msgid "What can you use it for?"
 msgstr ""
 
-#: views/admin/pro_analytics.php:35
+#: views/admin/pro_analytics.php:29
 msgid "%s the most frequently used channels"
 msgstr ""
 
-#: views/admin/pro_analytics.php:35
+#: views/admin/pro_analytics.php:29
 msgid "Discover"
 msgstr ""
 
-#: views/admin/pro_analytics.php:39
+#: views/admin/pro_analytics.php:33
 msgid "Keep %s of how each widget performs"
 msgstr ""
 
-#: views/admin/pro_analytics.php:39
+#: views/admin/pro_analytics.php:33
 msgid "track"
 msgstr ""
 
-#: views/admin/pro_analytics.php:43
+#: views/admin/pro_analytics.php:37
 msgid "%s the number of unique clicks and the %s"
 msgstr ""
 
-#: views/admin/pro_analytics.php:43
+#: views/admin/pro_analytics.php:37
 msgid "Analyze"
 msgstr ""
 
-#: views/admin/pro_analytics.php:43
+#: views/admin/pro_analytics.php:37
 msgid "click-through rate"
 msgstr ""
 
-#: views/admin/pro_analytics.php:49
-msgid "Upgrade to Pro 🚀"
-msgstr ""
-
-#: views/admin/recommended-plugins.php:161
+#: views/admin/recommended-plugins.php:187
 msgid "Try out our recommended plugins"
 msgstr ""
 
-#: views/admin/recommended-plugins.php:162
+#: views/admin/recommended-plugins.php:188
 msgid "Hide From Menu"
 msgstr ""
 
-#: views/admin/recommended-plugins.php:476
+#: views/admin/recommended-plugins.php:503
 msgid "Are you sure?"
 msgstr ""
 
-#: views/admin/recommended-plugins.php:477
+#: views/admin/recommended-plugins.php:504
 msgid ""
 "If you hide the recommended plugins page from your menu, it won't appear "
 "there again. Are you sure you'd like to do it?"
@@ -2374,173 +2417,173 @@ msgid ""
 "certain posts or pages by excluding or including them in the rules"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:169
+#: views/admin/trigger-and-target.php:170
 msgid "Don't show on"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:175
+#: views/admin/trigger-and-target.php:176
 msgid "Select Rule"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:212
-#: views/admin/trigger-and-target.php:310
-#: views/admin/trigger-and-target.php:373
-#: views/admin/trigger-and-target.php:399
-#: views/admin/trigger-and-target.php:553
-#: views/admin/trigger-and-target.php:589
+#: views/admin/trigger-and-target.php:216
+#: views/admin/trigger-and-target.php:318
+#: views/admin/trigger-and-target.php:386
+#: views/admin/trigger-and-target.php:413
+#: views/admin/trigger-and-target.php:570
+#: views/admin/trigger-and-target.php:610
 msgid "Add Rule"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:213
-#: views/admin/trigger-and-target.php:307
-#: views/admin/trigger-and-target.php:374
-#: views/admin/trigger-and-target.php:554
-#: views/admin/trigger-and-target.php:590
+#: views/admin/trigger-and-target.php:217
+#: views/admin/trigger-and-target.php:315
+#: views/admin/trigger-and-target.php:387
+#: views/admin/trigger-and-target.php:571
+#: views/admin/trigger-and-target.php:611
 msgid "Remove Rules"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:220
+#: views/admin/trigger-and-target.php:224
 msgid "Date scheduling"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:222
+#: views/admin/trigger-and-target.php:226
 msgid "Schedule the specific time and date when your Chaty widget appears."
 msgstr ""
 
-#: views/admin/trigger-and-target.php:247
+#: views/admin/trigger-and-target.php:252
 msgid "Timezone"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:256
+#: views/admin/trigger-and-target.php:261
 msgid "Start Date"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:258
+#: views/admin/trigger-and-target.php:263
 msgid ""
 "Schedule a date from which the Chaty widget will be displayed (the starting "
 "date is included)"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:271
+#: views/admin/trigger-and-target.php:276
 msgid "Start Time"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:279
+#: views/admin/trigger-and-target.php:284
 msgid "End Date"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:281
+#: views/admin/trigger-and-target.php:286
 msgid ""
 "Schedule a date from which the Chaty widget will stop being displayed (the "
 "end date is included)"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:295
+#: views/admin/trigger-and-target.php:300
 msgid "End Time"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:318
+#: views/admin/trigger-and-target.php:327
 msgid "Days and hours"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:320 views/admin/upgrade.php:196
+#: views/admin/trigger-and-target.php:329 views/admin/upgrade.php:196
 msgid ""
 "Display the widget on specific days and hours based on your opening days "
 "and hours"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:338
+#: views/admin/trigger-and-target.php:348
 msgid "Select Day"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:347
+#: views/admin/trigger-and-target.php:357
 msgid "From"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:352
+#: views/admin/trigger-and-target.php:362
 msgid "To"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:357
+#: views/admin/trigger-and-target.php:367
 msgid "GMT"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:381
+#: views/admin/trigger-and-target.php:394
 msgid "Traffic source"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:383
+#: views/admin/trigger-and-target.php:396
 msgid ""
 "Show the widget only to visitors who come from specific traffic sources "
 "including direct traffic, social networks, search engines, Google Ads, or "
 "any other traffic source."
 msgstr ""
 
-#: views/admin/trigger-and-target.php:414
+#: views/admin/trigger-and-target.php:428
 msgid "Direct visit"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:416
+#: views/admin/trigger-and-target.php:430
 msgid "Show the Chaty to visitors who arrived to your website from direct traffic"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:436
+#: views/admin/trigger-and-target.php:450
 msgid "Social networks"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:438
+#: views/admin/trigger-and-target.php:452
 msgid ""
 "Show the Chaty to visitors who arrived to your website from social networks "
 "including: Facebook, Twitter, Pinterest, Instagram, Google+, LinkedIn, "
 "Delicious, Tumblr, Dribbble, StumbleUpon, Flickr, Plaxo, Digg and more"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:458
+#: views/admin/trigger-and-target.php:472
 msgid "Search engines"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:460
-#: views/admin/trigger-and-target.php:482
+#: views/admin/trigger-and-target.php:474
+#: views/admin/trigger-and-target.php:496
 msgid ""
 "Show the Chaty to visitors who arrived from search engines including: "
 "Google, Bing, Yahoo!, Yandex, AOL, Ask, WOW,  WebCrawler, Baidu and more"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:480
+#: views/admin/trigger-and-target.php:494
 msgid "Google Ads"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:497
+#: views/admin/trigger-and-target.php:511
 msgid "Specific URL"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:525
+#: views/admin/trigger-and-target.php:539
 msgid "Contains"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:526
+#: views/admin/trigger-and-target.php:540
 msgid "Not contains"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:563 views/admin/upgrade.php:187
+#: views/admin/trigger-and-target.php:580 views/admin/upgrade.php:187
 msgid "Country targeting"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:565 views/admin/upgrade.php:188
+#: views/admin/trigger-and-target.php:582 views/admin/upgrade.php:188
 msgid ""
 "Target your widget to specific countries. You can create different widgets "
 "for different countries"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:579
+#: views/admin/trigger-and-target.php:597
 msgid "All Countries"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:596
+#: views/admin/trigger-and-target.php:618
 msgid "Custom CSS"
 msgstr ""
 
-#: views/admin/trigger-and-target.php:598
+#: views/admin/trigger-and-target.php:620
 msgid ""
 "Use this option if you wish to modify your widget additionally. This step "
 "is optional."
@@ -2908,7 +2951,7 @@ msgstr ""
 msgid "https://premio.io/downloads/chaty/"
 msgstr ""
 
-#: views/admin/install-chatway.php:429 views/admin/recommended-plugins.php:445
+#: views/admin/install-chatway.php:429 views/admin/recommended-plugins.php:470
 #. translators: %s: Number of millions.
 msgctxt "Active plugin installations"
 msgid "%s+ Million"

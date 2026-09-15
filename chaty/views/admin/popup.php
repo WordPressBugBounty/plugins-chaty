@@ -178,7 +178,7 @@ if (defined('ABSPATH') === false) {
             </div>
             <div class="mt-10 relative z-10">
                 <a class="text-white border border-cht-primary bg-cht-primary focus:text-white hover:bg-[#9455e1] ease-linear duration-200 hover:text-white px-10 py-2.5 inline-flex items-center space-x-3 rounded-lg mx-auto text-base font-primary drop-shadow-3xl" target="_blank" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>">
-                    <?php esc_html_e("Upgrade to Pro", "chaty"); ?>
+                    <?php esc_html_e("Upgrade Now", "chaty"); ?>
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
                         <path d="M6.5 12L10.5 8L6.5 4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -206,7 +206,7 @@ if (defined('ABSPATH') === false) {
                 <div class="chat-view-data-left">
                     <div class="chat-view-content">
                         <img class="chaty-logo" alt="<?php esc_html_e("Chaty logo", "chaty"); ?>" src="<?php echo esc_url(CHT_PLUGIN_URL) ?>admin/assets/images/logo-color.svg">
-                        <div class="view-pro-title"><?php esc_html_e("Upgrade to Pro", "chaty"); ?> 🎉</div>
+                        <div class="view-pro-title"><?php esc_html_e("Upgrade Now", "chaty"); ?> 🎉</div>
                         <ul class="text-left text-[#49687E] mt-8">
                             <li class="text-base flex text-[#49687E] mb-4">
                                 <span class="flex-none inline-flex items-center w-6 h-6 bg-[#e4fff5] mr-2 rounded-full text-center"><svg class="mx-auto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M13.333 4l-7.334 7.333L2.666 8" stroke="#68CB9B" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
@@ -231,7 +231,7 @@ if (defined('ABSPATH') === false) {
                         </ul>
                         <div class="view-pro-btn mt-12">
                             <a class="flex rounded-md text-base text-white py-3 bg-[#B78DEB] hover:bg-[#8f59d3] hover:text-white" target="_blank" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>">
-                                <?php esc_html_e("Upgrade to Pro", "chaty"); ?>
+                                <?php esc_html_e("Upgrade Now", "chaty"); ?>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>

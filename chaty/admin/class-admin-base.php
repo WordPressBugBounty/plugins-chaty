@@ -101,10 +101,50 @@ class CHT_Admin_Base
         add_action('wp_ajax_get_chatway_status', [$this, 'get_chatway_status']);
         add_filter('check_for_chatway', [$this, 'check_for_chatway']);
         add_filter('check_for_chatway_status', [$this, 'check_for_chatway_status']);
+        add_action('chaty_upgrade_box', [$this, 'chaty_upgrade_box']);
 
         // add need help in footer
         add_action('admin_footer', array($this, 'chaty_admin_footer_need_help_content'));
     }//end __construct()
+
+
+    function chaty_upgrade_box() {
+        $upgrade_url = admin_url('admin.php?page=chaty-app-upgrade');
+        ?>
+        <div class="relative inline-flex inline-upgrade-link">
+            <a href="<?php echo esc_url($upgrade_url); ?>" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.649 5.74203C18.4702 5.5928 18.2531 5.49682 18.0224 5.46505C17.7917 5.43327 17.5568 5.46699 17.3443 5.56234L13.3912 7.32015L11.0943 3.17953C10.9845 2.98621 10.8255 2.82545 10.6334 2.71361C10.4412 2.60177 10.2229 2.54285 10.0006 2.54285C9.77826 2.54285 9.55992 2.60177 9.36779 2.71361C9.17566 2.82545 9.0166 2.98621 8.90682 3.17953L6.60995 7.32015L2.65682 5.56234C2.44394 5.46713 2.20866 5.43337 1.97759 5.46488C1.74652 5.49639 1.52888 5.59191 1.34926 5.74065C1.16964 5.88938 1.03521 6.0854 0.961163 6.30654C0.887119 6.52768 0.876414 6.76512 0.930259 6.99203L2.91463 15.453C2.95258 15.6168 3.02338 15.7712 3.12276 15.9068C3.22213 16.0424 3.34801 16.1565 3.49276 16.242C3.68873 16.3593 3.9128 16.4214 4.1412 16.4217C4.25222 16.4215 4.36268 16.4057 4.46932 16.3748C8.08637 15.3748 11.907 15.3748 15.524 16.3748C15.8543 16.4617 16.2055 16.4139 16.5006 16.242C16.6462 16.1576 16.7728 16.0438 16.8723 15.908C16.9718 15.7722 17.0421 15.6173 17.0787 15.453L19.0709 6.99203C19.1241 6.76506 19.1128 6.52773 19.0383 6.30684C18.9637 6.08595 18.8289 5.89031 18.649 5.74203Z" fill="url(#paint0_linear_11695_35233)"/>
+                </svg>
+            </a>
+            <div class="chaty-upgrade-box flex flex-col gap-4 items-center justify-center">
+                <div class="chaty-upgrade-icon relative">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.1824 8.06186C25.9315 7.85233 25.6266 7.71758 25.3027 7.67297C24.9789 7.62837 24.6489 7.6757 24.3507 7.80958L18.8005 10.2776L15.5756 4.4641C15.4215 4.19268 15.1982 3.96697 14.9284 3.80994C14.6587 3.65292 14.3521 3.57019 14.04 3.57019C13.7279 3.57019 13.4213 3.65292 13.1516 3.80994C12.8818 3.96697 12.6585 4.19268 12.5044 4.4641L9.27954 10.2776L3.72934 7.80958C3.43044 7.6759 3.10011 7.6285 2.77569 7.67274C2.45127 7.71698 2.1457 7.85109 1.89351 8.05992C1.64132 8.26874 1.45258 8.54395 1.34862 8.85443C1.24466 9.16492 1.22963 9.49829 1.30523 9.81686L4.09131 21.6961C4.14458 21.926 4.24399 22.1428 4.38351 22.3332C4.52303 22.5237 4.69976 22.6838 4.903 22.8039C5.17814 22.9686 5.49273 23.0558 5.81341 23.0562C5.96929 23.0559 6.12436 23.0337 6.27409 22.9904C11.3524 21.5863 16.7166 21.5863 21.7949 22.9904C22.2586 23.1123 22.7517 23.0452 23.166 22.8039C23.3705 22.6853 23.5482 22.5257 23.6879 22.335C23.8276 22.1443 23.9263 21.9268 23.9777 21.6961L26.7748 9.81686C26.8495 9.4982 26.8337 9.16498 26.729 8.85486C26.6243 8.54473 26.435 8.27005 26.1824 8.06186Z" fill="white"/>
+                    </svg>
+                    <svg class="absolute -top-1 -right-1" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                            <path d="M6.82532 5.17444L10.0843 6.95839L6.82532 8.74078L5.04292 11.9998L3.25898 8.74078L0 6.95839L3.25898 5.17444L5.04292 1.91547L6.82532 5.17444Z" fill="url(#paint0_linear_11695_35437)"/>
+                            <path d="M11.3362 1.65729L12.9935 2.56394L11.3362 3.47058L10.4296 5.12633L9.52448 3.47058L7.86719 2.56394L9.52448 1.65729L10.4296 0L11.3362 1.65729Z" fill="url(#paint1_linear_11695_35437)"/>
+                            <path d="M11.3362 10.4305L12.9935 11.3371L11.3362 12.2438L10.4296 13.901L9.52448 12.2438L7.86719 11.3371L9.52448 10.4305L10.4296 8.77472L11.3362 10.4305Z" fill="url(#paint2_linear_11695_35437)"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-center text-sm font-medium text-[#092030]">
+                    <?php esc_html_e('Upgrade now to enjoy awesome Pro features!', 'chaty'); ?>
+                </div>
+                <div class="text-center">
+                    <a href="<?php echo esc_url($upgrade_url); ?>" target="_blank" class="chaty-upgrade-now-button">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
 
 
     function get_chatway_status()
@@ -628,7 +668,7 @@ class CHT_Admin_Base
 
             wp_enqueue_style($this->pluginSlug, plugins_url('../admin/assets/css/cht-style'.esc_attr($minified).'.css', __FILE__), [], CHT_VERSION);
             wp_enqueue_style($this->pluginSlug."-tailwind", plugins_url('../admin/assets/css/app.css', __FILE__), [], CHT_VERSION);
-            wp_enqueue_style($this->pluginSlug."-preview", plugins_url('../admin/assets/css/preview'.esc_attr($minified).'.css', __FILE__), [], CHT_VERSION);
+            wp_enqueue_style($this->pluginSlug."-preview", plugins_url('../admin/assets/css/preview.css', __FILE__), [], CHT_VERSION);
         }
 
         if ($page == "chaty_page_chaty-upgrade" || $page == "chaty_page_widget-analytics") {
@@ -1299,7 +1339,7 @@ class CHT_Admin_Base
                             esc_html__("Reference Page", "chaty")
                         );
 
-                        fputcsv($fp, $fields);
+                        fputcsv($fp, $fields, ",", "\"", "\\");
                     }
 
                     foreach ($results as $res) {
@@ -1323,7 +1363,7 @@ class CHT_Admin_Base
                             $res->ref_page,
                         ];
 
-                        fputcsv($fp, $fields);
+                        fputcsv($fp, $fields, ",", "\"", "\\");
                     }//end foreach
 
                     fclose($fp);

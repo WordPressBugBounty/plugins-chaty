@@ -57,9 +57,17 @@ $cta_type = "simple-view";
                                 <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0 16C0 8.45753 0 4.68629 2.34315 2.34315C4.68629 0 8.45753 0 16 0H120C127.542 0 131.314 0 133.657 2.34315C136 4.68629 136 8.45753 136 16V120C136 127.542 136 131.314 133.657 133.657C131.314 136 127.542 136 120 136H16C8.45753 136 4.68629 136 2.34315 133.657C0 131.314 0 127.542 0 120V16Z" fill="white"/> <path d="M0 16C0 8.45753 0 4.68629 2.34315 2.34315C4.68629 0 8.45753 0 16 0H120C127.542 0 131.314 0 133.657 2.34315C136 4.68629 136 8.45753 136 16V120C136 127.542 136 131.314 133.657 133.657C131.314 136 127.542 136 120 136H16C8.45753 136 4.68629 136 2.34315 133.657C0 131.314 0 127.542 0 120V16Z" fill="url(#paint0_linear_5493_27529)"/> <g clip-path="url(#clip0_5493_27529)"> <path d="M112 124C118.627 124 124 118.627 124 112C124 105.373 118.627 100 112 100C105.373 100 100 105.373 100 112C100 118.627 105.373 124 112 124Z" fill="#B78DEB"/> <path d="M113.958 109.156H107.024C106.18 109.156 105.469 109.867 105.469 110.711V115.334C105.469 116.178 106.18 116.889 107.024 116.889H112.624L114.847 119.111C114.935 119.2 114.98 119.2 115.158 119.2C115.247 119.2 115.247 119.2 115.291 119.2C115.424 119.111 115.513 118.978 115.513 118.8V110.711C115.513 109.867 114.802 109.156 113.958 109.156Z" fill="white"/> <path d="M116.27 106.844H109.337C108.492 106.844 107.781 107.555 107.781 108.4H113.959C115.248 108.4 116.27 109.422 116.27 110.711V115.866L117.115 116.711C117.203 116.8 117.248 116.8 117.426 116.8C117.515 116.8 117.515 116.8 117.559 116.8C117.692 116.711 117.781 116.578 117.781 116.4V108.4C117.826 107.555 117.115 106.844 116.27 106.844Z" fill="white"/> </g> <g filter="url(#filter0_d_5493_27529)"> <rect x="12" y="12" width="112" height="83" rx="8" fill="white"/> <rect x="20" y="40" width="94" height="4" rx="2" fill="#B78DEB" fill-opacity="0.4"/> <rect x="12" y="12" width="112" height="20" fill="#B78DEB" fill-opacity="0.2"/> <rect x="20" y="48" width="86" height="4" rx="2" fill="#B78DEB" fill-opacity="0.4"/> <rect x="20" y="56" width="45" height="4" rx="2" fill="#B78DEB" fill-opacity="0.4"/> <path d="M117 19L111 25" stroke="#83A1B7" stroke-linecap="round" stroke-linejoin="round"/> <path d="M111 19L117 25" stroke="#83A1B7" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="49" cy="80" r="7" fill="#49E670"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M51.4901 77.524C51.1666 77.1984 50.7818 76.9403 50.3579 76.7645C49.9341 76.5887 49.4795 76.4988 49.0206 76.5C47.0964 76.5 45.5299 78.0661 45.5292 79.9911C45.5292 80.6063 45.6898 81.2067 45.9951 81.7364L45.5 83.5451L47.3507 83.0594C47.8627 83.3381 48.4362 83.4842 49.0191 83.4845H49.0206C50.9444 83.4845 52.5109 81.9184 52.5117 79.9934C52.513 79.5347 52.4234 79.0803 52.248 78.6564C52.0727 78.2326 51.8151 77.8477 51.4901 77.524ZM49.0206 82.8953H49.0194C48.4997 82.8953 47.9895 82.7555 47.5424 82.4905L47.4367 82.4275L46.3384 82.7156L46.6313 81.645L46.5624 81.5353C46.2719 81.0727 46.118 80.5374 46.1187 79.9911C46.1195 78.3912 47.4211 77.0896 49.0218 77.0896C49.403 77.0887 49.7806 77.1635 50.1327 77.3095C50.4848 77.4556 50.8045 77.67 51.0732 77.9405C51.3433 78.2096 51.5574 78.5296 51.7031 78.882C51.8488 79.2343 51.9233 79.6121 51.9221 79.9934C51.9213 81.5933 50.6197 82.8953 49.0206 82.8953Z" fill="white"/> <path d="M50.0197 80.4377C50.0998 80.4669 50.5283 80.6777 50.6158 80.7216C50.7026 80.7652 50.7613 80.7873 50.7831 80.8239C50.8048 80.8605 50.8048 81.0351 50.7321 81.2388C50.6594 81.4426 50.3109 81.6285 50.1433 81.6534C49.9928 81.6756 49.8027 81.6853 49.5938 81.6188C49.4674 81.5783 49.3049 81.5247 49.0964 81.4348C48.2214 81.0568 47.6498 80.176 47.6062 80.1177L47.6051 80.1162C47.5575 80.0525 47.25 79.6408 47.25 79.2151C47.25 78.7857 47.4752 78.575 47.5553 78.4875C47.5845 78.4542 47.6203 78.4274 47.6604 78.4087C47.7005 78.3899 47.744 78.3797 47.7882 78.3786C47.8438 78.3784 47.8995 78.3794 47.9551 78.3817C48.0087 78.384 48.0807 78.3615 48.1511 78.5306C48.2238 78.7052 48.3984 79.1346 48.4202 79.1785C48.4423 79.2221 48.4567 79.273 48.4276 79.3313C48.3984 79.3897 48.384 79.4258 48.3404 79.4768C48.2969 79.5277 48.2491 79.5907 48.2098 79.6296C48.1658 79.6732 48.1203 79.7202 48.1713 79.8077C48.2222 79.8952 48.3972 80.1807 48.6566 80.4121C48.9899 80.7092 49.2711 80.8013 49.3582 80.8449C49.4453 80.8885 49.4962 80.8815 49.5472 80.8231C49.5981 80.7648 49.7653 80.5684 49.8237 80.4813C49.882 80.3942 49.9399 80.4086 50.0197 80.4377Z" fill="white"/> <path d="M27 87C30.866 87 34 83.866 34 80C34 76.134 30.866 73 27 73C23.134 73 20 76.134 20 80C20 83.866 23.134 87 27 87Z" fill="url(#paint1_linear_5493_27529)"/> <path d="M28.324 76.7334H25.3965C24.9186 76.734 24.4604 76.9241 24.1224 77.262C23.7844 77.6 23.5943 78.0582 23.5938 78.5362V81.4636C23.5942 81.9416 23.7843 82.3999 24.1223 82.738C24.4602 83.076 24.9185 83.2662 25.3965 83.2667H28.324C28.802 83.2663 29.2604 83.0761 29.5984 82.7381C29.9365 82.4 30.1266 81.9417 30.1271 81.4636V78.5362C30.1265 78.0582 29.9363 77.5999 29.5983 77.2619C29.2603 76.9239 28.802 76.7339 28.324 76.7334V76.7334ZM29.5473 81.4636C29.547 81.7879 29.4179 82.0989 29.1886 82.3282C28.9593 82.5576 28.6483 82.6866 28.324 82.687H25.3965C25.0721 82.6867 24.7611 82.5577 24.5318 82.3284C24.3024 82.099 24.1734 81.788 24.1731 81.4636V78.5362C24.1736 78.2119 24.3027 77.901 24.532 77.6718C24.7613 77.4425 25.0722 77.3135 25.3965 77.3131H28.324C28.6483 77.3135 28.9593 77.4425 29.1886 77.6719C29.4179 77.9012 29.547 78.2122 29.5473 78.5365V81.464V81.4636Z" fill="white"/> <path d="M26.8547 78.3174C26.5219 78.3175 26.1965 78.4162 25.9197 78.6012C25.643 78.7862 25.4273 79.0491 25.2999 79.3566C25.1726 79.6642 25.1393 80.0026 25.2042 80.3291C25.2692 80.6556 25.4295 80.9555 25.6649 81.1908C25.9003 81.4262 26.2002 81.5865 26.5266 81.6515C26.8531 81.7164 27.1915 81.6831 27.4991 81.5558C27.8066 81.4284 28.0695 81.2127 28.2545 80.936C28.4395 80.6592 28.5383 80.3339 28.5383 80.001C28.5379 79.5546 28.3603 79.1267 28.0447 78.811C27.7291 78.4954 27.3011 78.3179 26.8547 78.3174V78.3174ZM26.8547 81.1045C26.6364 81.1045 26.423 81.0397 26.2415 80.9184C26.06 80.7971 25.9185 80.6247 25.8349 80.423C25.7514 80.2213 25.7295 79.9994 25.7721 79.7853C25.8147 79.5711 25.9198 79.3745 26.0742 79.2201C26.2286 79.0657 26.4253 78.9606 26.6394 78.918C26.8535 78.8754 27.0755 78.8972 27.2772 78.9808C27.4789 79.0643 27.6513 79.2058 27.7726 79.3873C27.8939 79.5689 27.9586 79.7823 27.9586 80.0006C27.9583 80.2933 27.8419 80.5739 27.635 80.7808C27.428 80.9878 27.1474 81.1042 26.8547 81.1045V81.1045Z" fill="white"/> <path d="M28.6118 77.8252C28.5136 77.8253 28.4184 77.8594 28.3425 77.9218C28.2667 77.9841 28.2147 78.0709 28.1956 78.1672C28.1765 78.2636 28.1914 78.3635 28.2377 78.4502C28.284 78.5368 28.3589 78.6046 28.4497 78.6422C28.5404 78.6798 28.6414 78.6848 28.7354 78.6563C28.8294 78.6277 28.9106 78.5675 28.9652 78.4859C29.0198 78.4042 29.0444 78.3062 29.0348 78.2084C29.0252 78.1107 28.982 78.0193 28.9126 77.9498C28.8328 77.8701 28.7246 77.8253 28.6118 77.8252V77.8252Z" fill="white"/> <path d="M71 87C74.866 87 78 83.866 78 80C78 76.134 74.866 73 71 73C67.134 73 64 76.134 64 80C64 83.866 67.134 87 71 87Z" fill="#3E99D8"/> <path d="M70.3165 81.8641L69.0312 84.1794L71.7445 82.5394L70.3165 81.8641Z" fill="#E0E0E0"/> <path d="M74.1694 76.9916C74.1218 76.9434 74.0266 76.9434 73.9314 76.9434L66.7912 79.8375C66.696 79.8857 66.6484 79.9822 66.6484 80.0787C66.6484 80.1751 66.696 80.2716 66.7912 80.3199L72.9793 83.214C73.027 83.214 73.027 83.214 73.0746 83.214C73.1222 83.214 73.1698 83.214 73.1698 83.1657C73.2174 83.1175 73.265 83.0693 73.3126 82.9728L74.2646 77.1845C74.2646 77.1363 74.2646 77.0398 74.1694 76.9916Z" fill="white"/> <path d="M74.0294 77.1846L69.0312 81.3328V84.1787L70.3641 81.9599L74.0294 77.1846Z" fill="#F2F2F2"/> </g> <defs> <filter id="filter0_d_5493_27529" x="8" y="10" width="120" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="2"/> <feGaussianBlur stdDeviation="2"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0.513611 0 0 0 0 0.631773 0 0 0 0 0.716667 0 0 0 0.2 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5493_27529"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5493_27529" result="shape"/> </filter> <linearGradient id="paint0_linear_5493_27529" x1="3" y1="4" x2="131" y2="132.5" gradientUnits="userSpaceOnUse"> <stop offset="0.19096" stop-color="#B78DEB" stop-opacity="0"/> <stop offset="1" stop-color="#B78DEB" stop-opacity="0.15"/> </linearGradient> <linearGradient id="paint1_linear_5493_27529" x1="32.488" y1="75.688" x2="21.792" y2="84.9" gradientUnits="userSpaceOnUse"> <stop stop-color="#4A64D5"/> <stop offset="0.322" stop-color="#9737BD"/> <stop offset="0.636" stop-color="#F15540"/> <stop offset="1" stop-color="#FECC69"/> </linearGradient> <clipPath id="clip0_5493_27529"> <rect width="24" height="24" fill="white" transform="translate(100 100)"/> </clipPath> </defs> </svg>
                             </span>
                         </label>
-                        <label class="chat-label" for="cta-option-chat-view"><span></span> <?php esc_html_e("Chat view (Pro)", "chaty"); ?></label>
+                        <label class="chat-label !flex items-center gap-1 pointer-events-none" for="cta-option-chat-view">
+                            <span></span><?php esc_html_e("Chat view", "chaty"); ?>
+                            <?php do_action('chaty_upgrade_box'); ?>
+                        </label>
                     </div>
-                    <a href="#" class="upgrade-btn"><?php esc_html_e("Upgrade to Pro", "chaty"); ?></a>
+                    <a href="#" class="upgrade-btn chaty-upgrade-now-button">
+                        <?php esc_html_e("Upgrade Now", "chaty"); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -140,7 +148,7 @@ $cta_type = "simple-view";
                 <label class="custom-control custom-radio relative custom-icon-selection group">
                     <button type="button" disabled class="select-cta-fa-icon" id="select-cta-fa-icon"><?php esc_html_e("Icons Library", "chaty") ?></button>
                     <button type="button" disabled class="select-cta-image"><?php esc_html_e("Upload", "chaty") ?></button>
-                    <a class="custom-image-upgrade-btn" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                    <a class="chaty-upgrade-now-button custom-image-upgrade-btn" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
                         <?php esc_html_e('Upgrade Now', 'chaty'); ?>
                     </a>
                 </label>
@@ -148,76 +156,7 @@ $cta_type = "simple-view";
             </div>
         </div>
 
-        <div class="form-horizontal__item">
-            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base mb-2 block"><?php esc_html_e("Position", "chaty") ?>:</label>
-            <div class="tab-tab-select bg-cht-gray-50 flex-wrap gap-2 inline-flex items-center rounded-md p-1">
-                <?php
-                $position = get_option('cht_position');
-                $position = ($position != "left" && $position != "right") ? "right" : $position;
-                ?>
-                <label class="custom-control custom-radio" for="left-position">
-                    <input type="radio" id="left-position" name="cht_position" class="custom-control-input" <?php checked($position, "left") ?> value="left" />
-                    <span class="custom-control-label"><?php esc_html_e('Left', 'chaty'); ?></span>
-                </label>
 
-                <label class="custom-control custom-radio" for="right-position">
-                    <input type="radio" id="right-position" name="cht_position" class="custom-control-input" <?php checked($position, "right") ?> value="right" />
-                    <span class="custom-control-label"><?php esc_html_e('Right', 'chaty'); ?></span>
-                </label>
-
-                <span class="custom-control group relative custom-radio free-custom-radio">
-                    <input type="radio" class="custom-control-input" disabled>
-                    <span class="custom-control-label pointer-events-none"><?php esc_html_e('Custom Position', 'chaty'); ?> </span>
-                    <a class="absolute opacity-0 block z-40 group-hover:opacity-100 hover:text-white left-0 top-0 h-full py-[3px] text-base w-full text-center text-white rounded-[3px] bg-cht-primary" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
-                        (<?php esc_html_e('Upgrade to Pro', 'chaty'); ?>)
-                    </a>
-                </span>
-            </div>
-        </div>
-
-        <div class="form-horizontal__item flex-center chaty-default-state single-channel-setting active">
-            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3"><?php esc_html_e('Default state', 'chaty');?>
-            <span class="header-tooltip">
-                <span class="header-tooltip-text text-center"><?php esc_html_e('When the page loads, choose the default state of the widget. Choose between hover to open, opened by default or click to open states.', 'chaty');?></span>
-                <span class="ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </span>
-            </span>
-            </label>
-            <div>
-                <?php
-                $states = [
-                    "click" => esc_html__("Click to open", "chaty"),
-                    "hover" => esc_html__("Hover to open", "chaty"),
-                    "open"  => esc_html__("Opened by default", "chaty"),
-                ];
-                $state  = get_option('chaty_default_state');
-                $state  = empty($state) ? "click" : $state;
-                ?>
-                <select name="chaty_default_state" id="chaty_default_state" class="chaty-select">
-                    <?php foreach ($states as $key => $value) : ?>
-                        <option value="<?php echo esc_attr($key); ?>" <?php selected($state, $key); ?>><?php echo esc_attr($value); ?></option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-horizontal__item flex-center hide-show-button <?php echo esc_attr($state == "open" ? "active" : "") ?>">
-            <input type="hidden" name="cht_close_button" value="no" >
-            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 block" for="cht_close_button"><?php esc_html_e('Show close button', 'chaty');?>:</label>
-            <div>
-                <label class="switch group inline-flex">
-                    <?php $closeButton = get_option('cht_close_button'); ?>
-                    <?php $closeButton = empty($closeButton) ? "yes" : $closeButton; ?>
-                    <input data-gramm_editor="false" type="checkbox" id="cht_close_button" name="cht_close_button" value="yes" <?php checked($closeButton, "yes") ?>  >
-                    <span class="chaty-slider round"></span>
-                </label>
-            </div>
-        </div>
 
         <?php
         $color = $this->get_current_color();
@@ -273,9 +212,7 @@ $cta_type = "simple-view";
                             <div>
                                 <div class="circle">?</div>
                                 <span class="text-cht-gray-150 font-primary text-base"><?php esc_html_e('Custom color', 'chaty'); ?></span>
-                                <a class="text-cht-primary hover:text-cht-primary hover:underline font-primary text-base" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
-                                    (<?php esc_html_e('Upgrade to Pro', 'chaty'); ?>)
-                                </a>
+                                <?php do_action('chaty_upgrade_box'); ?>
                             </div>
                             <div>
                                 <input type="input" name="cht_custom_colo" placeholder="HEX code: #ffffff" value="" readonly style="cursor:not-allowed;width: 227px;" />
@@ -317,6 +254,120 @@ $cta_type = "simple-view";
                         <i class="cht-arrow-icon"></i>
                     </button>
                 </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal__item flex-center">
+            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base flex items-center gap-1 mb-3">
+                <?php esc_html_e('Widget shape', 'chaty'); ?>
+                <span class="icon inline-flex justify-center items-center label-tooltip" data-label='<?php esc_html_e('Choose the shape of your chat widget. This setting affects the widget icon and call-to-action button where applicable. Select whether the chat widget uses a round or square appearance.', 'chaty') ?>'>
+                    <span class="icon-tooltip inline-flex ml-0.5">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.00065 14.6666C11.6825 14.6666 14.6673 11.6819 14.6673 7.99998C14.6673 4.31808 11.6825 1.33331 8.00065 1.33331C4.31875 1.33331 1.33398 4.31808 1.33398 7.99998C1.33398 11.6819 4.31875 14.6666 8.00065 14.6666Z" stroke="#83A1B7" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 10.6667V8" stroke="#83A1B7" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 5.33331H8.00667" stroke="#83A1B7" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </span>
+                <?php do_action('chaty_upgrade_box'); ?>
+            </label>
+            <div class="tab-tab-select bg-cht-gray-50 rounded-md p-1 inline-flex flex-wrap items-center" id="widget-shape-action">
+                <?php
+                $widget_shape = 'circle';
+                ?>
+                <div>
+                    <label class="custom-control custom-radio" for="cht_widget_shape_circle">
+                        <input type="radio" id="cht_widget_shape_circle" name="cht_widget_shape" class="custom-control-input" <?php checked($widget_shape, "circle") ?> value="circle" />
+                        <span class="custom-control-label"><?php esc_html_e('Round', 'chaty'); ?></span>
+                    </label>
+                </div>
+                <div class="pro-feature pro-feature-disabled relative group">
+                    <label class="custom-control custom-radio" for="cht_widget_shape_square">
+                        <input disabled type="radio" id="cht_widget_shape_square" name="cht_widget_shape" class="custom-control-input" <?php checked($widget_shape, "square") ?> value="square" />
+                        <span class="custom-control-label"><?php esc_html_e('Square', 'chaty'); ?></span>
+                    </label>
+                    <a target="_blank" class="absolute pro-link opacity-0 group-hover:opacity-100 ml-2 top-[-2px] whitespace-nowrap chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal__item">
+            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base mb-2 block"><?php esc_html_e("Position", "chaty") ?>:</label>
+            <div class="tab-tab-select bg-cht-gray-50 flex-wrap gap-2 inline-flex items-center rounded-md p-1">
+                <?php
+                $position = get_option('cht_position');
+                $position = ($position != "left" && $position != "right") ? "right" : $position;
+                ?>
+                <label class="custom-control custom-radio" for="left-position">
+                    <input type="radio" id="left-position" name="cht_position" class="custom-control-input" <?php checked($position, "left") ?> value="left" />
+                    <span class="custom-control-label"><?php esc_html_e('Left', 'chaty'); ?></span>
+                </label>
+
+                <label class="custom-control custom-radio" for="right-position">
+                    <input type="radio" id="right-position" name="cht_position" class="custom-control-input" <?php checked($position, "right") ?> value="right" />
+                    <span class="custom-control-label"><?php esc_html_e('Right', 'chaty'); ?></span>
+                </label>
+
+                <span class="custom-control group relative custom-radio free-custom-radio inline-flex items-center">
+                    <input type="radio" class="custom-control-input" disabled>
+                    <span class="custom-control-label pointer-events-none !pr-2"><?php esc_html_e('Custom Position', 'chaty'); ?> </span>
+                    <?php do_action('chaty_upgrade_box'); ?>
+                    <a class="absolute opacity-0 z-40 group-hover:opacity-100 left-full ml-2 chaty-upgrade-now-button" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="form-horizontal__item flex-center chaty-default-state single-channel-setting active">
+            <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3"><?php esc_html_e('Default state', 'chaty');?>
+            <span class="header-tooltip">
+                <span class="header-tooltip-text text-center"><?php esc_html_e('When the page loads, choose the default state of the widget. Choose between hover to open, opened by default or click to open states.', 'chaty');?></span>
+                <span class="ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </span>
+            </span>
+            </label>
+            <div>
+                <?php
+                $states = [
+                    "click" => esc_html__("Click to open", "chaty"),
+                    "hover" => esc_html__("Hover to open", "chaty"),
+                    "open"  => esc_html__("Opened by default", "chaty"),
+                ];
+                $state  = get_option('chaty_default_state');
+                $state  = empty($state) ? "click" : $state;
+                ?>
+                <select name="chaty_default_state" id="chaty_default_state" class="chaty-select">
+                    <?php foreach ($states as $key => $value) : ?>
+                        <option value="<?php echo esc_attr($key); ?>" <?php selected($state, $key); ?>><?php echo esc_attr($value); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-horizontal__item flex-center hide-show-button <?php echo esc_attr($state == "open" ? "active" : "") ?>">
+            <input type="hidden" name="cht_close_button" value="no" >
+            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 block" for="cht_close_button"><?php esc_html_e('Show close button', 'chaty');?>:</label>
+            <div>
+                <label class="switch group inline-flex">
+                    <?php $closeButton = get_option('cht_close_button'); ?>
+                    <?php $closeButton = empty($closeButton) ? "yes" : $closeButton; ?>
+                    <input data-gramm_editor="false" type="checkbox" id="cht_close_button" name="cht_close_button" value="yes" <?php checked($closeButton, "yes") ?>  >
+                    <span class="chaty-slider round"></span>
+                </label>
             </div>
         </div>
 
@@ -379,73 +430,109 @@ $cta_type = "simple-view";
             <input id="custom-widget-size-input" name="cht_widget_size" type="hidden" value="<?php echo esc_attr($size) ?>"/>
         </div>
 
-        <div class="form-horizontal__item cht-option-settings max-w-[410px]" >
+        <div class="form-horizontal__item cht-option-settings max-w-[410px]" id="cht-cta-text-settings">
             <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-3"><?php esc_html_e('Call to action', 'chaty'); ?>:</label>
-            <div class="disable-message" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Call to action" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
+            <div class="disable-message relative" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Call to action" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
                 <?php $cta = get_option('cht_cta');?>
                  <textarea class="test_textarea chaty-setting-textarea chaty-cta-setting-textarea" id="cht_cta_textarea" type="text"  data-value="<?php echo esc_attr(wp_unslash($cta)) ?>" name="cht_cta" ><?php echo esc_attr(wp_unslash($cta)) ?></textarea>
-            </div>
-        </div>
 
-        <div class="form-horizontal__item flex-center">
-            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-2">
-                <?php esc_html_e('Call to action behavior', 'chaty'); ?>
-                <span class="header-tooltip">
-                    <span class="header-tooltip-text text-center"><?php esc_html_e('Choose how the CTA button would appear. &quot;Hide after first click&quot; hides the CTA button after the first visit. If you select the second option, the CTA stays visible all the time', "chaty") ?></span>
-                    <span class="ml-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </span>
-                </span>
-            </label>
-            <div class="cta-action-radio tab-tab-select bg-cht-gray-50 inline-block rounded-md p-1" id="cta-action">
-                <?php
-                $ctaAction = get_option('cht_cta_action');
-                $ctaAction = empty($ctaAction) ? "click" : $ctaAction;
-                ?>
-                <div class=" disable-message" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Show call to action" feature doesn\'t apply because the Chaty widget is already open.','chaty') ?>' for="all_time-cht_cta_action">
-                    <label class="custom-control custom-radio">
-                        <input type="radio" id="click-cht_cta_action" name="cht_cta_action" class="custom-control-input" <?php checked($ctaAction, "click") ?> value="click" />
-                        <span class="custom-control-label"><?php esc_html_e('Hide after first click', 'chaty'); ?></span>
-                    </label>
-                </div>
-                <div class=" disable-message" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Show call to action" feature doesn\'t apply because the Chaty widget is already open.','chaty') ?>' for="all_time-cht_cta_action">
-                    <label class="custom-control custom-radio">
-                        <input type="radio" id="all_time-cht_cta_action" name="cht_cta_action" class="custom-control-input" <?php checked($ctaAction, "all_time") ?> value="all_time" />
-                        <span class="custom-control-label"><?php esc_html_e('Show all the time', 'chaty'); ?></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <div class="color-setting">
-            <div class="color-box flex flex-wrap gap-5 sm:gap-8">
-                <div>
-                    <?php
-                    $val = get_option("cht_cta_text_color");
-                    $val = ($val === false) ? "#333333" : $val;
-                    $val = $this->validate_color($val, "#333333");
-                    ?>
-                    <div class="form-horizontal__item flex items-center gap-2 flex-center">
-                        <label class="form-horizontal__item-label font-primary text-base text-cht-gray-150 block"><?php esc_html_e('Call to action text color', 'chaty');?>:</label>
-                        <div class="disable-message" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Attention effect" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
-                            <input value="<?php echo esc_attr($val) ?>" type="text" class="chaty-color-field" name="cht_cta_text_color" id="cht_cta_text_color">
-                        </div>
+                <div class="cta-option-settings">
+                    <div class="font-primary text-cht-gray-150 text-base font-semibold mb-2.5">
+                        <?php esc_html_e('Call to Action Customization', 'chaty'); ?>
                     </div>
-                </div>
-                <div>
-                    <?php
-                    $val = get_option("cht_cta_bg_color");
-                    $val = ($val === false) ? "#ffffff" : $val;
-                    $val = $this->validate_color($val, "#ffffff");
-                    ?>
-                    <div class="form-horizontal__item flex items-center gap-2 flex-center">
-                        <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base block"><?php esc_html_e('Call to action background', 'chaty');?>:</label>
-                        <div class="disable-message" data-label='<?php esc_html_e('When the default state is set to "Opened by default", the "Attention effect" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
-                            <input value="<?php echo esc_attr($val) ?>" type="text" class="chaty-color-field" name="cht_cta_bg_color" id="cht_cta_bg_color">
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base flex items-center gap-1 mb-1">
+                                <?php esc_html_e('Placement', 'chaty'); ?>
+                                <span class="icon label-tooltip" data-label='<?php esc_html_e('Choose where the call-to-action button appears. Display it outside the widget or inside the widget for a cleaner, more compact design.', 'chaty') ?>'>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <?php do_action('chaty_upgrade_box'); ?>
+                            </label>
+                            <div class="cta-options">
+                                <div class="cta-option cta-radio">
+                                    <input id="cta_placement-outside" disabled checked name="cht_cta_placement" value="outside" type="radio" class="sr-only" >
+                                    <label class="chat-label" for="cta_placement-outside"><span></span> <?php esc_html_e("Outside the Widget", "chaty"); ?></label>
+                                </div>
+                                <div class="cta-option cta-radio">
+                                    <input id="cta_placement-inside" disabled name="cht_cta_placement" value="inside" type="radio" class="sr-only" >
+                                    <label class="chat-label" for="cta_placement-inside"><span></span> <?php esc_html_e("Inside the Widget", "chaty"); ?></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tooltip-settings" class="color-setting">
+                            <div class="color-box flex gap-3">
+                                <div class="clr-setting flex-[0_0_150px]">
+                                    <?php
+                                    $val = get_option("cht_cta_text_color");
+                                    $val = ($val === false) ? "#333333" : $val;
+                                    $val = $this->validate_color($val, "#333333");
+                                    ?>
+                                    <div class="form-horizontal__item flex flex-col">
+                                        <label class="form-horizontal__item-label text-base font-primary text-cht-gray-150 inline-block"><?php esc_html_e('Tooltip Text Color', 'chaty');?>:</label>
+                                        <div>
+                                            <div class="disable-message" data-title='<?php esc_html_e('When the default state is set to "Opened by default", the "Attention effect" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
+                                                <input value="<?php echo esc_attr($val) ?>" type="text" class="chaty-color-field" name="cht_cta_text_color" id="cht_cta_text_color">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr-setting" id="cta_bg_color">
+                                    <?php
+                                    $val = get_option("cht_cta_bg_color");
+                                    $val = ($val === false) ? "#ffffff" : $val;
+                                    $val = $this->validate_color($val, "#ffffff");
+                                    ?>
+                                    <div class="form-horizontal__item flex flex-col">
+                                        <label class="form-horizontal__item-label font-primary text-cht-gray-150 text-base inline-block"><?php esc_html_e('Tooltip Background Color', 'chaty');?>:</label>
+                                        <div>
+                                            <div class="disable-message" data-title='<?php esc_html_e('When the default state is set to "Opened by default", the "Attention effect" feature doesn\'t apply because the Chaty widget is already open.', 'chaty') ?>'>
+                                                <input value="<?php echo esc_attr($val) ?>" type="text" class="chaty-color-field" name="cht_cta_bg_color" id="cht_cta_bg_color">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-text-settings">
+                            <label class="align-top form-horizontal__item-label font-primary text-cht-gray-150 text-base block mb-1">
+                                <?php esc_html_e('Call to action behavior', 'chaty'); ?>
+                                <span class="icon label-tooltip" data-label='<?php esc_html_e('Choose how the CTA button would appear. "Hide after first click" hides the CTA button after the first visit. If you select the second option, the CTA stays visible all the time', 'chaty') ?>'>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </label>
+                            <div class="cta-options">
+                                <?php
+                                $cta_action = get_option('cht_cta_action');
+                                $cta_action = empty($cta_action) ? "click" : $cta_action;
+                                ?>
+                                <div class="cta-option cta-radio" >
+                                    <input type="radio" id="click-cht_cta_action" name="cht_cta_action" class="sr-only" <?php checked($cta_action, "click") ?> value="click" />
+                                    <label class="chat-label" for="click-cht_cta_action">
+                                        <span></span>
+                                        <?php esc_html_e('Hide after first click', 'chaty'); ?>
+                                    </label>
+                                </div>
+                                <div class="cta-option cta-radio">
+                                    <input type="radio" id="all_time-cht_cta_action" name="cht_cta_action" class="sr-only" <?php checked($cta_action, "all_time") ?> value="all_time" />
+                                    <label class="chat-label" for="all_time-cht_cta_action">
+                                        <span></span>
+                                        <?php esc_html_e('Show all the time', 'chaty'); ?>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -454,24 +541,24 @@ $cta_type = "simple-view";
 
         <div class="form-horizontal__item flex-center">
             <input type="hidden" class="cht-page-title-for-change" name="cht_page_title_for_change" value="0" >
-            <label class="form-horizontal__item-label  font-primary text-cht-gray-150 text-base mb-2 inline-block"><?php esc_html_e('Change the title of page', 'chaty');?>
-            <span class="header-tooltip">
-                <span class="header-tooltip-text text-center">
-                     <img src="<?php echo esc_url(CHT_PLUGIN_URL . 'admin/assets/images/chaty-changing-title.gif') ?>" alt="chaty-changing-title" class="inline-block"> 
-                    </br>
-                    </br>
-                    <?php printf(esc_html__("Grab the attention of visitors with the changing titles. It applies to the text within the <title> tag. The title will change between the selected and original titles every second until the visitor opens the widget.", "chaty")) ?>
+            <label class="form-horizontal__item-label  font-primary text-cht-gray-150 text-base mb-2 flex items-center gap-1"><?php esc_html_e('Change the title of page', 'chaty');?>
+                <span class="header-tooltip">
+                    <span class="header-tooltip-text text-center">
+                         <img src="<?php echo esc_url(CHT_PLUGIN_URL . 'admin/assets/images/chaty-changing-title.gif') ?>" alt="chaty-changing-title" class="inline-block">
+                        </br>
+                        </br>
+                        <?php printf(esc_html__("Grab the attention of visitors with the changing titles. It applies to the text within the <title> tag. The title will change between the selected and original titles every second until the visitor opens the widget.", "chaty")) ?>
 
+                    </span>
+                    <span class="ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
                 </span>
-
-                <span class="ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </span>
-            </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div>
                 <label class="switch group inline-flex">
@@ -482,8 +569,11 @@ $cta_type = "simple-view";
                     <input type="hidden" name="cht_page_title_for_change" value="off">
                     <input data-gramm_editor="false" type="checkbox" name="cht_page_title_for_change" value="1" <?php checked($checked, 1) ?> <?php echo esc_attr($disabled) ?> >
                     <span class="chaty-slider round"></span>
-                    <a target="_blank" class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary rounded-[6px] text-white hover:text-white" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
-                        <?php esc_html_e('Upgrade to Pro', 'chaty'); ?>
+                    <a target="_blank" class="opacity-0 group-hover:opacity-100 ml-4 chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
                     </a>
                 </label>
             </div> 
@@ -491,17 +581,18 @@ $cta_type = "simple-view";
 
         <div class="form-horizontal__item flex-center">
             <input type="hidden" name="cht_google_analytics" value="0" >
-            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 block"><?php esc_html_e('Google Analytics', 'chaty');?>
-            <span class="header-tooltip">
-                <span class="header-tooltip-text text-center"><?php echo sprintf(esc_html__("Enable google analytics tracking on the widget clicks. You can %1\$s", 'chaty'),"<a href='https://premio.io/help/chaty/how-do-i-track-chaty-clicks-using-google-analytics/' target='_blank'>".esc_html__("learn more here", "chaty")."</a>") ;?></span>
-                <span class="ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 flex gap-1 items-center"><?php esc_html_e('Google Analytics', 'chaty');?>
+                <span class="header-tooltip">
+                    <span class="header-tooltip-text text-center"><?php echo sprintf(esc_html__("Enable google analytics tracking on the widget clicks. You can %1\$s", 'chaty'),"<a href='https://premio.io/help/chaty/how-do-i-track-chaty-clicks-using-google-analytics/' target='_blank'>".esc_html__("learn more here", "chaty")."</a>") ;?></span>
+                    <span class="ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
                 </span>
-            </span>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div>
                 <label class="switch group inline-flex">
@@ -510,8 +601,11 @@ $cta_type = "simple-view";
                     ?>
                     <input data-gramm_editor="false" type="checkbox" name="cht_google_analytics" value="1" <?php checked($checked, 1) ?> <?php echo esc_attr($disabled) ?> >
                     <span class="chaty-slider round"></span>
-                    <a target="_blank" class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary rounded-[6px] text-white hover:text-white" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
-                        <?php esc_html_e('Upgrade to Pro', 'chaty'); ?>
+                    <a target="_blank" class="opacity-0 group-hover:opacity-100 ml-4 chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
                     </a>
                 </label>
             </div>
@@ -519,28 +613,32 @@ $cta_type = "simple-view";
 
         <div class="form-horizontal__item flex-center">
             <input type="hidden" name="cht_google_analytics" value="0" >
-            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 block"><?php esc_html_e('Background blur effect', 'chaty');?>
-                <div class="html-tooltip top">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </span>
+            <label class="form-horizontal__item-label text-cht-gray-150 font-primary text-base mb-2 flex items-center"><?php esc_html_e('Background blur effect', 'chaty');?>
+                <div class="html-tooltip top ml-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
                     <span class="tooltip-text top">
-                            <?php esc_html_e("Blur the background when the widget is in the open state. Useful for drawing the user's attention to the widget.", "chaty") ?>
-                            <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>/admin/assets/images/blur-screen.png" class="blur-screen-img"/>
-                        </span>
+                        <?php esc_html_e("Blur the background when the widget is in the open state. Useful for drawing the user's attention to the widget.", "chaty") ?>
+                        <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>/admin/assets/images/blur-screen.png" class="blur-screen-img"/>
+                    </span>
                 </div>
+                <?php do_action('chaty_upgrade_box'); ?>
             </label>
             <div>
                 <label class="switch group inline-flex">
                     <input data-gramm_editor="false" type="checkbox" name="cht_bg_blur_effect" value="1" <?php echo esc_attr($disabled) ?> >
                     <span class="chaty-slider round"></span>
-                    <a target="_blank" class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary rounded-[6px] text-white hover:text-white" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
-                        <?php esc_html_e('Upgrade to Pro', 'chaty'); ?>
+                    <a target="_blank" class="opacity-0 group-hover:opacity-100 ml-4 chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
                     </a>
                 </label>
             </div>
@@ -604,6 +702,39 @@ $cta_type = "simple-view";
                         <option value="<?php echo esc_attr($key); ?>" <?php selected($effect, $key); ?>><?php echo esc_attr($value); ?></option>
                     <?php endforeach; ?>
                 </select>
+            </div>
+        </div>
+
+        <div class="form-horizontal__item flex-center">
+            <label for="cht_widget_border" class="form-horizontal__item-label flex gap-1 items-center font-primary text-cht-gray-150 text-base mb-2">
+                <?php esc_html_e('Widget border', 'chaty');?>
+                <span class="header-tooltip">
+                    <span class="header-tooltip-text text-center"><?php esc_html_e("Add a subtle border around the widget to help it stand out against your website's background.", "chaty") ?></span>
+                    <span class="ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </span>
+                <?php do_action('chaty_upgrade_box'); ?>
+            </label>
+            <div class="">
+                <label class="switch group inline-flex" for="cht_widget_border">
+                    <?php
+                    $checked      =  "off";
+                    ?>
+                    <input type="hidden" name="cht_widget_border" value="off">
+                    <input <?php echo esc_attr($disabled) ?> type="checkbox" id="cht_widget_border" name="cht_widget_border" value="on" <?php checked($checked, "on") ?>>
+                    <span class="chaty-slider round"></span>
+                    <a target="_blank" class="opacity-0 group-hover:opacity-100 ml-4 chaty-upgrade-now-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                        <?php esc_html_e('Upgrade Now', 'chaty'); ?>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </label>
             </div>
         </div>
 

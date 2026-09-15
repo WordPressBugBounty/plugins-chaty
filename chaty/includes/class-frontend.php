@@ -719,12 +719,10 @@ class CHT_Frontend extends CHT_Admin_Base
                 $in_footer = apply_filters('show_chaty_script_in_footer', true);
 
                 // WP change this
-                wp_enqueue_style('chaty-front-css', CHT_PLUGIN_URL."css/chaty-front".esc_attr($minified).".css", [], CHT_VERSION.$chaty_updated_on);
-                wp_enqueue_script("chaty-front-end", CHT_PLUGIN_URL."js/cht-front-script".esc_attr($minified).".js", [ 'jquery' ], CHT_VERSION.$chaty_updated_on, $in_footer);
+                wp_enqueue_style('chaty-front-css', CHT_PLUGIN_URL."dist/css/style.css", [], CHT_VERSION.$chaty_updated_on);
+                wp_enqueue_script("chaty-front-end", CHT_PLUGIN_URL."dist/js/script.js", [ 'jquery' ], CHT_VERSION.$chaty_updated_on, $in_footer);
 
-                if($this->hasEmail) {
-                    wp_enqueue_script("chaty-mail-check", CHT_PLUGIN_URL . "admin/assets/js/mailcheck.js", ['jquery'], CHT_VERSION, $in_footer);
-                }
+                wp_enqueue_script("chaty-mail-check", CHT_PLUGIN_URL . "admin/assets/js/mailcheck.js", ['jquery'], CHT_VERSION, $in_footer);
 
                 if($this->hasEmoji) {
                     wp_enqueue_script('chaty-picmo-js', CHT_PLUGIN_URL . 'admin/assets/js/picmo-umd.min.js', ['jquery'], CHT_VERSION, $in_footer);
@@ -747,7 +745,7 @@ class CHT_Frontend extends CHT_Admin_Base
                     // Only run this if WP version >= 6.3
                     if ( version_compare( get_bloginfo( 'version' ), '6.3', '>=' ) ) {
                         add_filter( 'script_loader_tag', function ( $tag, $handle ) {
-                            if ( in_array( $handle, [ 'chaty-front-end', 'chaty-mail-check' ] ) ) {
+                            if ( in_array( $handle, [ 'chaty-front-end', 'chaty-mail-check', 'chaty-autocomplete' ] ) ) {
                                 return str_replace( '<script ', '<script defer ', $tag );
                             }
                             return $tag;

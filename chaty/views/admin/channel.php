@@ -539,7 +539,10 @@ $isAgent = 0;
                     <span><?php esc_html_e("Add Custom Field", "chaty"); ?></span>
                     <div class="pro-button !w-full !top-0 !transform-none !leading-8 !left-0 !m-0">
                         <span class="pro-btn text-white rounded-md !w-full bg-cht-primary hover:text-white">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </span>
                     </div>
                 </a>
@@ -608,7 +611,10 @@ $isAgent = 0;
                     </span>
                     <div class="pro-button w-full !top-0 !transform-none">
                         <span class="pro-btn !w-full !leading-8 text-white rounded-md bg-cht-primary hover:text-white">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </span>
                     </div>
                 </a>
@@ -634,7 +640,10 @@ $isAgent = 0;
                     </span>
                     <div class="pro-button">
                         <span class="pro-btn text-white rounded-md bg-cht-primary hover:text-white">
-                            <?php esc_html_e('Upgrade to Pro', 'chaty');?>
+                            <?php esc_html_e('Upgrade Now', 'chaty');?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </span>
                     </div>
                 </a>
@@ -684,7 +693,12 @@ $isAgent = 0;
                             <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" class="upload-chaty-icon"><span class="dashicons dashicons-upload"></span> <?php esc_html_e("Custom Image", "chaty") ?></a>
                         </div>
                         <div class="pro-button">
-                            <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>"><?php esc_html_e('Upgrade to Pro', 'chaty');?></a>
+                            <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
+                                <?php esc_html_e('Upgrade Now', 'chaty');?>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
@@ -693,7 +707,12 @@ $isAgent = 0;
                             <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" class="upload-chaty-icon"><?php esc_html_e("Change Icon", "chaty") ?></a>
                         </div>
                         <div class="pro-button">
-                            <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>"><?php esc_html_e('Upgrade to Pro', 'chaty');?></a>
+                            <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
+                                <?php esc_html_e('Upgrade Now', 'chaty');?>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -876,7 +895,7 @@ $isAgent = 0;
                             <label class="text-cht-gray-150 font-primary full-width chaty-switch text-sm" for="save_leads_locally_<?php echo esc_attr($social['slug']); ?>">
                                 <input type="checkbox" disabled id="save_leads_locally_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[save_leads_locally]" <?php checked($fieldValue, "yes") ?>>
                                 <div class="chaty-slider round"></div>
-                                Save leads to<a href="<?php echo esc_url(admin_url("admin.php?page=chaty-contact-form-feed")) ?>" target="_blank">this site</a>
+                                Save leads to <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-contact-form-feed")) ?>" target="_blank">this site</a>
                                 <div class="html-tooltip hidden sm:inline-block top no-position">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -889,127 +908,85 @@ $isAgent = 0;
                                 </div>
                             </label>
                         </div>
-                        <?php $fieldValue = isset($value['send_leads_in_email']) ? $value['send_leads_in_email'] : "no" ?>
-                        <div class="chaty-setting-col">
-                            <label class="text-cht-gray-150 font-primary full-width text-sm no-padding pro-feature email-setting" for="save_leads_to_email_<?php echo esc_attr($social['slug']); ?>" >
-                                <div class="chaty-switch">
-                                    <input class="email-setting-field" disabled type="checkbox" id="save_leads_to_email_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_in_email]">
+                        <div class="flex flex-col gap-2 pt-1">
+                            <div class="chaty-setting-col">
+                                <label class="text-cht-gray-150 font-primary full-width text-sm no-padding pro-feature email-setting flex items-center gap-2" for="save_leads_to_email_<?php echo esc_attr($social['slug']); ?>" >
+                                    <div class="chaty-switch">
+                                        <input class="email-setting-field" disabled type="checkbox" id="save_leads_to_email_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_in_email]" />
+                                        <div class="chaty-slider round"></div>
+                                        <?php esc_html_e('Send leads to your email', 'chaty') ?>
+                                    </div>
+                                    <div>
+                                        <span class="icon label-tooltip" data-label="<?php esc_html_e("Get your leads by email, whenever you get a new email you'll get an email notification", "chaty") ?>">
+                                            <span class="mt-1.5 inline-block">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                    <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                        <?php do_action('chaty_upgrade_box'); ?>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="chaty-setting-col">
+                                <label class="text-cht-gray-150 font-primary full-width chaty-switch text-sm pro-feature" for="enable_recaptcha_<?php echo esc_attr($social['slug']); ?>" class="email-setting full-width font-primary text-cht-gray-150">
+                                    <div class="chaty-switch">
+                                        <input class="captcha-setting-field" type="checkbox" id="enable_recaptcha_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[enable_recaptcha]" disabled>
+                                        <div class="chaty-slider round"></div>
+                                        <?php esc_html_e('Enable reCAPTCHA', 'chaty') ?>
+                                        <span class="header-tooltip">
+                                            <span class="header-tooltip-text text-center">
+                                                <?php printf(esc_html__("Click %1\$s to add your website. (please make sure you select V3). After adding your website you'll get your site Key and secret key.", "chaty"), "<a target='_blank' href='https://www.google.com/recaptcha/admin/create'>".esc_html__("here", "chaty")."</a>") ?>
+                                            </span>
+                                            <span class="ml-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <?php do_action('chaty_upgrade_box'); ?>
+                                </label>
+                            </div>
+                            <div class="chaty-setting-col">
+                                <label for="capture_ip_address_<?php echo esc_attr($social['slug']); ?>" class="full-width chaty-switch text-sm text-cht-gray-150 flex items-center group-custom pro-feature">
+                                    <input class="capture-ip-address-field" type="checkbox" id="capture_ip_address_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[capture_ip_address]" disabled>
                                     <div class="chaty-slider round"></div>
-                                    <?php esc_html_e('Send leads to your email', 'chaty') ?>
-                                </div>
-                                <div>
-                                    <span class="icon label-tooltip" data-label="<?php esc_html_e("Get your leads by email, whenever you get a new email you'll get an email notification", "chaty") ?>">
-                                        <span class="mt-1.5 inline-block">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <?php esc_html_e("Capture IP address", "chaty") ?>
+                                    <span class="header-tooltip">
+                                        <span class="header-tooltip-text text-center">
+                                            <?php printf(esc_html__("Capture the visitor's IP address when they submit the form.", 'chaty')) ?>
+                                        </span>
+                                        <span class="ml-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                 <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </span>
                                     </span>
-                                    <a class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary inline-block rounded-[6px] text-white hover:text-white" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                                        <?php esc_html_e('Upgrade to Pro', 'chaty');?>
-                                    </a>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="email-settings <?php echo ($fieldValue == "yes") ? "active" : "" ?>">
-                            <div class="chaty-setting-col">
-                                <label for="email_for_<?php echo esc_attr($social['slug']); ?>"><?php esc_html_e("Email address", "chaty") ?></label>
-                                <div>
-                                    <?php $fieldValue = isset($value['email_address']) ? $value['email_address'] : "" ?>
-                                    <input id="email_for_<?php echo esc_attr($social['slug']); ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[email_address]" value="<?php echo esc_attr($fieldValue); ?>">
-                                </div>
+                                    <?php do_action('chaty_upgrade_box'); ?>
+                                </label>
                             </div>
                             <div class="chaty-setting-col">
-                                <label for="sender_name_for_<?php echo esc_attr($social['slug']); ?>"><?php esc_html_e("Sender's name", "chaty") ?></label>
-                                <div>
-                                    <?php $fieldValue = isset($value['sender_name']) ? $value['sender_name'] : "" ?>
-                                    <input id="sender_name_for_<?php echo esc_attr($social['slug']); ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[sender_name]" value="<?php echo esc_attr($fieldValue); ?>">
-                                </div>
-                            </div>
-                            <div class="chaty-setting-col flex flex-row gap-1">
-                                <label for="email_subject_for_<?php echo esc_attr($social['slug']); ?>"><?php esc_html_e("Email subject", "chaty") ?></label>
-                                <div>
-                                    <?php $fieldValue = isset($value['email_subject']) ? $value['email_subject'] : "New lead from Chaty - {name} - {date} {hour}" ?>
-                                    <input id="email_subject_for_<?php echo esc_attr($social['slug']); ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[email_subject]" value="<?php echo esc_attr($fieldValue); ?>">
-                                    <div class="mail-merge-tags">
-                                        <span>{name}</span><span>{phone}</span><span>{email}</span><span>{date}</span><span>{hour}</span>
+                                <label class="text-cht-gray-150 font-primary full-width chaty-switch text-sm pro-feature" for="send_leads_mailchimp_mailpoet<?php echo esc_attr($social['slug']); ?>" class="email-setting full-width font-primary text-cht-gray-150">
+                                    <div class="chaty-switch">
+                                        <input class="" type="checkbox" id="send_leads_mailchimp_mailpoet<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_mailchimp_mailpoet]" disabled>
+                                        <div class="chaty-slider round"></div>
+                                        <?php esc_html_e('Send leads to Mailchimp/Klaviyo', 'chaty') ?>
                                     </div>
-                                </div>
+                                    <?php do_action('chaty_upgrade_box'); ?>
+                                </label>
                             </div>
-                        </div>
-                        <?php $field_value = isset($value['enable_recaptcha']) ? $value['enable_recaptcha'] : "no" ?>
-                        <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[enable_recaptcha]" >
-                        <div class="chaty-setting-col">
-                            <label class="text-cht-gray-150 font-primary full-width chaty-switch text-sm pro-feature" for="enable_recaptcha_<?php echo esc_attr($social['slug']); ?>" class="email-setting full-width font-primary text-cht-gray-150">
-                                <div class="chaty-switch">
-                                <input class="captcha-setting-field" type="checkbox" id="enable_recaptcha_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[enable_recaptcha]" <?php checked($field_value, "yes") ?> disabled>
-                                    <div class="chaty-slider round"></div>
-                                    <?php esc_html_e('Enable reCAPTCHA', 'chaty') ?>
-                                    <span class="header-tooltip">
-                                    <span class="header-tooltip-text text-center">
-                                        <?php printf(esc_html__("Click %1\$s to add your website. (please make sure you select V3). After adding your website you'll get your site Key and secret key.", "chaty"), "<a target='_blank' href='https://www.google.com/recaptcha/admin/create'>".esc_html__("here", "chaty")."</a>") ?>
-                                    </span>
-                                    <span class="ml-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </span>
-                                </span>
-                                </div>
-                                <div>
-                                    <a class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary inline-block rounded-[6px] text-white hover:text-white" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                                        <?php esc_html_e('Upgrade to Pro', 'chaty');?>
-                                    </a>
-                                </div>
-                            </label>
-                        </div>
-                        <?php $field_value = isset($value['capture_ip_address']) ? $value['capture_ip_address'] : "no" ?>
-                        <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[capture_ip_address]" >
-                        <div class="chaty-setting-col">
-                            <label for="capture_ip_address_<?php echo esc_attr($social['slug']); ?>" class="full-width chaty-switch text-sm text-cht-gray-150 flex items-center group-custom pro-feature">
-                                <input class="capture-ip-address-field" type="checkbox" id="capture_ip_address_<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[capture_ip_address]" <?php checked($field_value, "yes") ?> disabled>
-                                <div class="chaty-slider round"></div>
-                                <?php esc_html_e("Capture IP address", "chaty") ?>
-                                <span class="header-tooltip">
-                                <span class="header-tooltip-text text-center">
-                                    <?php printf(esc_html__("Capture the visitor's IP address when they submit the form.", 'chaty')) ?>
-                                </span>
-                                <span class="ml-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </span>
-                                </span>
-                                <div>
-                                    <a class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary inline-block rounded-[6px] text-white hover:text-white" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                                        <?php esc_html_e('Upgrade to Pro', 'chaty');?>
-                                    </a>
-                                </div>
-                            </label>
-                        </div>
-                        <?php $field_value = isset($value['send_leads_mailchimp_mailpoet']) ? $value['send_leads_mailchimp_mailpoet'] : "no" ?>
-                        <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_mailchimp_mailpoet]" >
-                        <div class="chaty-setting-col">
-                            <label class="text-cht-gray-150 font-primary full-width chaty-switch text-sm pro-feature" for="send_leads_mailchimp_mailpoet<?php echo esc_attr($social['slug']); ?>" class="email-setting full-width font-primary text-cht-gray-150">
-                                <div class="chaty-switch">
-                                    <input class="" type="checkbox" id="send_leads_mailchimp_mailpoet<?php echo esc_attr($social['slug']); ?>" value="yes" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_mailchimp_mailpoet]" <?php checked($field_value, "yes") ?> disabled>
-                                    <div class="chaty-slider round"></div>
-                                    <?php esc_html_e('Send leads to Mailchimp/Klaviyo', 'chaty') ?>
-                                </div>
-                                <div>
-                                    <a class="opacity-0 px-5 py-1.5 group-hover:opacity-100 ml-4 pro-btn bg-cht-primary inline-block rounded-[6px] text-white hover:text-white" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>">
-                                        <?php esc_html_e('Upgrade to Pro', 'chaty');?>
-                                    </a>
-                                </div>
-                            </label>
                         </div>
                     </div>
+                    <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[enable_recaptcha]" />
+                    <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[capture_ip_address]" />
+                    <input type="hidden" value="no" name="cht_social_<?php echo esc_attr($social['slug']); ?>[send_leads_mailchimp_mailpoet]" />
                 </div>
             <?php } ?>
             <div class="Whatsapp-settings advanced-settings">
@@ -1029,13 +1006,7 @@ $isAgent = 0;
                                 </span>
                             </span>
                         </span>
-                        <a href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" target="_blank" class="bg-[#7459B3] text-white hover:text-white gap-1 focus:text-white rounded-md inline-flex items-center py-1 px-2 text-xs">
-                            <?php esc_html_e("Upgrade Now", "chaty"); ?>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33301 8H12.6663" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 3.3335L12.6667 8.00016L8 12.6668" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                        <?php do_action('chaty_upgrade_box'); ?>
                     </label>
                     <div class="custom-input-tags">
                         <textarea placeholder="{title} and {URL} tags are supported" class="pre-set-message py-2 px-3 w-full max-w-[320px] rounded-md h-20 !bg-[#EAEFF2]" disabled id="cht_social_message_<?php echo esc_attr($social['slug']); ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[pre_set_message]"></textarea>
@@ -1048,23 +1019,19 @@ $isAgent = 0;
                 <?php $preSetMessage = isset($value['sms_pre_set_message']) ? $value['sms_pre_set_message'] : ""; ?>
                 <div class="chaty-setting-col flex flex-col gap-1">
                     <label class="font-primary text-sm text-cht-gray-150 w-full max-w-[320px] mt-2 flex items-center justify-between">
-                        <?php esc_html_e("Pre Set Message", "chaty") ?>
-                        <span class="icon label-tooltip inline-tooltip" data-label="<?php esc_html_e("Add your own pre-set message that's automatically added to the user's message. You can also use merge tags and add the URL or the title of the current visitor's page. E.g. you can add the current URL of a product to the message so you know which product the visitor is talking about when the visitor messages you", "chaty"); ?>">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="20" height="27" viewBox="0 0 20 20" fill="none">
-                                    <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
+                        <div>
+                            <?php esc_html_e("Pre Set Message", "chaty") ?>
+                            <span class="icon label-tooltip inline-tooltip" data-label="<?php esc_html_e("Add your own pre-set message that's automatically added to the user's message. You can also use merge tags and add the URL or the title of the current visitor's page. E.g. you can add the current URL of a product to the message so you know which product the visitor is talking about when the visitor messages you", "chaty"); ?>">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="20" height="27" viewBox="0 0 20 20" fill="none">
+                                        <path d="M8.00004 14.6654C11.6819 14.6654 14.6667 11.6806 14.6667 7.9987C14.6667 4.3168 11.6819 1.33203 8.00004 1.33203C4.31814 1.33203 1.33337 4.3168 1.33337 7.9987C1.33337 11.6806 4.31814 14.6654 8.00004 14.6654Z" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8 10.6667V8" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8 5.33203H8.00667" stroke="#72777c" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
                             </span>
-                        </span>
-                        <a href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" target="_blank" class="bg-[#7459B3] text-white hover:text-white gap-1 focus:text-white rounded-md inline-flex items-center py-1 px-2 text-xs">
-                            <?php esc_html_e("Upgrade Now", "chaty"); ?>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33301 8H12.6663" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 3.3335L12.6667 8.00016L8 12.6668" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                        </div>
+                        <?php do_action('chaty_upgrade_box'); ?>
                     </label>
                     <div class="custom-input-tags">
                         <textarea placeholder="{title} and {URL} tags are supported" class="pre-set-message py-2 px-3 w-full max-w-[320px] rounded-md h-20 !bg-[#EAEFF2]" disabled id="cht_social_sms_message_<?php echo esc_attr($social['slug']); ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[sms_pre_set_message]"></textarea>
@@ -1076,7 +1043,7 @@ $isAgent = 0;
             <div class="Email-settings advanced-settings">
                 <div class="chaty-setting-col flex flex-col gap-1">
                     <label class="font-primary text-sm text-cht-gray-150 w-full max-w-[320px] mt-2 flex items-center justify-between">
-                        <div>
+                        <div class="inline-flex justify-start">
                             <?php esc_html_e("Mail Subject", "chaty") ?>
                             <span class="icon label-tooltip inline-tooltip" data-label="<?php esc_html_e("Add your own pre-set message that's automatically added to the user's message. You can also use merge tags and add the URL or the title of the current visitor's page. E.g. you can add the current URL of a product to the message so you know which product the visitor is talking about when the visitor messages you", "chaty"); ?>">
                                 <span>
@@ -1089,13 +1056,7 @@ $isAgent = 0;
                                 </span>
                             </span>
                         </div>
-                        <a href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" target="_blank" class="bg-[#7459B3] text-white hover:text-white gap-1 focus:text-white rounded-md inline-flex items-center py-1 px-2 text-xs">
-                            <?php esc_html_e("Upgrade Now", "chaty"); ?>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33301 8H12.6663" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 3.3335L12.6667 8.00016L8 12.6668" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                        <?php do_action('chaty_upgrade_box'); ?>
                     </label>
                     <div class="custom-input-tags">
                         <input disabled class="rounded-md !bg-[#EAEFF2]" id="cht_social_message_<?php echo esc_attr($social['slug']); ?>" type="text" name="" value="">
@@ -1106,7 +1067,10 @@ $isAgent = 0;
 
             <div class="WeChat-settings advanced-settings">
                 <div class="clear clearfix"></div>
-                <div class="pro-feature-title"><?php esc_html_e("Pro Features", "chaty"); ?> 🚀</div>
+                <div class="pro-feature-title flex items-center gap-1">
+                    <?php esc_html_e("Pro Features", "chaty"); ?>
+                    <?php do_action('chaty_upgrade_box'); ?>
+                </div>
                 <div class="pro-features d-block">
                     <div class="pro-item">
                         <div class="sm:flex sm:items-center sm:space-x-3 mt-4">
@@ -1155,9 +1119,12 @@ $isAgent = 0;
                         </div>
                     </div>
                     <div class="pro-link">
-                        <div class="pro-btn">
-                            <a target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">Upgrade to Pro</a>
-                        </div>
+                        <a class="chaty-upgrade-now-button" target="_blank" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                            <?php esc_html_e("Upgrade Now", 'chaty') ?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1182,18 +1149,20 @@ $isAgent = 0;
                 <!-- Advance setting for Custom Link -->
                 <div class="chaty-setting-col flex flex-col gap-1">
                     <label class="font-primary text-sm text-cht-gray-150 sm:w-44"><?php esc_html_e("LinkedIn", "chaty") ?></label>
-                    <div class="cta-action-radio tab-tab-select bg-cht-gray-50 inline-block rounded-md p-1">
-                        <div class="i-block">
-                            <label class="custom-control custom-radio">
-                                <input type="radio" name="cht_social_<?php echo esc_attr($social['slug']); ?>[link_type]" class="custom-control-input" <?php checked($isChecked, "personal") ?> value="personal" />
-                                <span class="custom-control-label px-2 py-1 inline-block text-cht-gray-150 rounded-[3px]"><?php esc_html_e("Personal", "chaty") ?></span>
-                            </label>
-                        </div>
-                        <div class="i-block">
-                            <label class="custom-control custom-radio">
-                                <input type="radio" name="cht_social_<?php echo esc_attr($social['slug']); ?>[link_type]" class="custom-control-input" <?php checked($isChecked, "company") ?> value="company" />
-                                <span class="custom-control-label px-2 py-1 inline-block text-cht-gray-150 rounded-[3px]"><?php esc_html_e("Company", "chaty") ?></span>
-                            </label>
+                    <div>
+                        <div class="cta-action-radio tab-tab-select bg-cht-gray-50 inline-flex rounded-md p-1">
+                            <div class="i-block">
+                                <label class="custom-control custom-radio">
+                                    <input type="radio" name="cht_social_<?php echo esc_attr($social['slug']); ?>[link_type]" class="custom-control-input" <?php checked($isChecked, "personal") ?> value="personal" />
+                                    <span class="custom-control-label px-2 py-1 inline-block text-cht-gray-150 rounded-[3px]"><?php esc_html_e("Personal", "chaty") ?></span>
+                                </label>
+                            </div>
+                            <div class="i-block">
+                                <label class="custom-control custom-radio">
+                                    <input type="radio" name="cht_social_<?php echo esc_attr($social['slug']); ?>[link_type]" class="custom-control-input" <?php checked($isChecked, "company") ?> value="company" />
+                                    <span class="custom-control-label px-2 py-1 inline-block text-cht-gray-150 rounded-[3px]"><?php esc_html_e("Company", "chaty") ?></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1215,13 +1184,7 @@ $isAgent = 0;
                                 </svg>
                             </span>
                         </span>
-                        <a href="<?php echo esc_url($this->getUpgradeMenuItemUrl());?>" target="_blank" class="bg-[#7459B3] text-white hover:text-white gap-1 focus:text-white rounded-md inline-flex items-center py-1 px-2 text-xs">
-                            <?php esc_html_e("Upgrade Now", "chaty"); ?>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.33301 8H12.6663" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 3.3335L12.6667 8.00016L8 12.6668" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                        <?php do_action('chaty_upgrade_box'); ?>
                     </label>
                 </div>
             </div>

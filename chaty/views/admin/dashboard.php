@@ -198,7 +198,9 @@ $installed_plugins = get_plugins();
                                     <li><?php esc_html_e("📈 Unlock analytics about each channel usage and different widgets", "chaty"); ?></li>
                                     <li><?php esc_html_e("🎨 Customise the widget to display the chat view popup.", "chaty"); ?></li>
                                 </ul>
-                                <a class="dashboard-pro-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>"><?php esc_html_e("Upgrade to Pro today", "chaty"); ?></a>
+                                <a class="dashboard-pro-button" href="<?php echo esc_url($this->getUpgradeMenuItemUrl()); ?>">
+                                    <?php esc_html_e("Upgrade to Pro today", "chaty"); ?>
+                                </a>
                             </div>
                             <div class="dashboard-pro-body-right">
                                 <img src="<?php echo esc_url(CHT_PLUGIN_URL) ?>/admin/assets/images/dashboard.png" alt="chaty">

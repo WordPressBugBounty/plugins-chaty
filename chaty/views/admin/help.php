@@ -371,7 +371,7 @@ $data = array(
     <div class="premio-help-wrap">
         <div class="premio-help-menu">
                 <a target="_blank" href="<?php echo esc_url($data['get_support_link']) ?>"><?php esc_html_e("Get Support", "chaty") ?></a>
-                <a target="_blank" href="<?php echo esc_url($data['upgrade_to_pro_link']) ?>"><?php esc_html_e("Upgrade to Pro", "chaty") ?></a>
+                <a target="_blank" href="<?php echo esc_url($data['upgrade_to_pro_link']) ?>"><?php esc_html_e("Upgrade Now", "chaty") ?></a>
             <?php if($data['recommended_plugins_link_status'] != true): ?>
                 <a target="_blank" href="<?php echo esc_url($data['recommended_plugins_link']) ?>"><?php esc_html_e("Recommended Plugins", "chaty") ?></a>
             <?php endif; ?>
@@ -395,7 +395,7 @@ $data = array(
         <?php  } ?> 
         <div class="premio-help-absulate-content">
             <a target="_blank" href="<?php echo esc_url($data['upgrade_to_pro_link']) ?>" class="premio-help-absulate-content-single premio-click-to-close">
-                <span class="text"><?php esc_html_e("Upgrade to Pro", "chaty") ?></span>
+                <span class="text"><?php esc_html_e("Upgrade Now", "chaty") ?></span>
                 <span class="icon-img pro"><img src="<?php echo esc_url($data['pro_icon']) ?>" alt=""></span>
             </a>
             <a target="_blank"  href="<?php echo esc_url($data['get_support_link']) ?>" class="premio-help-absulate-content-single premio-click-to-close">

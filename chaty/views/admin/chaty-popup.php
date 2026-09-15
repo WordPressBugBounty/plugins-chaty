@@ -11,7 +11,7 @@ if (defined('ABSPATH') === false) {
 }
 ?>
 <div class="chaty-popup" id="chaty-intro-popup" style="display: block">
-    <div class="chaty-popup-box shadow-xl rounded-lg bg-white px-8 py-10 text-center bg-cover bg-no-repeat" style="background-image: url(<?php echo esc_url(CHT_PLUGIN_URL.'images/popup-bg.png'); ?>)">
+    <div class="chaty-popup-box shadow-xl rounded-lg bg-white px-8 py-10 text-center bg-cover bg-no-repeat" style="background-image: url(<?php echo esc_url(CHT_PLUGIN_URL.'dist/images/popup-bg.png'); ?>)">
         
         <button class="close-chaty-popup text-white bg-cht-gray-150 absolute right-2 top-2 hover:bg-slate-600" style="line-height: 1px">
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none">

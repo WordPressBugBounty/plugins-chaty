@@ -53,10 +53,10 @@ if ($showFirstChatyBox == 1) {
                 <?php } else { ?>
                     <a class="block rounded-md mb-2.5 text-[#B78DEB] border border-[#B78DEB] py-2 text-center text-base hover:bg-[#B78DEB] hover:text-white focus:bg-[#B78DEB] focus:text-white" href="<?php echo admin_url('admin.php?page=chaty-app') ?>"><?php esc_html_e('Close', 'chaty') ?></a>
                 <?php } ?>
-                <a class="chaty-primary-btn flex rounded-md items-center justify-center text-base text-white py-2 bg-[#B78DEB] hover:bg-[#8f59d3] hover:text-white focus:text-white" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>">
-                    <?php esc_html_e("Upgrade to Pro", "chaty"); ?>
+                <a class="chaty-upgrade-now-button w-full items-center justify-center h-10" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>">
+                    <?php esc_html_e("Upgrade Now", "chaty"); ?>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <div class="view-pro-bottom text-center mt-3">
@@ -87,11 +87,21 @@ if ($showFirstChatyBox == 1) {
                         <p><?php echo sprintf(esc_html__("You just got your first lead from Chaty. Click on the %1\$s button to display your contact form leads", "chaty"), "<b>".esc_html__("Show me", "chaty")."</b>") ?></p>
                         <p><?php echo sprintf(esc_html__("%1\$s to get leads to your email along with advanced triggers & targeting & more cool features", "chaty"), "<b>".esc_html__("Upgrade to Chaty Pro 🚀", "chaty")."</b>") ?></p>
                     </div>
-                    <div class="show-lead-btn">
-                        <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-contact-form-feed")) ?>" class=""><?php esc_html_e("Show me the new lead", "chaty") ?></a><span class="dashicons dashicons-arrow-right"></span>
+                    <div class="show-lead-btn flex items-center justify-center">
+                        <a href="<?php echo esc_url(admin_url("admin.php?page=chaty-contact-form-feed")) ?>" class="">
+                            <?php esc_html_e("Show me the new lead", "chaty") ?>
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <div class="first-button lead-btn">
-                        <a target="_blank" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>"><?php esc_html_e("Upgrade to Pro", "chaty"); ?><span>🚀</span></a>
+                    <div class="text-center">
+                        <a class="chaty-upgrade-now-button" target="_blank" href="<?php echo esc_url(admin_url("admin.php?page=chaty-app-upgrade")) ?>">
+                            <?php esc_html_e("Upgrade Now", "chaty"); ?>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

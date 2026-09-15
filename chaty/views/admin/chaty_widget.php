@@ -14,7 +14,7 @@ if (defined('ABSPATH') === false) {
 $data = [
     'logo'          => CHT_PLUGIN_URL . 'admin/assets/images/logo-color.svg',
     'upgrade_url'   => $this->getUpgradeMenuItemUrl(),
-    'upgrade_text'  => esc_html__('Upgrade to Pro', 'chaty'),
+    'upgrade_text'  => esc_html__('Upgrade Now', 'chaty'),
     'title'         => esc_html__( 'Create a new Chaty widgets for your website. What can you use it for?', 'chaty' ),
     'features'      => array(
         [
@@ -59,8 +59,11 @@ $data = [
         <h2 class="font-primary text-cht-gray-150 text-[26px] font-semibold">
             <?php echo esc_attr($data['title']) ?>
         </h2>
-        <a class="btn text-base mt-3 sm:mt-0 rounded-lg font-normal border-cht-primary bg-cht-primary text-white drop-shadow-3xl" href="<?php echo esc_url($data['upgrade_url']); ?>">
+        <a class="chaty-upgrade-now-button" href="<?php echo esc_url($data['upgrade_url']); ?>">
             <?php echo esc_attr($data['upgrade_text']) ?>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12L10 8L6 4" stroke="#092030" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
         </a>
     </header>
     <main>
