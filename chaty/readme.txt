@@ -3,7 +3,7 @@ Contributors: galdub, tomeraharon, premio
 Tags: whatsapp, whatsapp chat, facebook messenger, chat, chat button
 Requires at least: 4.7
 Tested up to: 7.1
-Stable tag: 3.6.1
+Stable tag: 3.6.2
 Plugin URI: https://premio.io/downloads/chaty/
 License: GPLv3
 
@@ -296,6 +296,10 @@ Yes! You can even decide what chat buttons will show up on each device (desktop/
 
 
 == Changelog ==
+
+= 3.6.2 =
+Added a GDPR consent checkbox to the Contact Form.
+Improved Discord channel setup with clearer agent and channel naming fields.
 
 = 3.6.1 =
 More chat button shapes and call-to-action placement - improved chat button shape options and CTA placement

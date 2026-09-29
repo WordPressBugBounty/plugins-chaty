@@ -386,6 +386,11 @@ class CHT_Frontend extends CHT_Admin_Base
                         $insert['message'] = esc_sql(sanitize_text_field($message));
                     }
 
+                    $fieldSetting = isset($value['consent']) ? $value['consent'] : [];
+                    if (isset($fieldSetting['is_active']) && $fieldSetting['is_active'] == "yes") {
+                        $insert['consent'] = !empty($postData['consent']) ? 1 : 0;
+                    }
+
                     $insert['ref_page']   = esc_url(esc_sql(sanitize_text_field($refURL)));
                     $insert['ip_address'] = "";
                     $insert['widget_id']  = esc_sql(sanitize_text_field($widget));
@@ -1264,6 +1269,19 @@ class CHT_Frontend extends CHT_Admin_Base
                                         "placeholder" => isset($fieldSetting['placeholder']) ? $this->sanitize_xss($fieldSetting['placeholder']) : esc_html__("Enter your message", "chaty"),
                                         "type"        => "textarea",
                                     ];
+                                }
+
+                                if(isset($value['consent']) && is_array($value['consent'])) {
+                                    $fieldSetting = $value['consent'];
+                                    if (isset($fieldSetting['is_active']) && $fieldSetting['is_active'] == "yes") {
+                                        $contactFields[] = [
+                                            "field"       => "consent",
+                                            "title"       => isset($fieldSetting['field_label'])? $this->sanitize_xss($fieldSetting['field_label']) : esc_html__("Consent", "chaty"),
+                                            "is_required" => (isset($fieldSetting['is_required']) && $fieldSetting['is_required'] == "yes") ? 1 : 0,
+                                            "placeholder" => isset($fieldSetting['placeholder']) ? $this->sanitize_xss($fieldSetting['placeholder']) : esc_html__("Enter your message", "chaty"),
+                                            "type"        => "checkbox",
+                                        ];
+                                    }
                                 }
                             }//end if
 

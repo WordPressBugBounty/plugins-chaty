@@ -197,7 +197,7 @@ if (!empty($conditionArray)) {
                         <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('Email', 'chaty');?></th>
                         <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('Phone number', 'chaty');?></th>
                         <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('Message', 'chaty');?></th>
-                        <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('IP Address', 'chaty');?></th>
+                        <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('Consent', 'chaty');?></th>
                         <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('Date', 'chaty');?></th>
                         <th class="text-center text-cht-gray-150 text-sm font-semibold font-primary py-3 px-5 bg-cht-primary-50"><?php esc_html_e('URL', 'chaty');?></th>
                         <th class="rounded-tr-lg text-cht-gray-150 text-sm font-semibold font-primary py-3 px-2 bg-cht-primary-50"><?php esc_html_e('Delete', 'chaty');?></th>
@@ -229,28 +229,28 @@ if (!empty($conditionArray)) {
                             <?php echo esc_attr($res->id) ?>
                         </td>
                         <td class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t" data-title="<?php esc_html_e('Widget Name', 'chaty');?>">
-                            <?php echo esc_attr(stripslashes($widgetName)) ?>
+                            <?php echo esc_attr(stripslashes((string) $widgetName)) ?>
                         </td>
                         <td class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t" data-title="<?php esc_html_e('Name', 'chaty');?>">
-                            <?php echo esc_attr(stripslashes($res->name)) ?>
+                            <?php echo esc_attr(stripslashes((string) $res->name)) ?>
                         </td>
                         <td class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t" data-title="<?php esc_html_e('Email', 'chaty');?>">
-                            <?php echo esc_attr(stripslashes($res->email)) ?>
+                            <?php echo esc_attr(stripslashes((string) $res->email)) ?>
                         </td>
                         <td class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t" data-title="<?php esc_html_e('Phone number', 'chaty');?>">
-                            <?php echo esc_attr(stripslashes($res->phone_number)) ?>
+                            <?php echo esc_attr(stripslashes((string) $res->phone_number)) ?>
                         </td>
                         <td class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t" data-title="<?php esc_html_e('Message', 'chaty');?>">
-                            <?php echo nl2br(esc_attr(stripslashes($res->message))) ?>
+                            <?php echo nl2br(esc_attr(stripslashes((string) $res->message))) ?>
                         </td>
                         <td
-                            class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t"
-                            data-title="<?php esc_html_e('IP Address', 'chaty');?>">
+                                class="bg-white py-3.5 px-5 text-cht-gray-150 font-primary text-sm text-center border-r border-t"
+                                data-title="<?php esc_html_e('Consent', 'chaty');?>">
                             <?php
-                            if(isset($socialIcons['capture_ip_address']) && $socialIcons['capture_ip_address'] == "yes") {
-                                echo nl2br(esc_attr(stripslashes($res->ip_address)));
+                            if (isset($res->consent) && $res->consent !== null && $res->consent !== '') {
+                                echo ($res->consent == 1) ? esc_html__('Yes', 'chaty') : esc_html__('No', 'chaty');
                             } else {
-                                echo "";
+                                echo '&mdash;';
                             }
                             ?>
                         </td>

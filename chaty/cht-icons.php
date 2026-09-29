@@ -7,7 +7,7 @@
   Author URI: https://premio.io/downloads/chaty/
   Text Domain: chaty
   Domain Path: /languages
-  Version: 3.6.1
+  Version: 3.6.2
   License: GPLv3
 */
 
@@ -27,7 +27,7 @@ define('CHT_INC', CHT_DIR . '/includes');
 define('CHT_PRO_URL', admin_url("admin.php?page=chaty-app-upgrade"));
 define('CHT_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('CHT_PLUGIN_BASE', plugin_basename(CHT_FILE));
-define('CHT_VERSION', "3.6.1");
+define('CHT_VERSION', "3.6.2");
 if(!defined('CHT_DEV_MODE')) {
     define('CHT_DEV_MODE', false);
 }
@@ -202,35 +202,66 @@ function cht_activation_redirect($plugin)
 }
 
 function chaty_plugin_check_db_table() {
-    global $wpdb, $pagenow;
+    global $pagenow;
     $page = filter_input(INPUT_GET, 'page');
     if ($pagenow == 'plugins.php' || ($page == 'chaty-app' || $page == 'chaty-upgrade' || $page == 'widget-analytics' || $page == 'chaty-contact-form-feed')) {
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        $charset_collate = $wpdb->get_charset_collate();
-        $chaty_table = $wpdb->prefix . 'chaty_contact_form_leads';
-        $query = "SHOW TABLES LIKE '".esc_sql($chaty_table)."'";
-        if ($wpdb->get_var($query) != $chaty_table) {
-            $chaty_table_settings = "CREATE TABLE {$chaty_table} (
+        chaty_plugin_check_table();
+    }
+}
+add_action( 'admin_init' , 'chaty_plugin_check_db_table' );
+
+function chaty_plugin_check_table() {
+    global $wpdb;
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    $charset_collate = $wpdb->get_charset_collate();
+    $chaty_table = $wpdb->prefix . 'chaty_contact_form_leads';
+    $query = "SHOW TABLES LIKE '".esc_sql($chaty_table)."'";
+    if ($wpdb->get_var($query) != $chaty_table) {
+        $chaty_table_settings = "CREATE TABLE {$chaty_table} (
 				id bigint(11) NOT NULL AUTO_INCREMENT,
 				widget_id int(11) NULL,
 				name varchar(100) NULL,
 				email varchar(100) NULL,
-                phone_number varchar(100) NULL,
+            phone_number varchar(100) NULL,
 				message text NULL,
+				consent tinyint(1) NULL DEFAULT NULL,
 				ref_page text NULL,
 				ip_address tinytext NULL,
 				created_on datetime,
 				PRIMARY KEY  (id)
 			) $charset_collate;";
-            dbDelta($chaty_table_settings);
-        }
+        dbDelta($chaty_table_settings);
+    }
 
-        /* version 2.7.3 change added new column */
-        $column_name = 'phone_number';
-        $field_check = $wpdb->get_var($wpdb->prepare("SHOW COLUMNS FROM {$chaty_table} LIKE %s", $column_name));
-        if ('phone_number' != $field_check) {
-            $wpdb->query("ALTER TABLE {$chaty_table} ADD phone_number VARCHAR(100) NULL DEFAULT NULL AFTER email");
-        }
+    /* version 2.7.3 change added new column */
+    $column_name = 'phone_number';
+    $field_check = $wpdb->get_var($wpdb->prepare("SHOW COLUMNS FROM {$chaty_table} LIKE %s", $column_name));
+    if ('phone_number' != $field_check) {
+        $wpdb->query("ALTER TABLE {$chaty_table} ADD phone_number VARCHAR(100) NULL DEFAULT NULL AFTER email");
+    }
+
+    /* add consent column (NULL = consent not collected / legacy lead, 1 = consent given, 0 = consent field shown but not ticked) */
+    $consent_check = $wpdb->get_var($wpdb->prepare("SHOW COLUMNS FROM {$chaty_table} LIKE %s", 'consent'));
+    if ('consent' != $consent_check) {
+        $wpdb->query("ALTER TABLE {$chaty_table} ADD consent TINYINT(1) NULL DEFAULT NULL AFTER message");
+    }
+
+}
+
+/**
+ * Run the DB table check once after the plugin has been updated to a new version.
+ * An update loads the new code on the next request, so the stored version is compared on load.
+ */
+function chaty_plugin_maybe_upgrade_db() {
+    $pluginData     = get_file_data(__FILE__, array('Version' => 'Version'));
+    $currentVersion = isset($pluginData['Version']) ? $pluginData['Version'] : '';
+    if (empty($currentVersion)) {
+        return;
+    }
+
+    if (get_option('chaty_db_version') !== $currentVersion) {
+        chaty_plugin_check_table();
+        update_option('chaty_db_version', $currentVersion);
     }
 }
-add_action( 'admin_init' , 'chaty_plugin_check_db_table' );
+add_action( 'plugins_loaded', 'chaty_plugin_maybe_upgrade_db', 20 );

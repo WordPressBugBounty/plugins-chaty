@@ -471,6 +471,13 @@ $isAgent = 0;
                         'type'        => 'textarea',
                         'is_enabled'  => 1,
                     ],
+                    'consent' => [
+                            'title' => esc_html__("Consent", "chaty"),
+                            'placeholder' => esc_html__("I consent to having this website store my submitted information so they can respond to my inquiry", "chaty"),
+                            'is_required' => 1,
+                            'type' => 'checkbox',
+                            'is_enabled' => 1,
+                    ]
                 ];
                 echo '<div class="form-field-setting-col">';
                 foreach ($fields as $label => $field) {
@@ -511,7 +518,11 @@ $isAgent = 0;
                         <div class="field-settings <?php echo ($field_value['is_active'] == "yes") ? "active" : "" ?>">
                             <div class="chaty-setting-col pb-4 grid sm:grid-cols-2 items-center gap-3">
                                 <div>
-                                    <input class="rounded-lg w-full chaty-input-text contact_form_custom_value" data-type="<?php echo esc_attr($field['type']) ?>" id="placeholder_for_<?php echo esc_attr($social['slug']); ?>_<?php echo esc_attr($label) ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[<?php echo esc_attr($label) ?>][placeholder]" value="<?php echo esc_attr($field_value['placeholder']) ?>" >
+                                    <?php if($label == 'consent') { ?>
+                                        <textarea maxlength="200" class="rounded-lg w-full chaty-input-text contact_form_custom_value h-24 py-1 px-3 text-sm" data-type="<?php echo esc_attr($field['type']) ?>" id="placeholder_for_<?php echo esc_attr($social['slug']); ?>_<?php echo esc_attr($label) ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[<?php echo esc_attr($label) ?>][placeholder]"><?php echo esc_attr($field_value['placeholder']) ?></textarea>
+                                    <?php } else { ?>
+                                        <input class="rounded-lg w-full chaty-input-text contact_form_custom_value" data-type="<?php echo esc_attr($field['type']) ?>" id="placeholder_for_<?php echo esc_attr($social['slug']); ?>_<?php echo esc_attr($label) ?>" type="text" name="cht_social_<?php echo esc_attr($social['slug']); ?>[<?php echo esc_attr($label) ?>][placeholder]" value="<?php echo esc_attr($field_value['placeholder']) ?>" >
+                                    <?php } ?>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <div class="checkbox">

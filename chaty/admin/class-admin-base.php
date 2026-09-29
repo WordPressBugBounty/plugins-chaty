@@ -1335,6 +1335,7 @@ class CHT_Admin_Base
                             esc_html__("Email", "chaty"),
                             esc_html__("Phone number", "chaty"),
                             esc_html__("Message", "chaty"),
+                            esc_html__("Consent", "chaty"),
                             esc_html__("Date", "chaty"),
                             esc_html__("Reference Page", "chaty")
                         );
@@ -1358,7 +1359,8 @@ class CHT_Admin_Base
                             $res->name,
                             $res->email,
                             $res->phone_number,
-                            nl2br($res->message),
+                            nl2br((string) $res->message),
+                            (isset($res->consent) && $res->consent !== null && $res->consent !== '') ? ($res->consent == 1 ? esc_html__("Yes", "chaty") : esc_html__("No", "chaty")) : "",
                             $res->created_on,
                             $res->ref_page,
                         ];
