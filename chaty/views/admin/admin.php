@@ -71,7 +71,7 @@ $proClass      = "none_pro";
             <!-- ---------------------
             Header Step (choose your chat channel | customize social widget launcher | triggers and targeting)
             ---------------------- -->
-            <div class="chaty-header chaty-logo z-50 flex gap-3 items-center justify-between bg-white p-1.5 fixed top-0 left-0 w-full" id="chaty-header-tab-label">
+            <div class="chaty-header chaty-logo z-50 flex gap-3 items-center justify-between bg-white p-1.5 fixed top-0 left-0 w-full mt-0!" id="chaty-header-tab-label">
                 <a href="<?php echo esc_url( $this->getDashboardUrl() ) ?>">
                     <img class="max-w-[100px]" src="<?php echo esc_url(CHT_PLUGIN_URL.'admin/assets/images/logo-color.svg'); ?>" alt="Chaty" class="logo">
                     <img class="w-8 small-logo" src="<?php echo esc_url(CHT_PLUGIN_URL.'admin/assets/images/logo-small.svg'); ?>" alt="Chaty" class="logo">
@@ -296,5 +296,10 @@ $proClass      = "none_pro";
     <!-- chaty preview button -->
     <a href="#" class="preview-help-btn"><?php esc_html_e('Preview', 'chaty'); ?></a>
 </div>
+<style>
+    #wpbody-content {
+        padding-top: 120px;
+    }
+</style>
 <?php require_once 'popup.php';
 include_once "review-popup.php";

@@ -3,7 +3,7 @@ Contributors: galdub, tomeraharon, premio
 Tags: whatsapp, whatsapp chat, facebook messenger, chat, chat button
 Requires at least: 4.7
 Tested up to: 7.1
-Stable tag: 3.6.4
+Stable tag: 3.6.5
 Plugin URI: https://premio.io/downloads/chaty/
 License: GPLv3
 
@@ -300,6 +300,9 @@ Yes! You can even decide what chat buttons will show up on each device (desktop/
 
 
 == Changelog ==
+
+= 3.6.5 =
+Fixed a display issue with internal modals.
 
 = 3.6.4 =
 Fixed an issue where the bounce effect didn’t work when pending messages and an attention effect were enabled together.
